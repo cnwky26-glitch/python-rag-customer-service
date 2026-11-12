@@ -1,0 +1,2715 @@
+{
+  "rows": [
+    {
+      "chunk_size": 180,
+      "overlap": 30,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0
+    },
+    {
+      "chunk_size": 300,
+      "overlap": 50,
+      "dev_recall_at_5": 0.875,
+      "dev_rejection_rate": 1.0
+    },
+    {
+      "chunk_size": 420,
+      "overlap": 70,
+      "dev_recall_at_5": 0.875,
+      "dev_rejection_rate": 1.0
+    }
+  ],
+  "results": {
+    "180": {
+      "recall_at_5": 0.75,
+      "recall_curve": {
+        "1": 0.5,
+        "2": 0.75,
+        "3": 0.75,
+        "4": 0.75,
+        "5": 0.75
+      },
+      "p50_ms": 17.85214999836171,
+      "p95_ms": 20.702225001514307,
+      "p99_ms": 22.211404998597573,
+      "mean_ms": 17.96745625006224,
+      "cold_first_query_ms": 34.732600004645064,
+      "request_count": 16,
+      "rejection_rate": 1.0,
+      "questions": [
+        {
+          "id": "D01",
+          "question": "如何把包含 JSON 的字符串反序列化为 Python 对象？",
+          "module": "json",
+          "relevant_doc_ids": [
+            "json:json.loads"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "json:json.load",
+                "chunk_id": "json:json.load@0",
+                "title": "json. load ( fp , * , cls = None , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , object_pairs_hook = None , ** kw )",
+                "text": "使用 JSON 至 Python 转换表 将 fp 反序列化为 Python 对象。 参数 : fp ( file-like object ) -- 一个包含要执行反序列化的 JSON 文档的支持 .read() 的 text file 或 binary file 。 cls (a JSONDecoder subclass) -- 如果设定此参数,则使用自定",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.load",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.6532192826271057,
+                "hybrid_score": 0.8959657847881317
+              },
+              {
+                "doc_id": "json:json.loads",
+                "chunk_id": "json:json.loads@0",
+                "title": "json. loads ( s , * , cls = None , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , object_pairs_hook = None , ** kw )",
+                "text": "类似于 load() ,但不是针对文件型对象,而是使用这个 转换表 将 s (一个包含 JSON 的 str , bytes 或 bytearray 实例) 反序列化为 Python 对象。 在 3.6 版本发生变更: s 现在可以为 bytes 或 bytearray 类型。 输入编码应为 UTF-8, UTF-16 或 UTF-32。 在 3.9 版本发",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.loads",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.6070271134376526,
+                "hybrid_score": 0.7407201056427569
+              },
+              {
+                "doc_id": "json:json.JSONDecoder",
+                "chunk_id": "json:json.JSONDecoder@900",
+                "title": "class json. JSONDecoder ( * , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , strict = True , object_pairs_hook = None )",
+                "text": "e ),那么控制字符将被允许在字符串内。在此上下文中的控制字符编码在范围 0--31 内的字符,包括 '\\t' (制表符), '\\n' , '\\r' 和 '\\0' 。 如果反序列化的数据不是有效 JSON 文档,引发 JSONDecodeError 错误。 在 3.6 版本发生变更: 所有形参现在都是 仅限关键字参数 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.JSONDecoder",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.6181325912475586,
+                "hybrid_score": 0.6383775684995111
+              },
+              {
+                "doc_id": "json:json.dump",
+                "chunk_id": "json:json.dump@0",
+                "title": "json. dump ( obj , fp , * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , cls = None , indent = None , separators = None , default = None , sort_keys = False , ** kw )",
+                "text": "使用这个 Python 至 JSON 转换表 将 obj 序列化为输出到 fp (一个支持 .write() 的 file-like object ) 的已格式化的 JSON 流。 备注 与 pickle 和 marshal 不同,JSON 不是一个具有框架的协议,所以尝试多次使用同一个 fp 调用 dump() 来序列化多个对象会产生一个不合规的 JSON",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.dump",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.6131554841995239,
+                "hybrid_score": 0.6266952828423421
+              },
+              {
+                "doc_id": "json:json.dumps",
+                "chunk_id": "json:json.dumps@0",
+                "title": "json. dumps ( obj , * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , cls = None , indent = None , separators = None , default = None , sort_keys = False , ** kw )",
+                "text": "使用这个 转换表 将 obj 序列化为 JSON 格式的 str 。 其参数的含义与 dump() 中的相同。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.dumps",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5936113595962524,
+                "hybrid_score": 0.5572345062499673
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "json"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 15.11650000611553
+          }
+        },
+        {
+          "id": "D02",
+          "question": "怎样通过路径对象创建目录，并自动创建不存在的父目录？",
+          "module": "pathlib",
+          "relevant_doc_ids": [
+            "pathlib:pathlib.Path.mkdir"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "pathlib:pathlib.Path.mkdir",
+                "chunk_id": "pathlib:pathlib.Path.mkdir@0",
+                "title": "Path. mkdir ( mode = 0o777 , parents = False , exist_ok = False )",
+                "text": "使用给定的路径新建目录。 如果给出了 mode ,它将与进程的 umask 值合并来决定文件模式和访问旗标。 如果路径已存在,则会引发 FileExistsError 。 如果 parents 为真值,任何找不到的父目录都会伴随着此路径被创建;它们会以默认权限被创建,而不考虑 mode 设置(模仿 POSIX 的 mkdir -p 命令)。 如果 paren",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.mkdir",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5591405034065247,
+                "hybrid_score": 0.8677421510219574
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.iterdir",
+                "chunk_id": "pathlib:pathlib.Path.iterdir@300",
+                "title": "Path. iterdir ( )",
+                "text": "目 '.' 和 '..' 。 如果迭代器创建之后有文件在目录中被移除或添加,是否要包括该文件所对应的路径对象并没有明确规定。 如果该路径不是一个目录或是无法访问,则会引发 OSError 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.iterdir",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5533604621887207,
+                "hybrid_score": 0.635786156424711
+              },
+              {
+                "doc_id": "pathlib:pathlib.PurePath.with_segments",
+                "chunk_id": "pathlib:pathlib.PurePath.with_segments@0",
+                "title": "PurePath. with_segments ( * pathsegments )",
+                "text": "通过组合给定的 pathsegments 创建一个相同类型的新路径对象。 每当创建派生路径,如从 parent 和 relative_to() 创建时都会调用此方法。 子类可以覆盖此方法以便向派生路径传递信息,例如: from pathlib import PurePosixPath class MyPath ( PurePosixPath ): def _",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.PurePath.with_segments",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5445020794868469,
+                "hybrid_score": 0.6004218584352272
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.cwd",
+                "chunk_id": "pathlib:pathlib.Path.cwd@0",
+                "title": "classmethod Path. cwd ( )",
+                "text": "返回一个新的表示当前目录的路径对象(和 os.getcwd() 返回的相同): >>> Path . cwd () PosixPath('/home/antoine/pathlib')",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.cwd",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.557377815246582,
+                "hybrid_score": 0.5548182852664877
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.home",
+                "chunk_id": "pathlib:pathlib.Path.home@0",
+                "title": "classmethod Path. home ( )",
+                "text": "返回一个表示用户家目录的新路径对象(与带 ~ 构造的 os.path.expanduser() 所返回的相同)。 如果无法解析家目录,则会引发 RuntimeError 。 >>> Path . home () PosixPath('/home/antoine') Added in version 3.5.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.home",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5736991763114929,
+                "hybrid_score": 0.5468931968778574
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "pathlib"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 18.26499999879161
+          }
+        },
+        {
+          "id": "D03",
+          "question": "怎样用正则表达式替换字符串中匹配到的部分？",
+          "module": "re",
+          "relevant_doc_ids": [
+            "re:re.sub"
+          ],
+          "recall_at_5": 0.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "re:re.search",
+                "chunk_id": "re:re.search@0",
+                "title": "re. search ( pattern , string , flags = 0 )",
+                "text": "扫描整个 string 查找正则表达式 pattern 产生匹配的第一个位置,并返回相应的 Match 。 如果字符串中没有与模式匹配的位置则返回 None ;请注意这不同于在字符串的某个位置上找到零长度匹配。 表达式的行为可通过指定 flags 值来修改。值可以是任意 flags 变量,可使用按位 OR ( | 运算符) 进行组合。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.search",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6539902687072754,
+                "hybrid_score": 0.8961970806121826
+              },
+              {
+                "doc_id": "re:re.Pattern.search",
+                "chunk_id": "re:re.Pattern.search@0",
+                "title": "Pattern. search ( string [ , pos [ , endpos ] ] )",
+                "text": "扫描整个 string 查找该正则表达式产生匹配的第一个位置,并返回相应的 Match 。 如果字符串中没有与模式匹配的位置则返回 None ;请注意这不同于在字符串的某个位置上找到零长度匹配。 可选的第二个参数 pos 给出了字符串中开始搜索的位置索引;默认为 0 ,它不完全等价于字符串切片; '^' 样式字符匹配字符串真正的开头,和换行符后面的第一个字符",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Pattern.search",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6703385710716248,
+                "hybrid_score": 0.8732120955270568
+              },
+              {
+                "doc_id": "re:re.Pattern.flags",
+                "chunk_id": "re:re.Pattern.flags@0",
+                "title": "Pattern. flags",
+                "text": "正则表达式匹配旗标。这是一个传给 compile() 的旗标组合,模式中的任何 (?...) 内联旗标,以及隐式旗标如当模式为 Unicode 字符串时的 UNICODE 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Pattern.flags",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.5842288732528687,
+                "hybrid_score": 0.8352623946291958
+              },
+              {
+                "doc_id": "re:re.PatternError.pattern",
+                "chunk_id": "re:re.PatternError.pattern@0",
+                "title": "pattern",
+                "text": "正则表达式的模式串。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.PatternError.pattern",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6470680236816406,
+                "hybrid_score": 0.8231628616490073
+              },
+              {
+                "doc_id": "re:re.escape",
+                "chunk_id": "re:re.escape@750",
+                "title": "re. escape ( pattern )",
+                "text": "s 在 3.3 版本发生变更: '_' 不再被转义。 在 3.7 版本发生变更: 只有在正则表达式中具有特殊含义的字符才会被转义。因此, '!' , '\"' , '%' , \"'\" , ',' , '/' , ':' , ';' , '<' , '=' , '>' , '@' 和 \"`\" 将不再会被转义。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.escape",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6099836826324463,
+                "hybrid_score": 0.8064910787243073
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "re"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.007599999487866
+          }
+        },
+        {
+          "id": "D04",
+          "question": "如何在一个字符或多个分隔符之间猜测 CSV 文件使用的格式？",
+          "module": "csv",
+          "relevant_doc_ids": [
+            "csv:csv.Sniffer.sniff"
+          ],
+          "recall_at_5": 0.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "csv:csv.Dialect",
+                "chunk_id": "csv:csv.Dialect@0",
+                "title": "class csv. Dialect",
+                "text": "Dialect 类是一个容器类,其属性包含有如何处理双引号、空白符、分隔符等的信息。 由于缺少严格的 CSV 规格描述,不同的应用程序会产生略有差别的 CSV 数据。 Dialect 实例定义了 reader 和 writer 实例将具有怎样的行为。 所有可用的 Dialect 名称会由 list_dialects() 返回,并且它们可由特定的 reader",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.Dialect",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5596730709075928,
+                "hybrid_score": 0.8679019212722778
+              },
+              {
+                "doc_id": "csv:csv.writer",
+                "chunk_id": "csv:csv.writer@0",
+                "title": "csv. writer ( csvfile , / , dialect = 'excel' , ** fmtparams )",
+                "text": "返回一个 writer 对象,该对象负责将用户的数据在给定的文件型对象上转换为带分隔符的字符串。 csvfile 可以是任何具有 write() 方法的对象。 如果 csvfile 是一个文件对象,则打开它时应使用 newline='' [ 1 ] 。 可以给出可选的 dialect 形参用来定义一组特定 CSV 变种专属的形参。 它可以是 Dialect ",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.writer",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.6074139475822449,
+                "hybrid_score": 0.8244686251198181
+              },
+              {
+                "doc_id": "csv:csv.reader",
+                "chunk_id": "csv:csv.reader@300",
+                "title": "csv. reader ( csvfile , / , dialect = 'excel' , ** fmtparams )",
+                "text": "参的完整细节,请参阅 变种与格式参数 一节。 从 csv 文件读取的每一行都将返回为一个字符串列表。 除非指定了 QUOTE_NONNUMERIC 格式选项(在这种情况下未加引号的字段会被转换为浮点数),否则不会执行自动数据类型转换。 一个简短的用法示例: >>> import csv >>> with open ( 'eggs.csv' , newline",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.reader",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.6174111366271973,
+                "hybrid_score": 0.7792904371085714
+              },
+              {
+                "doc_id": "csv:csv.Sniffer",
+                "chunk_id": "csv:csv.Sniffer@0",
+                "title": "class csv. Sniffer",
+                "text": "Sniffer 类用于推断 CSV 文件的格式。 Sniffer 类提供了两个方法: 备注 此方法是一个粗略的启发式方式,有可能产生假正例和假反例。 Sniffer 类具有以下属性:",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.Sniffer",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5736867189407349,
+                "hybrid_score": 0.7585821757286335
+              },
+              {
+                "doc_id": "csv:csv.excel_tab",
+                "chunk_id": "csv:csv.excel_tab@0",
+                "title": "class csv. excel_tab",
+                "text": "excel_tab 类定义了 Excel 生成的、制表符分隔的 CSV 文件的常规属性。它在变种注册表中的名称是 'excel-tab' 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.excel_tab",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.6142853498458862,
+                "hybrid_score": 0.6574612472780945
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "csv"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 20.068199999514036
+          }
+        },
+        {
+          "id": "D05",
+          "question": "如何获取当前工作目录的路径字符串？",
+          "module": "os",
+          "relevant_doc_ids": [
+            "os:os.getcwd"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "os:os.getcwd",
+                "chunk_id": "os:os.getcwd@0",
+                "title": "os. getcwd ( )",
+                "text": "返回表示当前工作目录的字符串。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.getcwd",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.6429839134216309,
+                "hybrid_score": 0.8928951740264892
+              },
+              {
+                "doc_id": "os:os.getcwdb",
+                "chunk_id": "os:os.getcwdb@0",
+                "title": "os. getcwdb ( )",
+                "text": "返回表示当前工作目录的字节串 (bytestring)。 在 3.8 版本发生变更: 在 Windows 上,本函数现在会使用 UTF-8 编码格式而不是 ANSI 代码页:请参看 PEP 529 了解具体原因。 该函数在 Windows 上不再被弃用。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.getcwdb",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5357853174209595,
+                "hybrid_score": 0.5663936394966719
+              },
+              {
+                "doc_id": "os:os.add_dll_directory",
+                "chunk_id": "os:os.add_dll_directory@0",
+                "title": "os. add_dll_directory ( path )",
+                "text": "将路径添加到 DLL 搜索路径。 当需要解析扩展模块的依赖时(扩展模块本身通过 sys.path 解析),会使用该搜索路径, ctypes 也会使用该搜索路径。 要移除目录,可以在返回的对象上调用 close() ,也可以在 with 语句内使用本方法。 参阅 Microsoft 文档 获取如何加载 DLL 的信息。 引发一个 审计事件 os.add_dll",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.add_dll_directory",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5087457895278931,
+                "hybrid_score": 0.5638296696007798
+              },
+              {
+                "doc_id": "os:os.fchdir",
+                "chunk_id": "os:os.fchdir@0",
+                "title": "os. fchdir ( fd )",
+                "text": "将当前工作目录更改为文件描述符 fd 指向的目录。fd 必须指向打开的目录而非文件。从 Python 3.3 开始,它等效于 os.chdir(fd) 。 引发一个 审计事件 os.chdir 并附带参数 path 。 可用性 : Unix.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.fchdir",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5878214836120605,
+                "hybrid_score": 0.533248367575549
+              },
+              {
+                "doc_id": "os:os.DirEntry.path",
+                "chunk_id": "os:os.DirEntry.path@150",
+                "title": "path",
+                "text": "path 属性也是相对路径。 在创建 scandir() 迭代器之后更改当前工作目录可能会导致稍后对 path 的使用解析出不同的结果。 在某些平台上,如果原始的 scandir() 参数可用于枚举但不可用于与条目名称拼接,则构造的路径可能无效。 如果 scandir() path 参数是 文件描述符 ,则 path 属性与 name 属性相同。 如果 sc",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.DirEntry.path",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5626446604728699,
+                "hybrid_score": 0.5267610927976257
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "os"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 19.03659999516094
+          }
+        },
+        {
+          "id": "D06",
+          "question": "如何计算一个数的平方根？",
+          "module": "math",
+          "relevant_doc_ids": [
+            "math:math.sqrt"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "math:math.sqrt",
+                "chunk_id": "math:math.sqrt@0",
+                "title": "math. sqrt ( x )",
+                "text": "返回 x 的平方根。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.sqrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.6254969835281372,
+                "hybrid_score": 0.8876490950584411
+              },
+              {
+                "doc_id": "math:math.isqrt",
+                "chunk_id": "math:math.isqrt@0",
+                "title": "math. isqrt ( n )",
+                "text": "返回非负整数 n 的整数平方根。 这就是对 n 的实际平方根向下取整,或者相当于使得 a 2 ≤ n 的最大整数 a 。 对于某些应用来说,可以更适合取值为使得 n ≤ a 2 的最小整数 a ,或者换句话说就是 n 的实际平方根向上取整。 对于正数 n ,这可以使用 a = 1 + isqrt(n - 1) 来计算。 Added in version 3.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.isqrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.5983654260635376,
+                "hybrid_score": 0.705905237681469
+              },
+              {
+                "doc_id": "math:math.cbrt",
+                "chunk_id": "math:math.cbrt@0",
+                "title": "math. cbrt ( x )",
+                "text": "返回 x 的立方根。 Added in version 3.11.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.cbrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.56981360912323,
+                "hybrid_score": 0.41994577077752504
+              },
+              {
+                "doc_id": "math:math.log1p",
+                "chunk_id": "math:math.log1p@0",
+                "title": "math. log1p ( x )",
+                "text": "返回 1+x 的自然对数(以 e 为底)。 以对于接近零的 x 精确的方式计算结果。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.log1p",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.5035515427589417,
+                "hybrid_score": 0.28183663245034535
+              },
+              {
+                "doc_id": "math:math.fmod",
+                "chunk_id": "math:math.fmod@300",
+                "title": "math. fmod ( x , y )",
+                "text": ",它不能准确表示为一个浮点数,并会舍入为令人惊讶的 1e100 。 出于这个原因,函数 fmod() 在处理浮点数时通常都是首选,而 Python 的 x % y 则在处理整数时是首选。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.fmod",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.5089218616485596,
+                "hybrid_score": 0.26533998057324504
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "math"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 18.110100005287677
+          }
+        },
+        {
+          "id": "D07",
+          "question": "如何计算数据的中位数？",
+          "module": "statistics",
+          "relevant_doc_ids": [
+            "statistics:statistics.median"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "statistics:statistics.median",
+                "chunk_id": "statistics:statistics.median@150",
+                "title": "statistics. median ( data )",
+                "text": "1 , 3 , 5 ]) 3 当数据点的总数为偶数时,中位数将通过对两个中间值求平均进行插值得出: >>> median ([ 1 , 3 , 5 , 7 ]) 4.0 这适用于当你的数据是离散的,并且你不介意中位数不是实际数据点的情况。 如果数据是有序的(支持排序操作)但不是数字(不支持加法),请考虑改用 median_low() 或 median_hig",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.646729052066803,
+                "hybrid_score": 0.8940187156200409
+              },
+              {
+                "doc_id": "statistics:statistics.median_high",
+                "chunk_id": "statistics:statistics.median_high@150",
+                "title": "statistics. median_high ( data )",
+                "text": ">>> median_high ([ 1 , 3 , 5 , 7 ]) 5 当你的数据是离散的,并且你希望中位数是一个实际数据点而非插值结果时可以使用高中位数。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_high",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.6314810514450073,
+                "hybrid_score": 0.7641250921328487
+              },
+              {
+                "doc_id": "statistics:statistics.median_low",
+                "chunk_id": "statistics:statistics.median_low@150",
+                "title": "statistics. median_low ( data )",
+                "text": " >>> median_low ([ 1 , 3 , 5 , 7 ]) 3 当你的数据是离散的,并且你希望中位数是一个实际数据点而非插值结果时可以使用低中位数。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_low",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.6404401063919067,
+                "hybrid_score": 0.7613424422792113
+              },
+              {
+                "doc_id": "statistics:statistics.median_grouped",
+                "chunk_id": "statistics:statistics.median_grouped@0",
+                "title": "statistics. median_grouped ( data , interval = 1.0 )",
+                "text": "针对围绕连续的、固定宽度区间的中点进行了 分组或分档 的数值数据估算中位数。 data 可以是任意数值数据的可迭代对象,其中每个值都恰好为分档的中点。至少必须有一个值。 interval 是每个分档的宽度。 例如,人口信息可能被归纳为按 10 年划分的连续年龄分组,每个分组由各区间的 5 年中点来表示: >>> from collections import",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_grouped",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.5803402066230774,
+                "hybrid_score": 0.6973266964826816
+              },
+              {
+                "doc_id": "statistics:statistics.NormalDist.median",
+                "chunk_id": "statistics:statistics.NormalDist.median@0",
+                "title": "median",
+                "text": "一个只读特征属性,表示特定正态分布的 中位数 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.NormalDist.median",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.5036441087722778,
+                "hybrid_score": 0.5501958245650287
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "statistics"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.31890000135172
+          }
+        },
+        {
+          "id": "D08",
+          "question": "如何把列表里的元素打乱顺序并原地修改列表？",
+          "module": "random",
+          "relevant_doc_ids": [
+            "random:random.shuffle"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "random:random.sample",
+                "chunk_id": "random:random.sample@0",
+                "title": "random. sample ( population , k , * , counts = None )",
+                "text": "返回从总体序列中选取的唯一元素的长度为 k 的列表。用于无重复的随机抽样。 返回包含来自总体的元素的新列表,同时保持原始总体不变。结果列表按选择顺序排列,因此所有子切片也将是有效的随机样本。 这允许抽奖获奖者(样本)被划分为大奖和第二名获胜者(子切片)。 总体成员不必是 可哈希对象 或唯一的。如果总体包含重复,则每次出现都是样本中可能的选择。 重复的元素可以",
+                "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.sample",
+                "module": "random",
+                "version": "3.13",
+                "similarity": 0.5352324843406677,
+                "hybrid_score": 0.8605697453022003
+              },
+              {
+                "doc_id": "random:random.shuffle",
+                "chunk_id": "random:random.shuffle@0",
+                "title": "random. shuffle ( x )",
+                "text": "就地将序列 x 随机打乱位置。 要改变一个不可变的序列并返回一个新的打乱列表,请使用 sample(x, k=len(x)) 。 请注意,即使对于小的 len(x) , x 的排列总数也可以快速增长,大于大多数随机数生成器的周期。这意味着长序列的大多数排列永远不会产生。 例如,长度为 2080 的序列是可以在 Mersenne Twister 随机数生成器的",
+                "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.shuffle",
+                "module": "random",
+                "version": "3.13",
+                "similarity": 0.5138096809387207,
+                "hybrid_score": 0.6485426267031459
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "random"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 15.581899999233428
+          }
+        },
+        {
+          "id": "D09",
+          "question": "我的网购订单什么时候发货？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.951900001207832
+          }
+        },
+        {
+          "id": "D10",
+          "question": "怎样申请信用卡退款？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.128599996794946
+          }
+        },
+        {
+          "id": "D11",
+          "question": "我的手机屏幕碎了，换屏收费多少？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.953900001884904
+          }
+        },
+        {
+          "id": "D12",
+          "question": "学校宿舍的空调坏了在哪里报修？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 22.58869999786839
+          }
+        },
+        {
+          "id": "D13",
+          "question": "这家健身房的年卡能不能退？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 20.073400002729613
+          }
+        },
+        {
+          "id": "D14",
+          "question": "请给我开一张治疗感冒的药方。",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.101799996453337
+          }
+        },
+        {
+          "id": "D15",
+          "question": "校园食堂今天的午餐菜单是什么？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.75239999551559
+          }
+        },
+        {
+          "id": "D16",
+          "question": "下一班去机场的大巴几点开？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.423800003598444
+          }
+        }
+      ],
+      "requests": [
+        {
+          "id": "D05",
+          "repeat": 0,
+          "latency_ms": 19.03659999516094,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "os:os.getcwd",
+            "os:os.getcwdb",
+            "os:os.add_dll_directory",
+            "os:os.fchdir",
+            "os:os.DirEntry.path"
+          ]
+        },
+        {
+          "id": "D01",
+          "repeat": 0,
+          "latency_ms": 15.11650000611553,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "json:json.load",
+            "json:json.loads",
+            "json:json.JSONDecoder",
+            "json:json.dump",
+            "json:json.dumps"
+          ]
+        },
+        {
+          "id": "D06",
+          "repeat": 0,
+          "latency_ms": 18.110100005287677,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "math:math.sqrt",
+            "math:math.isqrt",
+            "math:math.cbrt",
+            "math:math.log1p",
+            "math:math.fmod"
+          ]
+        },
+        {
+          "id": "D12",
+          "repeat": 0,
+          "latency_ms": 22.58869999786839,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D14",
+          "repeat": 0,
+          "latency_ms": 17.101799996453337,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D03",
+          "repeat": 0,
+          "latency_ms": 17.007599999487866,
+          "recall_at_5": 0.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "re:re.search",
+            "re:re.Pattern.search",
+            "re:re.Pattern.flags",
+            "re:re.PatternError.pattern",
+            "re:re.escape"
+          ]
+        },
+        {
+          "id": "D08",
+          "repeat": 0,
+          "latency_ms": 15.581899999233428,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "random:random.sample",
+            "random:random.shuffle"
+          ]
+        },
+        {
+          "id": "D11",
+          "repeat": 0,
+          "latency_ms": 17.953900001884904,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D02",
+          "repeat": 0,
+          "latency_ms": 18.26499999879161,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "pathlib:pathlib.Path.mkdir",
+            "pathlib:pathlib.Path.iterdir",
+            "pathlib:pathlib.PurePath.with_segments",
+            "pathlib:pathlib.Path.cwd",
+            "pathlib:pathlib.Path.home"
+          ]
+        },
+        {
+          "id": "D10",
+          "repeat": 0,
+          "latency_ms": 17.128599996794946,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D15",
+          "repeat": 0,
+          "latency_ms": 17.75239999551559,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D16",
+          "repeat": 0,
+          "latency_ms": 17.423800003598444,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D04",
+          "repeat": 0,
+          "latency_ms": 20.068199999514036,
+          "recall_at_5": 0.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "csv:csv.Dialect",
+            "csv:csv.writer",
+            "csv:csv.reader",
+            "csv:csv.Sniffer",
+            "csv:csv.excel_tab"
+          ]
+        },
+        {
+          "id": "D09",
+          "repeat": 0,
+          "latency_ms": 17.951900001207832,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D13",
+          "repeat": 0,
+          "latency_ms": 20.073400002729613,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D07",
+          "repeat": 0,
+          "latency_ms": 16.31890000135172,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "statistics:statistics.median",
+            "statistics:statistics.median_high",
+            "statistics:statistics.median_low",
+            "statistics:statistics.median_grouped",
+            "statistics:statistics.NormalDist.median"
+          ]
+        }
+      ]
+    },
+    "300": {
+      "recall_at_5": 0.875,
+      "recall_curve": {
+        "1": 0.5,
+        "2": 0.75,
+        "3": 0.75,
+        "4": 0.75,
+        "5": 0.875
+      },
+      "p50_ms": 18.582600001536775,
+      "p95_ms": 21.045674997367314,
+      "p99_ms": 21.6494549978961,
+      "mean_ms": 18.404550000923336,
+      "cold_first_query_ms": 23.664200001803692,
+      "request_count": 16,
+      "rejection_rate": 1.0,
+      "questions": [
+        {
+          "id": "D01",
+          "question": "如何把包含 JSON 的字符串反序列化为 Python 对象？",
+          "module": "json",
+          "relevant_doc_ids": [
+            "json:json.loads"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "json:json.load",
+                "chunk_id": "json:json.load@0",
+                "title": "json. load ( fp , * , cls = None , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , object_pairs_hook = None , ** kw )",
+                "text": "使用 JSON 至 Python 转换表 将 fp 反序列化为 Python 对象。 参数 : fp ( file-like object ) -- 一个包含要执行反序列化的 JSON 文档的支持 .read() 的 text file 或 binary file 。 cls (a JSONDecoder subclass) -- 如果设定此参数,则使用自定义的JSON解码器。任何传递给 load() 方法的多余关键字参数都会被传递给 cls 的构造器。如果传入 None (默认值),则会使用 JSONDecoder 。 object_hook ( callable | None) -- 如果",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.load",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.6129270792007446,
+                "hybrid_score": 0.8838781237602233
+              },
+              {
+                "doc_id": "json:json.loads",
+                "chunk_id": "json:json.loads@0",
+                "title": "json. loads ( s , * , cls = None , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , object_pairs_hook = None , ** kw )",
+                "text": "类似于 load() ,但不是针对文件型对象,而是使用这个 转换表 将 s (一个包含 JSON 的 str , bytes 或 bytearray 实例) 反序列化为 Python 对象。 在 3.6 版本发生变更: s 现在可以为 bytes 或 bytearray 类型。 输入编码应为 UTF-8, UTF-16 或 UTF-32。 在 3.9 版本发生变更: 关键字参数 encoding 已被移除。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.loads",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5836814641952515,
+                "hybrid_score": 0.8037880731395733
+              },
+              {
+                "doc_id": "json:json.dump",
+                "chunk_id": "json:json.dump@0",
+                "title": "json. dump ( obj , fp , * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , cls = None , indent = None , separators = None , default = None , sort_keys = False , ** kw )",
+                "text": "使用这个 Python 至 JSON 转换表 将 obj 序列化为输出到 fp (一个支持 .write() 的 file-like object ) 的已格式化的 JSON 流。 备注 与 pickle 和 marshal 不同,JSON 不是一个具有框架的协议,所以尝试多次使用同一个 fp 调用 dump() 来序列化多个对象会产生一个不合规的 JSON 文件。 参数 : obj ( object ) -- 要序列化的 Python 对象。 fp ( file-like object ) -- obj 将被序列化输出到的文件型对象。 json 模块总是产生 str 对象,而不是 bytes",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.dump",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5963879823684692,
+                "hybrid_score": 0.758442422880391
+              },
+              {
+                "doc_id": "json:json.JSONDecoder",
+                "chunk_id": "json:json.JSONDecoder@750",
+                "title": "class json. JSONDecoder ( * , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , strict = True , object_pairs_hook = None )",
+                "text": "解析器的情况 (比如 float )。 parse_constant 是一个可选的函数,它被调用时将传入以下字符串之一: '-Infinity' , 'Infinity' , 'NaN' 。 它可被用于当遇到无效的 JSON 数字时引发一个异常。 如果 strict 为 false (默认为 True ),那么控制字符将被允许在字符串内。在此上下文中的控制字符编码在范围 0--31 内的字符,包括 '\\t' (制表符), '\\n' , '\\r' 和 '\\0' 。 如果反序列化的数据不是有效 JSON 文档,引发 JSONDecodeError 错误。 在 3.6 版本发生变更: 所有形参现在都",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.JSONDecoder",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5842688083648682,
+                "hybrid_score": 0.6626833170126291
+              },
+              {
+                "doc_id": "json:json.dumps",
+                "chunk_id": "json:json.dumps@0",
+                "title": "json. dumps ( obj , * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , cls = None , indent = None , separators = None , default = None , sort_keys = False , ** kw )",
+                "text": "使用这个 转换表 将 obj 序列化为 JSON 格式的 str 。 其参数的含义与 dump() 中的相同。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.dumps",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5936113595962524,
+                "hybrid_score": 0.6247079474101698
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "json"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.533199999888893
+          }
+        },
+        {
+          "id": "D02",
+          "question": "怎样通过路径对象创建目录，并自动创建不存在的父目录？",
+          "module": "pathlib",
+          "relevant_doc_ids": [
+            "pathlib:pathlib.Path.mkdir"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "pathlib:pathlib.Path.mkdir",
+                "chunk_id": "pathlib:pathlib.Path.mkdir@0",
+                "title": "Path. mkdir ( mode = 0o777 , parents = False , exist_ok = False )",
+                "text": "使用给定的路径新建目录。 如果给出了 mode ,它将与进程的 umask 值合并来决定文件模式和访问旗标。 如果路径已存在,则会引发 FileExistsError 。 如果 parents 为真值,任何找不到的父目录都会伴随着此路径被创建;它们会以默认权限被创建,而不考虑 mode 设置(模仿 POSIX 的 mkdir -p 命令)。 如果 parents 为假值(默认),则找不到的父级目录会引发 FileNotFoundError 。 如果 exist_ok 为 false(默认),则在目标已存在的情况下抛出 FileExistsError 。 如果 exist_ok 为真值,则 Fi",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.mkdir",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5644688606262207,
+                "hybrid_score": 0.8693406581878662
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.iterdir",
+                "chunk_id": "pathlib:pathlib.Path.iterdir@250",
+                "title": "Path. iterdir ( )",
+                "text": "') PosixPath('docs/Makefile') 子条目会以任意顺序产生,并且不包括特殊条目 '.' 和 '..' 。 如果迭代器创建之后有文件在目录中被移除或添加,是否要包括该文件所对应的路径对象并没有明确规定。 如果该路径不是一个目录或是无法访问,则会引发 OSError 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.iterdir",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5549160242080688,
+                "hybrid_score": 0.5430073140593417
+              },
+              {
+                "doc_id": "pathlib:pathlib.PurePath.with_segments",
+                "chunk_id": "pathlib:pathlib.PurePath.with_segments@0",
+                "title": "PurePath. with_segments ( * pathsegments )",
+                "text": "通过组合给定的 pathsegments 创建一个相同类型的新路径对象。 每当创建派生路径,如从 parent 和 relative_to() 创建时都会调用此方法。 子类可以覆盖此方法以便向派生路径传递信息,例如: from pathlib import PurePosixPath class MyPath ( PurePosixPath ): def __init__ ( self , * pathsegments , session_id ): super () . __init__ ( * pathsegments ) self . session_id = session_id de",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.PurePath.with_segments",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5413309335708618,
+                "hybrid_score": 0.5270374139363369
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.cwd",
+                "chunk_id": "pathlib:pathlib.Path.cwd@0",
+                "title": "classmethod Path. cwd ( )",
+                "text": "返回一个新的表示当前目录的路径对象(和 os.getcwd() 返回的相同): >>> Path . cwd () PosixPath('/home/antoine/pathlib')",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.cwd",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.557377815246582,
+                "hybrid_score": 0.504090331987395
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.home",
+                "chunk_id": "pathlib:pathlib.Path.home@0",
+                "title": "classmethod Path. home ( )",
+                "text": "返回一个表示用户家目录的新路径对象(与带 ~ 构造的 os.path.expanduser() 所返回的相同)。 如果无法解析家目录,则会引发 RuntimeError 。 >>> Path . home () PosixPath('/home/antoine') Added in version 3.5.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.home",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5736991763114929,
+                "hybrid_score": 0.5023070093373281
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "pathlib"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 19.059600002947263
+          }
+        },
+        {
+          "id": "D03",
+          "question": "怎样用正则表达式替换字符串中匹配到的部分？",
+          "module": "re",
+          "relevant_doc_ids": [
+            "re:re.sub"
+          ],
+          "recall_at_5": 0.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "re:re.search",
+                "chunk_id": "re:re.search@0",
+                "title": "re. search ( pattern , string , flags = 0 )",
+                "text": "扫描整个 string 查找正则表达式 pattern 产生匹配的第一个位置,并返回相应的 Match 。 如果字符串中没有与模式匹配的位置则返回 None ;请注意这不同于在字符串的某个位置上找到零长度匹配。 表达式的行为可通过指定 flags 值来修改。值可以是任意 flags 变量,可使用按位 OR ( | 运算符) 进行组合。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.search",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6539902687072754,
+                "hybrid_score": 0.8961970806121826
+              },
+              {
+                "doc_id": "re:re.escape",
+                "chunk_id": "re:re.escape@500",
+                "title": "re. escape ( pattern )",
+                "text": "ub() 和 subn() 的替换字符串,只有反斜杠应该被转义。例如: >>> digits_re = r '\\d+' >>> sample = '/usr/sbin/sendmail - 0 errors, 12 warnings' >>> print ( re . sub ( digits_re , digits_re . replace ( ' \\\\ ' , r ' \\\\ ' ), sample )) /usr/sbin/sendmail - \\d+ errors, \\d+ warnings 在 3.3 版本发生变更: '_' 不再被转义。 在 3.7 版本发生变更: 只有在正则表达式中",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.escape",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6521691083908081,
+                "hybrid_score": 0.8947818801400724
+              },
+              {
+                "doc_id": "re:re.Pattern.flags",
+                "chunk_id": "re:re.Pattern.flags@0",
+                "title": "Pattern. flags",
+                "text": "正则表达式匹配旗标。这是一个传给 compile() 的旗标组合,模式中的任何 (?...) 内联旗标,以及隐式旗标如当模式为 Unicode 字符串时的 UNICODE 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Pattern.flags",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.5842288732528687,
+                "hybrid_score": 0.8159514376420515
+              },
+              {
+                "doc_id": "re:re.Match.group",
+                "chunk_id": "re:re.Match.group@250",
+                "title": "Match. group ( [ group1 , ... ] )",
+                "text": "多次匹配的部分之中,则返回最后一个匹配。 >>> m = re . match ( r \"(\\w+) (\\w+)\" , \"Isaac Newton, physicist\" ) >>> m . group ( 0 ) # 整个匹配 'Isaac Newton' >>> m . group ( 1 ) # 第一个圆括号标记的子分组。 'Isaac' >>> m . group ( 2 ) # 第二个圆括号标记的子分组。 'Newton' >>> m . group ( 1 , 2 ) # 使用多个参数则返回一个元组。 ('Isaac', 'Newton') 如果正则表达式使用了 (?P<name>",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Match.group",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6315023899078369,
+                "hybrid_score": 0.8083777035873411
+              },
+              {
+                "doc_id": "re:re.Pattern.search",
+                "chunk_id": "re:re.Pattern.search@0",
+                "title": "Pattern. search ( string [ , pos [ , endpos ] ] )",
+                "text": "扫描整个 string 查找该正则表达式产生匹配的第一个位置,并返回相应的 Match 。 如果字符串中没有与模式匹配的位置则返回 None ;请注意这不同于在字符串的某个位置上找到零长度匹配。 可选的第二个参数 pos 给出了字符串中开始搜索的位置索引;默认为 0 ,它不完全等价于字符串切片; '^' 样式字符匹配字符串真正的开头,和换行符后面的第一个字符,但不会匹配索引规定开始的位置。 可选参数 endpos 限定了字符串搜索的结束;它假定字符串长度到 endpos ,所以只有从 pos 到 endpos - 1 的字符会被匹配。如果 endpos 小于 pos ,就不会有匹配产生;另外,",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Pattern.search",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6132979989051819,
+                "hybrid_score": 0.790153257697099
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "re"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 19.039899998460896
+          }
+        },
+        {
+          "id": "D04",
+          "question": "如何在一个字符或多个分隔符之间猜测 CSV 文件使用的格式？",
+          "module": "csv",
+          "relevant_doc_ids": [
+            "csv:csv.Sniffer.sniff"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "csv:csv.Dialect",
+                "chunk_id": "csv:csv.Dialect@0",
+                "title": "class csv. Dialect",
+                "text": "Dialect 类是一个容器类,其属性包含有如何处理双引号、空白符、分隔符等的信息。 由于缺少严格的 CSV 规格描述,不同的应用程序会产生略有差别的 CSV 数据。 Dialect 实例定义了 reader 和 writer 实例将具有怎样的行为。 所有可用的 Dialect 名称会由 list_dialects() 返回,并且它们可由特定的 reader 和 writer 类通过它们的初始化函数 ( __init__ ) 来注册,例如: import csv with open ( 'students.csv' , 'w' , newline = '' ) as csvfile : wri",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.Dialect",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5499352216720581,
+                "hybrid_score": 0.8649805665016174
+              },
+              {
+                "doc_id": "csv:csv.writer",
+                "chunk_id": "csv:csv.writer@0",
+                "title": "csv. writer ( csvfile , / , dialect = 'excel' , ** fmtparams )",
+                "text": "返回一个 writer 对象,该对象负责将用户的数据在给定的文件型对象上转换为带分隔符的字符串。 csvfile 可以是任何具有 write() 方法的对象。 如果 csvfile 是一个文件对象,则打开它时应使用 newline='' [ 1 ] 。 可以给出可选的 dialect 形参用来定义一组特定 CSV 变种专属的形参。 它可以是 Dialect 类的某个子类的实例或是 list_dialects() 函数所返回的字符串之一。 还可以给出另一个可选的 fmtparams 关键字参数来覆盖当前变种中的单个格式化形参。 有关各个变种和格式化形参的完整细节,请参阅 变种与格式参数 部分。 ",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.writer",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5887770056724548,
+                "hybrid_score": 0.8440663555024928
+              },
+              {
+                "doc_id": "csv:csv.reader",
+                "chunk_id": "csv:csv.reader@250",
+                "title": "csv. reader ( csvfile , / , dialect = 'excel' , ** fmtparams )",
+                "text": "一个可选关键字形参 fmtparams 可被用来覆盖当前变种中的单个格式形参。 有关变种和格式设置形参的完整细节,请参阅 变种与格式参数 一节。 从 csv 文件读取的每一行都将返回为一个字符串列表。 除非指定了 QUOTE_NONNUMERIC 格式选项(在这种情况下未加引号的字段会被转换为浮点数),否则不会执行自动数据类型转换。 一个简短的用法示例: >>> import csv >>> with open ( 'eggs.csv' , newline = '' ) as csvfile : ... spamreader = csv . reader ( csvfile , delimit",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.reader",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.6097666025161743,
+                "hybrid_score": 0.7745530900280531
+              },
+              {
+                "doc_id": "csv:csv.Sniffer",
+                "chunk_id": "csv:csv.Sniffer@0",
+                "title": "class csv. Sniffer",
+                "text": "Sniffer 类用于推断 CSV 文件的格式。 Sniffer 类提供了两个方法: 备注 此方法是一个粗略的启发式方式,有可能产生假正例和假反例。 Sniffer 类具有以下属性:",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.Sniffer",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5736867189407349,
+                "hybrid_score": 0.7720213708213446
+              },
+              {
+                "doc_id": "csv:csv.Sniffer.sniff",
+                "chunk_id": "csv:csv.Sniffer.sniff@0",
+                "title": "sniff ( sample , delimiters = None )",
+                "text": "分析给定的 sample 并返回一个 Dialect 子类,该子类中包含了分析出的格式参数。如果给出可选的 delimiters 参数,则该参数会被解释为字符串,该字符串包含了可能的有效定界符。 如果多个定界符对样本的适用程度相同——例如 ',' 和 ';' 都能一致地拆分每一行——则优先选用在 preferred 属性中按顺序列出的定界符,无论它们各自出现的次数如何。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.Sniffer.sniff",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5529406666755676,
+                "hybrid_score": 0.6889378038018795
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "csv"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 18.66390000213869
+          }
+        },
+        {
+          "id": "D05",
+          "question": "如何获取当前工作目录的路径字符串？",
+          "module": "os",
+          "relevant_doc_ids": [
+            "os:os.getcwd"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "os:os.getcwd",
+                "chunk_id": "os:os.getcwd@0",
+                "title": "os. getcwd ( )",
+                "text": "返回表示当前工作目录的字符串。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.getcwd",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.6429839134216309,
+                "hybrid_score": 0.8928951740264892
+              },
+              {
+                "doc_id": "os:os.getcwdb",
+                "chunk_id": "os:os.getcwdb@0",
+                "title": "os. getcwdb ( )",
+                "text": "返回表示当前工作目录的字节串 (bytestring)。 在 3.8 版本发生变更: 在 Windows 上,本函数现在会使用 UTF-8 编码格式而不是 ANSI 代码页:请参看 PEP 529 了解具体原因。 该函数在 Windows 上不再被弃用。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.getcwdb",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5357853174209595,
+                "hybrid_score": 0.5916420796852331
+              },
+              {
+                "doc_id": "os:os.fchdir",
+                "chunk_id": "os:os.fchdir@0",
+                "title": "os. fchdir ( fd )",
+                "text": "将当前工作目录更改为文件描述符 fd 指向的目录。fd 必须指向打开的目录而非文件。从 Python 3.3 开始,它等效于 os.chdir(fd) 。 引发一个 审计事件 os.chdir 并附带参数 path 。 可用性 : Unix.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.fchdir",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5878214836120605,
+                "hybrid_score": 0.5510118151275778
+              },
+              {
+                "doc_id": "os:os.DirEntry.path",
+                "chunk_id": "os:os.DirEntry.path@0",
+                "title": "path",
+                "text": "本条目的路径名:等效于 os.path.join(scandir_path, entry.name) ,其中 scandir_path 是原始的 scandir() path 参数。 除文件名外,该路径保留了原始的 scandir() 参数。 如果 scandir() path 参数是相对路径,则 path 属性也是相对路径。 在创建 scandir() 迭代器之后更改当前工作目录可能会导致稍后对 path 的使用解析出不同的结果。 在某些平台上,如果原始的 scandir() 参数可用于枚举但不可用于与条目名称拼接,则构造的路径可能无效。 如果 scandir() path 参数是 文件描述",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.DirEntry.path",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5380845069885254,
+                "hybrid_score": 0.5390789531978608
+              },
+              {
+                "doc_id": "os:os.chdir",
+                "chunk_id": "os:os.chdir@0",
+                "title": "os. chdir ( path )",
+                "text": "将当前工作目录更改为 path 。 本函数支持 指定文件描述符为参数 。其中,描述符必须指向打开的目录,不能是打开的文件。 本函数可以抛出 OSError 及其子类的异常,如 FileNotFoundError 、 PermissionError 和 NotADirectoryError 异常。 引发一个 审计事件 os.chdir 并附带参数 path 。 参见 contextlib.chdir() 上下文管理器,它在进入时更改当前工作目录,并在退出时恢复先前的目录。 在 3.3 版本发生变更: 在某些平台上新增支持将 path 参数指定为文件描述符。 在 3.6 版本发生变更: 接受一个 ",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.chdir",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5591707229614258,
+                "hybrid_score": 0.5362108728056592
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "os"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 20.27480000106152
+          }
+        },
+        {
+          "id": "D06",
+          "question": "如何计算一个数的平方根？",
+          "module": "math",
+          "relevant_doc_ids": [
+            "math:math.sqrt"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "math:math.sqrt",
+                "chunk_id": "math:math.sqrt@0",
+                "title": "math. sqrt ( x )",
+                "text": "返回 x 的平方根。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.sqrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.6254969835281372,
+                "hybrid_score": 0.8876490950584411
+              },
+              {
+                "doc_id": "math:math.isqrt",
+                "chunk_id": "math:math.isqrt@0",
+                "title": "math. isqrt ( n )",
+                "text": "返回非负整数 n 的整数平方根。 这就是对 n 的实际平方根向下取整,或者相当于使得 a 2 ≤ n 的最大整数 a 。 对于某些应用来说,可以更适合取值为使得 n ≤ a 2 的最小整数 a ,或者换句话说就是 n 的实际平方根向上取整。 对于正数 n ,这可以使用 a = 1 + isqrt(n - 1) 来计算。 Added in version 3.8.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.isqrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.5987457633018494,
+                "hybrid_score": 0.7470127884110471
+              },
+              {
+                "doc_id": "math:math.cbrt",
+                "chunk_id": "math:math.cbrt@0",
+                "title": "math. cbrt ( x )",
+                "text": "返回 x 的立方根。 Added in version 3.11.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.cbrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.56981360912323,
+                "hybrid_score": 0.4240119328983181
+              },
+              {
+                "doc_id": "math:math.log1p",
+                "chunk_id": "math:math.log1p@0",
+                "title": "math. log1p ( x )",
+                "text": "返回 1+x 的自然对数(以 e 为底)。 以对于接近零的 x 精确的方式计算结果。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.log1p",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.5035515427589417,
+                "hybrid_score": 0.291404745759691
+              },
+              {
+                "doc_id": "math:math.fmod",
+                "chunk_id": "math:math.fmod@250",
+                "title": "math. fmod ( x , y )",
+                "text": "e-100 ,但 Python 的 -1e-100 % 1e100 则是 1e100-1e-100 ,它不能准确表示为一个浮点数,并会舍入为令人惊讶的 1e100 。 出于这个原因,函数 fmod() 在处理浮点数时通常都是首选,而 Python 的 x % y 则在处理整数时是首选。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.fmod",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.5232098698616028,
+                "hybrid_score": 0.23240319552108735
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "math"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.84229999955278
+          }
+        },
+        {
+          "id": "D07",
+          "question": "如何计算数据的中位数？",
+          "module": "statistics",
+          "relevant_doc_ids": [
+            "statistics:statistics.median"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "statistics:statistics.median",
+                "chunk_id": "statistics:statistics.median@0",
+                "title": "statistics. median ( data )",
+                "text": "使用普通的“取中间两数平均值”方法返回数值数据的中位数(中间值)。如果 data 为空,则将引发 StatisticsError 。 data 可以是序列或可迭代对象。 中位数是衡量中间位置的可靠方式,并且较少受到极端值的影响。当数据点的总数为奇数时,将返回中间数据点: >>> median ([ 1 , 3 , 5 ]) 3 当数据点的总数为偶数时,中位数将通过对两个中间值求平均进行插值得出: >>> median ([ 1 , 3 , 5 , 7 ]) 4.0 这适用于当你的数据是离散的,并且你不介意中位数不是实际数据点的情况。 如果数据是有序的(支持排序操作)但不是数字(不支持加法),请",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.6391862630844116,
+                "hybrid_score": 0.8917558789253235
+              },
+              {
+                "doc_id": "statistics:statistics.median_low",
+                "chunk_id": "statistics:statistics.median_low@0",
+                "title": "statistics. median_low ( data )",
+                "text": "返回数值数据的低中位数。如果 data 为空则将引发 StatisticsError 。 data 可以是序列或可迭代对象。 低中位数一定是数据集的成员。当数据点总数为奇数时,将返回中间值。当其为偶数时,将返回两个中间值中较小的那个。 >>> median_low ([ 1 , 3 , 5 ]) 3 >>> median_low ([ 1 , 3 , 5 , 7 ]) 3 当你的数据是离散的,并且你希望中位数是一个实际数据点而非插值结果时可以使用低中位数。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_low",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.596504271030426,
+                "hybrid_score": 0.8509484769159466
+              },
+              {
+                "doc_id": "statistics:statistics.median_high",
+                "chunk_id": "statistics:statistics.median_high@0",
+                "title": "statistics. median_high ( data )",
+                "text": "返回数据的高中位数。如果 data 为空则将引发 StatisticsError 。 data 可以是序列或可迭代对象。 高中位数一定是数据集的成员。当数据点总数为奇数时,将返回中间值。当其为偶数时,将返回两个中间值中较大的那个。 >>> median_high ([ 1 , 3 , 5 ]) 3 >>> median_high ([ 1 , 3 , 5 , 7 ]) 5 当你的数据是离散的,并且你希望中位数是一个实际数据点而非插值结果时可以使用高中位数。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_high",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.5839738845825195,
+                "hybrid_score": 0.8505986860620844
+              },
+              {
+                "doc_id": "statistics:statistics.median_grouped",
+                "chunk_id": "statistics:statistics.median_grouped@0",
+                "title": "statistics. median_grouped ( data , interval = 1.0 )",
+                "text": "针对围绕连续的、固定宽度区间的中点进行了 分组或分档 的数值数据估算中位数。 data 可以是任意数值数据的可迭代对象,其中每个值都恰好为分档的中点。至少必须有一个值。 interval 是每个分档的宽度。 例如,人口信息可能被归纳为按 10 年划分的连续年龄分组,每个分组由各区间的 5 年中点来表示: >>> from collections import Counter >>> demographics = Counter ({ ... 25 : 172 , # 20 至 30 岁 ... 35 : 484 , # 30 至 40 岁 ... 45 : 387 , # 40 至 50 岁 ",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_grouped",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.5915517807006836,
+                "hybrid_score": 0.7712190559673198
+              },
+              {
+                "doc_id": "statistics:statistics.NormalDist.median",
+                "chunk_id": "statistics:statistics.NormalDist.median@0",
+                "title": "median",
+                "text": "一个只读特征属性,表示特定正态分布的 中位数 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.NormalDist.median",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.5036441087722778,
+                "hybrid_score": 0.5812689843309004
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "statistics"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.2756999998237
+          }
+        },
+        {
+          "id": "D08",
+          "question": "如何把列表里的元素打乱顺序并原地修改列表？",
+          "module": "random",
+          "relevant_doc_ids": [
+            "random:random.shuffle"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "random:random.sample",
+                "chunk_id": "random:random.sample@0",
+                "title": "random. sample ( population , k , * , counts = None )",
+                "text": "返回从总体序列中选取的唯一元素的长度为 k 的列表。用于无重复的随机抽样。 返回包含来自总体的元素的新列表,同时保持原始总体不变。结果列表按选择顺序排列,因此所有子切片也将是有效的随机样本。 这允许抽奖获奖者(样本)被划分为大奖和第二名获胜者(子切片)。 总体成员不必是 可哈希对象 或唯一的。如果总体包含重复,则每次出现都是样本中可能的选择。 重复的元素可以一个个地直接列出,或使用可选的仅限关键字形参 counts 来指定。例如, sample(['red', 'blue'], counts=[4, 2], k=5) 等价于 sample(['red', 'red', 'red', 'red'",
+                "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.sample",
+                "module": "random",
+                "version": "3.13",
+                "similarity": 0.5457437038421631,
+                "hybrid_score": 0.8637231111526489
+              },
+              {
+                "doc_id": "random:random.shuffle",
+                "chunk_id": "random:random.shuffle@0",
+                "title": "random. shuffle ( x )",
+                "text": "就地将序列 x 随机打乱位置。 要改变一个不可变的序列并返回一个新的打乱列表,请使用 sample(x, k=len(x)) 。 请注意,即使对于小的 len(x) , x 的排列总数也可以快速增长,大于大多数随机数生成器的周期。这意味着长序列的大多数排列永远不会产生。 例如,长度为 2080 的序列是可以在 Mersenne Twister 随机数生成器的周期内拟合的最大序列。 在 3.11 版本发生变更: 移除了可选的形参 random 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.shuffle",
+                "module": "random",
+                "version": "3.13",
+                "similarity": 0.5026999711990356,
+                "hybrid_score": 0.6587418530718425
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "random"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.3509999983944
+          }
+        },
+        {
+          "id": "D09",
+          "question": "我的网购订单什么时候发货？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 18.50130000093486
+          }
+        },
+        {
+          "id": "D10",
+          "question": "怎样申请信用卡退款？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.566600002988707
+          }
+        },
+        {
+          "id": "D11",
+          "question": "我的手机屏幕碎了，换屏收费多少？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 21.800399998028297
+          }
+        },
+        {
+          "id": "D12",
+          "question": "学校宿舍的空调坏了在哪里报修？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 20.794099997146986
+          }
+        },
+        {
+          "id": "D13",
+          "question": "这家健身房的年卡能不能退？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 19.25140000093961
+          }
+        },
+        {
+          "id": "D14",
+          "question": "请给我开一张治疗感冒的药方。",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.768900004739407
+          }
+        },
+        {
+          "id": "D15",
+          "question": "校园食堂今天的午餐菜单是什么？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.760700003942475
+          }
+        },
+        {
+          "id": "D16",
+          "question": "下一班去机场的大巴几点开？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 18.989000003784895
+          }
+        }
+      ],
+      "requests": [
+        {
+          "id": "D05",
+          "repeat": 0,
+          "latency_ms": 20.27480000106152,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "os:os.getcwd",
+            "os:os.getcwdb",
+            "os:os.fchdir",
+            "os:os.DirEntry.path",
+            "os:os.chdir"
+          ]
+        },
+        {
+          "id": "D01",
+          "repeat": 0,
+          "latency_ms": 17.533199999888893,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "json:json.load",
+            "json:json.loads",
+            "json:json.dump",
+            "json:json.JSONDecoder",
+            "json:json.dumps"
+          ]
+        },
+        {
+          "id": "D06",
+          "repeat": 0,
+          "latency_ms": 16.84229999955278,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "math:math.sqrt",
+            "math:math.isqrt",
+            "math:math.cbrt",
+            "math:math.log1p",
+            "math:math.fmod"
+          ]
+        },
+        {
+          "id": "D12",
+          "repeat": 0,
+          "latency_ms": 20.794099997146986,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D14",
+          "repeat": 0,
+          "latency_ms": 17.768900004739407,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D03",
+          "repeat": 0,
+          "latency_ms": 19.039899998460896,
+          "recall_at_5": 0.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "re:re.search",
+            "re:re.escape",
+            "re:re.Pattern.flags",
+            "re:re.Match.group",
+            "re:re.Pattern.search"
+          ]
+        },
+        {
+          "id": "D08",
+          "repeat": 0,
+          "latency_ms": 16.3509999983944,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "random:random.sample",
+            "random:random.shuffle"
+          ]
+        },
+        {
+          "id": "D11",
+          "repeat": 0,
+          "latency_ms": 21.800399998028297,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D02",
+          "repeat": 0,
+          "latency_ms": 19.059600002947263,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "pathlib:pathlib.Path.mkdir",
+            "pathlib:pathlib.Path.iterdir",
+            "pathlib:pathlib.PurePath.with_segments",
+            "pathlib:pathlib.Path.cwd",
+            "pathlib:pathlib.Path.home"
+          ]
+        },
+        {
+          "id": "D10",
+          "repeat": 0,
+          "latency_ms": 16.566600002988707,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D15",
+          "repeat": 0,
+          "latency_ms": 16.760700003942475,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D16",
+          "repeat": 0,
+          "latency_ms": 18.989000003784895,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D04",
+          "repeat": 0,
+          "latency_ms": 18.66390000213869,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "csv:csv.Dialect",
+            "csv:csv.writer",
+            "csv:csv.reader",
+            "csv:csv.Sniffer",
+            "csv:csv.Sniffer.sniff"
+          ]
+        },
+        {
+          "id": "D09",
+          "repeat": 0,
+          "latency_ms": 18.50130000093486,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D13",
+          "repeat": 0,
+          "latency_ms": 19.25140000093961,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D07",
+          "repeat": 0,
+          "latency_ms": 16.2756999998237,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "statistics:statistics.median",
+            "statistics:statistics.median_low",
+            "statistics:statistics.median_high",
+            "statistics:statistics.median_grouped",
+            "statistics:statistics.NormalDist.median"
+          ]
+        }
+      ]
+    },
+    "420": {
+      "recall_at_5": 0.875,
+      "recall_curve": {
+        "1": 0.625,
+        "2": 0.75,
+        "3": 0.75,
+        "4": 0.75,
+        "5": 0.875
+      },
+      "p50_ms": 17.258649997529574,
+      "p95_ms": 20.45689999977185,
+      "p99_ms": 21.114740001576138,
+      "mean_ms": 17.753306248323497,
+      "cold_first_query_ms": 22.998200001893565,
+      "request_count": 16,
+      "rejection_rate": 1.0,
+      "questions": [
+        {
+          "id": "D01",
+          "question": "如何把包含 JSON 的字符串反序列化为 Python 对象？",
+          "module": "json",
+          "relevant_doc_ids": [
+            "json:json.loads"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "json:json.loads",
+                "chunk_id": "json:json.loads@0",
+                "title": "json. loads ( s , * , cls = None , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , object_pairs_hook = None , ** kw )",
+                "text": "类似于 load() ,但不是针对文件型对象,而是使用这个 转换表 将 s (一个包含 JSON 的 str , bytes 或 bytearray 实例) 反序列化为 Python 对象。 在 3.6 版本发生变更: s 现在可以为 bytes 或 bytearray 类型。 输入编码应为 UTF-8, UTF-16 或 UTF-32。 在 3.9 版本发生变更: 关键字参数 encoding 已被移除。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.loads",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5836814641952515,
+                "hybrid_score": 0.8751044392585754
+              },
+              {
+                "doc_id": "json:json.load",
+                "chunk_id": "json:json.load@0",
+                "title": "json. load ( fp , * , cls = None , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , object_pairs_hook = None , ** kw )",
+                "text": "使用 JSON 至 Python 转换表 将 fp 反序列化为 Python 对象。 参数 : fp ( file-like object ) -- 一个包含要执行反序列化的 JSON 文档的支持 .read() 的 text file 或 binary file 。 cls (a JSONDecoder subclass) -- 如果设定此参数,则使用自定义的JSON解码器。任何传递给 load() 方法的多余关键字参数都会被传递给 cls 的构造器。如果传入 None (默认值),则会使用 JSONDecoder 。 object_hook ( callable | None) -- 如果设置,将是一个在调用时传入任意被解码的 JSON 对象字面值 (即 dict ) 的函数。 该函数的返回值将代替该 dict 被使用。 此特性可被用于实现自定义解码器,例如 JSON-RPC 类提示。 默认值为 None 。 object_",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.load",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5903725624084473,
+                "hybrid_score": 0.8592818953284221
+              },
+              {
+                "doc_id": "json:json.dump",
+                "chunk_id": "json:json.dump@0",
+                "title": "json. dump ( obj , fp , * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , cls = None , indent = None , separators = None , default = None , sort_keys = False , ** kw )",
+                "text": "使用这个 Python 至 JSON 转换表 将 obj 序列化为输出到 fp (一个支持 .write() 的 file-like object ) 的已格式化的 JSON 流。 备注 与 pickle 和 marshal 不同,JSON 不是一个具有框架的协议,所以尝试多次使用同一个 fp 调用 dump() 来序列化多个对象会产生一个不合规的 JSON 文件。 参数 : obj ( object ) -- 要序列化的 Python 对象。 fp ( file-like object ) -- obj 将被序列化输出到的文件型对象。 json 模块总是产生 str 对象,而不是 bytes 对象,因此 fp.write() 必须支持 str 输入。 skipkeys ( bool ) -- 如为 True ,则不为基本类型 ( str , int , float , bool , None ) 的键将被跳过而不会引发 Typ",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.dump",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5912729501724243,
+                "hybrid_score": 0.7755293805973413
+              },
+              {
+                "doc_id": "json:json.JSONDecoder",
+                "chunk_id": "json:json.JSONDecoder@700",
+                "title": "class json. JSONDecoder ( * , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , strict = True , object_pairs_hook = None )",
+                "text": "。 默认情况下,这相当于 int(num_str) 。 它可被用于 JSON 整数使用其他数据类型或解析器的情况 (比如 float )。 parse_constant 是一个可选的函数,它被调用时将传入以下字符串之一: '-Infinity' , 'Infinity' , 'NaN' 。 它可被用于当遇到无效的 JSON 数字时引发一个异常。 如果 strict 为 false (默认为 True ),那么控制字符将被允许在字符串内。在此上下文中的控制字符编码在范围 0--31 内的字符,包括 '\\t' (制表符), '\\n' , '\\r' 和 '\\0' 。 如果反序列化的数据不是有效 JSON 文档,引发 JSONDecodeError 错误。 在 3.6 版本发生变更: 所有形参现在都是 仅限关键字参数 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.JSONDecoder",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5750248432159424,
+                "hybrid_score": 0.6846989749703907
+              },
+              {
+                "doc_id": "json:json.dumps",
+                "chunk_id": "json:json.dumps@0",
+                "title": "json. dumps ( obj , * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , cls = None , indent = None , separators = None , default = None , sort_keys = False , ** kw )",
+                "text": "使用这个 转换表 将 obj 序列化为 JSON 格式的 str 。 其参数的含义与 dump() 中的相同。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.dumps",
+                "module": "json",
+                "version": "3.13",
+                "similarity": 0.5936113595962524,
+                "hybrid_score": 0.6698566704441895
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "json"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.18189999862807
+          }
+        },
+        {
+          "id": "D02",
+          "question": "怎样通过路径对象创建目录，并自动创建不存在的父目录？",
+          "module": "pathlib",
+          "relevant_doc_ids": [
+            "pathlib:pathlib.Path.mkdir"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "pathlib:pathlib.Path.mkdir",
+                "chunk_id": "pathlib:pathlib.Path.mkdir@0",
+                "title": "Path. mkdir ( mode = 0o777 , parents = False , exist_ok = False )",
+                "text": "使用给定的路径新建目录。 如果给出了 mode ,它将与进程的 umask 值合并来决定文件模式和访问旗标。 如果路径已存在,则会引发 FileExistsError 。 如果 parents 为真值,任何找不到的父目录都会伴随着此路径被创建;它们会以默认权限被创建,而不考虑 mode 设置(模仿 POSIX 的 mkdir -p 命令)。 如果 parents 为假值(默认),则找不到的父级目录会引发 FileNotFoundError 。 如果 exist_ok 为 false(默认),则在目标已存在的情况下抛出 FileExistsError 。 如果 exist_ok 为真值,则 FileExistsError 将不会被引发除非给定的路径在文件系统中已存在并且不是目录(与 POSIX mkdir -p 命令的行为相同)。 在 3.5 版本发生变更: exist_ok 形参被加入。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.mkdir",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5489534139633179,
+                "hybrid_score": 0.8646860241889953
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.iterdir",
+                "chunk_id": "pathlib:pathlib.Path.iterdir@0",
+                "title": "Path. iterdir ( )",
+                "text": "当路径指向一个目录时,产生该路径下的对象的路径: >>> p = Path ( 'docs' ) >>> for child in p . iterdir (): child ... PosixPath('docs/conf.py') PosixPath('docs/_templates') PosixPath('docs/make.bat') PosixPath('docs/index.rst') PosixPath('docs/_build') PosixPath('docs/_static') PosixPath('docs/Makefile') 子条目会以任意顺序产生,并且不包括特殊条目 '.' 和 '..' 。 如果迭代器创建之后有文件在目录中被移除或添加,是否要包括该文件所对应的路径对象并没有明确规定。 如果该路径不是一个目录或是无法访问,则会引发 OSError 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.iterdir",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5606802701950073,
+                "hybrid_score": 0.5591381549787451
+              },
+              {
+                "doc_id": "pathlib:pathlib.PurePath.with_segments",
+                "chunk_id": "pathlib:pathlib.PurePath.with_segments@0",
+                "title": "PurePath. with_segments ( * pathsegments )",
+                "text": "通过组合给定的 pathsegments 创建一个相同类型的新路径对象。 每当创建派生路径,如从 parent 和 relative_to() 创建时都会调用此方法。 子类可以覆盖此方法以便向派生路径传递信息,例如: from pathlib import PurePosixPath class MyPath ( PurePosixPath ): def __init__ ( self , * pathsegments , session_id ): super () . __init__ ( * pathsegments ) self . session_id = session_id def with_segments ( self , * pathsegments ): return type ( self )( * pathsegments , session_id = self . session_id ) etc =",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.PurePath.with_segments",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5451459288597107,
+                "hybrid_score": 0.5317770939254656
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.home",
+                "chunk_id": "pathlib:pathlib.Path.home@0",
+                "title": "classmethod Path. home ( )",
+                "text": "返回一个表示用户家目录的新路径对象(与带 ~ 构造的 os.path.expanduser() 所返回的相同)。 如果无法解析家目录,则会引发 RuntimeError 。 >>> Path . home () PosixPath('/home/antoine') Added in version 3.5.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.home",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5736991763114929,
+                "hybrid_score": 0.5224438120145789
+              },
+              {
+                "doc_id": "pathlib:pathlib.Path.rename",
+                "chunk_id": "pathlib:pathlib.Path.rename@0",
+                "title": "Path. rename ( target )",
+                "text": "将此文件或目录重命名为给定的 target ,并返回一个新的指向 target 的 Path 实例。 在 Unix 上,如果 target 存在且为一个文件,那么如果用户具有相应权限则它将静默地替换。 在 Windows 上,如果 target 存在,则会引发 FileExistsError 。 target 可以是一个字符串或者另一个路径对象: >>> p = Path ( 'foo' ) >>> p . open ( 'w' ) . write ( 'some text' ) 9 >>> target = Path ( 'bar' ) >>> p . rename ( target ) PosixPath('bar') >>> target . open () . read () 'some text' 目标路径可能为绝对或相对路径。 相对路径将被解读为相对于当前工作目录,而 不是 相对于 Path 对象的目录。 它根据 o",
+                "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.rename",
+                "module": "pathlib",
+                "version": "3.13",
+                "similarity": 0.5056264996528625,
+                "hybrid_score": 0.5223140195005749
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "pathlib"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 20.182799999020062
+          }
+        },
+        {
+          "id": "D03",
+          "question": "怎样用正则表达式替换字符串中匹配到的部分？",
+          "module": "re",
+          "relevant_doc_ids": [
+            "re:re.sub"
+          ],
+          "recall_at_5": 0.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "re:re.search",
+                "chunk_id": "re:re.search@0",
+                "title": "re. search ( pattern , string , flags = 0 )",
+                "text": "扫描整个 string 查找正则表达式 pattern 产生匹配的第一个位置,并返回相应的 Match 。 如果字符串中没有与模式匹配的位置则返回 None ;请注意这不同于在字符串的某个位置上找到零长度匹配。 表达式的行为可通过指定 flags 值来修改。值可以是任意 flags 变量,可使用按位 OR ( | 运算符) 进行组合。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.search",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6539902687072754,
+                "hybrid_score": 0.8961970806121826
+              },
+              {
+                "doc_id": "re:re.Pattern.flags",
+                "chunk_id": "re:re.Pattern.flags@0",
+                "title": "Pattern. flags",
+                "text": "正则表达式匹配旗标。这是一个传给 compile() 的旗标组合,模式中的任何 (?...) 内联旗标,以及隐式旗标如当模式为 Unicode 字符串时的 UNICODE 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Pattern.flags",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.5842288732528687,
+                "hybrid_score": 0.8107576967333626
+              },
+              {
+                "doc_id": "re:re.Pattern.search",
+                "chunk_id": "re:re.Pattern.search@0",
+                "title": "Pattern. search ( string [ , pos [ , endpos ] ] )",
+                "text": "扫描整个 string 查找该正则表达式产生匹配的第一个位置,并返回相应的 Match 。 如果字符串中没有与模式匹配的位置则返回 None ;请注意这不同于在字符串的某个位置上找到零长度匹配。 可选的第二个参数 pos 给出了字符串中开始搜索的位置索引;默认为 0 ,它不完全等价于字符串切片; '^' 样式字符匹配字符串真正的开头,和换行符后面的第一个字符,但不会匹配索引规定开始的位置。 可选参数 endpos 限定了字符串搜索的结束;它假定字符串长度到 endpos ,所以只有从 pos 到 endpos - 1 的字符会被匹配。如果 endpos 小于 pos ,就不会有匹配产生;另外,如果 rx 是一个编译后的正则对象, rx.search(string, 0, 50) 等价于 rx.search(string[:50], 0) 。 >>> pattern = re . compile ( \"d\" ) >>> patte",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Pattern.search",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6284219026565552,
+                "hybrid_score": 0.7961210307652349
+              },
+              {
+                "doc_id": "re:re.fullmatch",
+                "chunk_id": "re:re.fullmatch@0",
+                "title": "re. fullmatch ( pattern , string , flags = 0 )",
+                "text": "如果整个 string 与正则表达式 pattern 匹配,则返回相应的 Match 。如果字符串与模式不匹配则返回 None ;请注意这与零长度匹配是不同的。 表达式的行为可通过指定 flags 值来修改。值可以是任意 flags 变量,可使用按位 OR ( | 运算符) 进行组合。 Added in version 3.4.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.fullmatch",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.5843548774719238,
+                "hybrid_score": 0.788589044060124
+              },
+              {
+                "doc_id": "re:re.escape",
+                "chunk_id": "re:re.escape@0",
+                "title": "re. escape ( pattern )",
+                "text": "转义 pattern 中的特殊字符。如果你想对任意可能包含正则表达式元字符的文本字符串进行匹配,它就是有用的。比如 >>> print ( re . escape ( 'https://www.python.org' )) https://www\\.python\\.org >>> legal_chars = string . ascii_lowercase + string . digits + \"!#$%&'*+-.^_`|~:\" >>> print ( '[ %s ]+' % re . escape ( legal_chars )) [abcdefghijklmnopqrstuvwxyz0123456789!\\#\\$%\\&'\\*\\+\\-\\.\\^_`\\|\\~:]+ >>> operators = [ '+' , '-' , '*' , '/' , '**' ] >>> print ( '|' . join ( map ( re",
+                "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.escape",
+                "module": "re",
+                "version": "3.13",
+                "similarity": 0.6357409358024597,
+                "hybrid_score": 0.7524919146585695
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "re"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.245399994659238
+          }
+        },
+        {
+          "id": "D04",
+          "question": "如何在一个字符或多个分隔符之间猜测 CSV 文件使用的格式？",
+          "module": "csv",
+          "relevant_doc_ids": [
+            "csv:csv.Sniffer.sniff"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "csv:csv.Dialect",
+                "chunk_id": "csv:csv.Dialect@0",
+                "title": "class csv. Dialect",
+                "text": "Dialect 类是一个容器类,其属性包含有如何处理双引号、空白符、分隔符等的信息。 由于缺少严格的 CSV 规格描述,不同的应用程序会产生略有差别的 CSV 数据。 Dialect 实例定义了 reader 和 writer 实例将具有怎样的行为。 所有可用的 Dialect 名称会由 list_dialects() 返回,并且它们可由特定的 reader 和 writer 类通过它们的初始化函数 ( __init__ ) 来注册,例如: import csv with open ( 'students.csv' , 'w' , newline = '' ) as csvfile : writer = csv . writer ( csvfile , dialect = 'unix' )",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.Dialect",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5571041107177734,
+                "hybrid_score": 0.867131233215332
+              },
+              {
+                "doc_id": "csv:csv.writer",
+                "chunk_id": "csv:csv.writer@0",
+                "title": "csv. writer ( csvfile , / , dialect = 'excel' , ** fmtparams )",
+                "text": "返回一个 writer 对象,该对象负责将用户的数据在给定的文件型对象上转换为带分隔符的字符串。 csvfile 可以是任何具有 write() 方法的对象。 如果 csvfile 是一个文件对象,则打开它时应使用 newline='' [ 1 ] 。 可以给出可选的 dialect 形参用来定义一组特定 CSV 变种专属的形参。 它可以是 Dialect 类的某个子类的实例或是 list_dialects() 函数所返回的字符串之一。 还可以给出另一个可选的 fmtparams 关键字参数来覆盖当前变种中的单个格式化形参。 有关各个变种和格式化形参的完整细节,请参阅 变种与格式参数 部分。 为了尽量简化与实现 DB API 的模块之间的接口,可以将 None 作为空字符串写入。 虽然这个转换是不可逆的,但它可以简化 SQL NULL 数据值到 CSV 文件的转储而无需预处理从 cursor.fetch* 调用返回的数据。 在被",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.writer",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5844027996063232,
+                "hybrid_score": 0.8594025086947127
+              },
+              {
+                "doc_id": "csv:csv.Sniffer",
+                "chunk_id": "csv:csv.Sniffer@0",
+                "title": "class csv. Sniffer",
+                "text": "Sniffer 类用于推断 CSV 文件的格式。 Sniffer 类提供了两个方法: 备注 此方法是一个粗略的启发式方式,有可能产生假正例和假反例。 Sniffer 类具有以下属性:",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.Sniffer",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5736867189407349,
+                "hybrid_score": 0.7640533922055184
+              },
+              {
+                "doc_id": "csv:csv.reader",
+                "chunk_id": "csv:csv.reader@350",
+                "title": "csv. reader ( csvfile , / , dialect = 'excel' , ** fmtparams )",
+                "text": " 除非指定了 QUOTE_NONNUMERIC 格式选项(在这种情况下未加引号的字段会被转换为浮点数),否则不会执行自动数据类型转换。 一个简短的用法示例: >>> import csv >>> with open ( 'eggs.csv' , newline = '' ) as csvfile : ... spamreader = csv . reader ( csvfile , delimiter = ' ' , quotechar = '|' ) ... for row in spamreader : ... print ( ', ' . join ( row )) Spam, Spam, Spam, Spam, Spam, Baked Beans Spam, Lovely Spam, Wonderful Spam 其中 eggs.csv 包含: Spam Spam Spam Spam Spam |Baked Beans|",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.reader",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5765343904495239,
+                "hybrid_score": 0.7527735817120931
+              },
+              {
+                "doc_id": "csv:csv.Sniffer.sniff",
+                "chunk_id": "csv:csv.Sniffer.sniff@0",
+                "title": "sniff ( sample , delimiters = None )",
+                "text": "分析给定的 sample 并返回一个 Dialect 子类,该子类中包含了分析出的格式参数。如果给出可选的 delimiters 参数,则该参数会被解释为字符串,该字符串包含了可能的有效定界符。 如果多个定界符对样本的适用程度相同——例如 ',' 和 ';' 都能一致地拆分每一行——则优先选用在 preferred 属性中按顺序列出的定界符,无论它们各自出现的次数如何。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.Sniffer.sniff",
+                "module": "csv",
+                "version": "3.13",
+                "similarity": 0.5529406666755676,
+                "hybrid_score": 0.6944199250647958
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "csv"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.01659999525873
+          }
+        },
+        {
+          "id": "D05",
+          "question": "如何获取当前工作目录的路径字符串？",
+          "module": "os",
+          "relevant_doc_ids": [
+            "os:os.getcwd"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "os:os.getcwd",
+                "chunk_id": "os:os.getcwd@0",
+                "title": "os. getcwd ( )",
+                "text": "返回表示当前工作目录的字符串。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.getcwd",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.6429839134216309,
+                "hybrid_score": 0.8928951740264892
+              },
+              {
+                "doc_id": "os:os.getcwdb",
+                "chunk_id": "os:os.getcwdb@0",
+                "title": "os. getcwdb ( )",
+                "text": "返回表示当前工作目录的字节串 (bytestring)。 在 3.8 版本发生变更: 在 Windows 上,本函数现在会使用 UTF-8 编码格式而不是 ANSI 代码页:请参看 PEP 529 了解具体原因。 该函数在 Windows 上不再被弃用。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.getcwdb",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5357853174209595,
+                "hybrid_score": 0.6060987825269946
+              },
+              {
+                "doc_id": "os:os.fchdir",
+                "chunk_id": "os:os.fchdir@0",
+                "title": "os. fchdir ( fd )",
+                "text": "将当前工作目录更改为文件描述符 fd 指向的目录。fd 必须指向打开的目录而非文件。从 Python 3.3 开始,它等效于 os.chdir(fd) 。 引发一个 审计事件 os.chdir 并附带参数 path 。 可用性 : Unix.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.fchdir",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5878214836120605,
+                "hybrid_score": 0.5637938035848212
+              },
+              {
+                "doc_id": "os:os.chdir",
+                "chunk_id": "os:os.chdir@0",
+                "title": "os. chdir ( path )",
+                "text": "将当前工作目录更改为 path 。 本函数支持 指定文件描述符为参数 。其中,描述符必须指向打开的目录,不能是打开的文件。 本函数可以抛出 OSError 及其子类的异常,如 FileNotFoundError 、 PermissionError 和 NotADirectoryError 异常。 引发一个 审计事件 os.chdir 并附带参数 path 。 参见 contextlib.chdir() 上下文管理器,它在进入时更改当前工作目录,并在退出时恢复先前的目录。 在 3.3 版本发生变更: 在某些平台上新增支持将 path 参数指定为文件描述符。 在 3.6 版本发生变更: 接受一个 path-like object 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.chdir",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5562807321548462,
+                "hybrid_score": 0.5482502389168912
+              },
+              {
+                "doc_id": "os:os.add_dll_directory",
+                "chunk_id": "os:os.add_dll_directory@0",
+                "title": "os. add_dll_directory ( path )",
+                "text": "将路径添加到 DLL 搜索路径。 当需要解析扩展模块的依赖时(扩展模块本身通过 sys.path 解析),会使用该搜索路径, ctypes 也会使用该搜索路径。 要移除目录,可以在返回的对象上调用 close() ,也可以在 with 语句内使用本方法。 参阅 Microsoft 文档 获取如何加载 DLL 的信息。 引发一个 审计事件 os.add_dll_directory 并附带参数 path 。 可用性 : Windows. Added in version 3.8: 早期版本的 CPython 解析 DLL 时用的是当前进程的默认行为。这会导致不一致,比如不是每次都会去搜索 PATH 和当前工作目录,且系统函数(如 AddDllDirectory )失效。 在 3.8 中,DLL 的两种主要加载方式现在可以显式覆盖进程的行为,以确保一致性。请参阅 移植说明 了解如何更新你的库。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.add_dll_directory",
+                "module": "os",
+                "version": "3.13",
+                "similarity": 0.5051687955856323,
+                "hybrid_score": 0.5443592682769529
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "os"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 21.27920000202721
+          }
+        },
+        {
+          "id": "D06",
+          "question": "如何计算一个数的平方根？",
+          "module": "math",
+          "relevant_doc_ids": [
+            "math:math.sqrt"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "math:math.sqrt",
+                "chunk_id": "math:math.sqrt@0",
+                "title": "math. sqrt ( x )",
+                "text": "返回 x 的平方根。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.sqrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.6254969835281372,
+                "hybrid_score": 0.8876490950584411
+              },
+              {
+                "doc_id": "math:math.isqrt",
+                "chunk_id": "math:math.isqrt@0",
+                "title": "math. isqrt ( n )",
+                "text": "返回非负整数 n 的整数平方根。 这就是对 n 的实际平方根向下取整,或者相当于使得 a 2 ≤ n 的最大整数 a 。 对于某些应用来说,可以更适合取值为使得 n ≤ a 2 的最小整数 a ,或者换句话说就是 n 的实际平方根向上取整。 对于正数 n ,这可以使用 a = 1 + isqrt(n - 1) 来计算。 Added in version 3.8.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.isqrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.5987457633018494,
+                "hybrid_score": 0.7584207019551216
+              },
+              {
+                "doc_id": "math:math.cbrt",
+                "chunk_id": "math:math.cbrt@0",
+                "title": "math. cbrt ( x )",
+                "text": "返回 x 的立方根。 Added in version 3.11.",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.cbrt",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.56981360912323,
+                "hybrid_score": 0.4241294909442235
+              },
+              {
+                "doc_id": "math:math.log1p",
+                "chunk_id": "math:math.log1p@0",
+                "title": "math. log1p ( x )",
+                "text": "返回 1+x 的自然对数(以 e 为底)。 以对于接近零的 x 精确的方式计算结果。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.log1p",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.5035515427589417,
+                "hybrid_score": 0.2888764623599968
+              },
+              {
+                "doc_id": "math:math.asin",
+                "chunk_id": "math:math.asin@0",
+                "title": "math. asin ( x )",
+                "text": "返回以弧度为单位的 x 的反正弦值。 结果范围在 -pi/2 到 pi/2 之间。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.asin",
+                "module": "math",
+                "version": "3.13",
+                "similarity": 0.50345379114151,
+                "hybrid_score": 0.151036137342453
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "math"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 15.675899994676001
+          }
+        },
+        {
+          "id": "D07",
+          "question": "如何计算数据的中位数？",
+          "module": "statistics",
+          "relevant_doc_ids": [
+            "statistics:statistics.median"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "statistics:statistics.median",
+                "chunk_id": "statistics:statistics.median@0",
+                "title": "statistics. median ( data )",
+                "text": "使用普通的“取中间两数平均值”方法返回数值数据的中位数(中间值)。如果 data 为空,则将引发 StatisticsError 。 data 可以是序列或可迭代对象。 中位数是衡量中间位置的可靠方式,并且较少受到极端值的影响。当数据点的总数为奇数时,将返回中间数据点: >>> median ([ 1 , 3 , 5 ]) 3 当数据点的总数为偶数时,中位数将通过对两个中间值求平均进行插值得出: >>> median ([ 1 , 3 , 5 , 7 ]) 4.0 这适用于当你的数据是离散的,并且你不介意中位数不是实际数据点的情况。 如果数据是有序的(支持排序操作)但不是数字(不支持加法),请考虑改用 median_low() 或 median_high() 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.6357262134552002,
+                "hybrid_score": 0.8907178640365601
+              },
+              {
+                "doc_id": "statistics:statistics.median_low",
+                "chunk_id": "statistics:statistics.median_low@0",
+                "title": "statistics. median_low ( data )",
+                "text": "返回数值数据的低中位数。如果 data 为空则将引发 StatisticsError 。 data 可以是序列或可迭代对象。 低中位数一定是数据集的成员。当数据点总数为奇数时,将返回中间值。当其为偶数时,将返回两个中间值中较小的那个。 >>> median_low ([ 1 , 3 , 5 ]) 3 >>> median_low ([ 1 , 3 , 5 , 7 ]) 3 当你的数据是离散的,并且你希望中位数是一个实际数据点而非插值结果时可以使用低中位数。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_low",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.596504271030426,
+                "hybrid_score": 0.852690366275797
+              },
+              {
+                "doc_id": "statistics:statistics.median_high",
+                "chunk_id": "statistics:statistics.median_high@0",
+                "title": "statistics. median_high ( data )",
+                "text": "返回数据的高中位数。如果 data 为空则将引发 StatisticsError 。 data 可以是序列或可迭代对象。 高中位数一定是数据集的成员。当数据点总数为奇数时,将返回中间值。当其为偶数时,将返回两个中间值中较大的那个。 >>> median_high ([ 1 , 3 , 5 ]) 3 >>> median_high ([ 1 , 3 , 5 , 7 ]) 5 当你的数据是离散的,并且你希望中位数是一个实际数据点而非插值结果时可以使用高中位数。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_high",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.5839738845825195,
+                "hybrid_score": 0.8520814704809003
+              },
+              {
+                "doc_id": "statistics:statistics.median_grouped",
+                "chunk_id": "statistics:statistics.median_grouped@0",
+                "title": "statistics. median_grouped ( data , interval = 1.0 )",
+                "text": "针对围绕连续的、固定宽度区间的中点进行了 分组或分档 的数值数据估算中位数。 data 可以是任意数值数据的可迭代对象,其中每个值都恰好为分档的中点。至少必须有一个值。 interval 是每个分档的宽度。 例如,人口信息可能被归纳为按 10 年划分的连续年龄分组,每个分组由各区间的 5 年中点来表示: >>> from collections import Counter >>> demographics = Counter ({ ... 25 : 172 , # 20 至 30 岁 ... 35 : 484 , # 30 至 40 岁 ... 45 : 387 , # 40 至 50 岁 ... 55 : 22 , # 50 至 60 岁 ... 65 : 6 , # 60 至 70 岁 ... }) ... 第 50 个百分点位置(中位数)就是 1071 名成员中的第 536 人。此人属于 30 至 40 岁年龄分组。 常",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.median_grouped",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.5901480913162231,
+                "hybrid_score": 0.8476714304804076
+              },
+              {
+                "doc_id": "statistics:statistics.NormalDist.median",
+                "chunk_id": "statistics:statistics.NormalDist.median@0",
+                "title": "median",
+                "text": "一个只读特征属性,表示特定正态分布的 中位数 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.NormalDist.median",
+                "module": "statistics",
+                "version": "3.13",
+                "similarity": 0.5036441087722778,
+                "hybrid_score": 0.5786122937829559
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "statistics"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.005899997253437
+          }
+        },
+        {
+          "id": "D08",
+          "question": "如何把列表里的元素打乱顺序并原地修改列表？",
+          "module": "random",
+          "relevant_doc_ids": [
+            "random:random.shuffle"
+          ],
+          "recall_at_5": 1.0,
+          "response": {
+            "status": "找到",
+            "results": [
+              {
+                "doc_id": "random:random.sample",
+                "chunk_id": "random:random.sample@0",
+                "title": "random. sample ( population , k , * , counts = None )",
+                "text": "返回从总体序列中选取的唯一元素的长度为 k 的列表。用于无重复的随机抽样。 返回包含来自总体的元素的新列表,同时保持原始总体不变。结果列表按选择顺序排列,因此所有子切片也将是有效的随机样本。 这允许抽奖获奖者(样本)被划分为大奖和第二名获胜者(子切片)。 总体成员不必是 可哈希对象 或唯一的。如果总体包含重复,则每次出现都是样本中可能的选择。 重复的元素可以一个个地直接列出,或使用可选的仅限关键字形参 counts 来指定。例如, sample(['red', 'blue'], counts=[4, 2], k=5) 等价于 sample(['red', 'red', 'red', 'red', 'blue', 'blue'], k=5) . 要从一系列整数中选择样本,请使用 range() 对象作为参数。 对于从大量总体中采样,这种方法特别快速且节省空间: sample(range(10000000), k=60) 。 如果样",
+                "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.sample",
+                "module": "random",
+                "version": "3.13",
+                "similarity": 0.5495637655258179,
+                "hybrid_score": 0.8648691296577453
+              },
+              {
+                "doc_id": "random:random.shuffle",
+                "chunk_id": "random:random.shuffle@0",
+                "title": "random. shuffle ( x )",
+                "text": "就地将序列 x 随机打乱位置。 要改变一个不可变的序列并返回一个新的打乱列表,请使用 sample(x, k=len(x)) 。 请注意,即使对于小的 len(x) , x 的排列总数也可以快速增长,大于大多数随机数生成器的周期。这意味着长序列的大多数排列永远不会产生。 例如,长度为 2080 的序列是可以在 Mersenne Twister 随机数生成器的周期内拟合的最大序列。 在 3.11 版本发生变更: 移除了可选的形参 random 。",
+                "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.shuffle",
+                "module": "random",
+                "version": "3.13",
+                "similarity": 0.5026999711990356,
+                "hybrid_score": 0.7156253047937937
+              }
+            ],
+            "filters": {
+              "version": "3.13",
+              "module": "random"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 16.52520000061486
+          }
+        },
+        {
+          "id": "D09",
+          "question": "我的网购订单什么时候发货？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 19.0394999954151
+          }
+        },
+        {
+          "id": "D10",
+          "question": "怎样申请信用卡退款？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 15.766699994856026
+          }
+        },
+        {
+          "id": "D11",
+          "question": "我的手机屏幕碎了，换屏收费多少？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 18.88949999556644
+          }
+        },
+        {
+          "id": "D12",
+          "question": "学校宿舍的空调坏了在哪里报修？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 19.33139999891864
+          }
+        },
+        {
+          "id": "D13",
+          "question": "这家健身房的年卡能不能退？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 19.442000004346482
+          }
+        },
+        {
+          "id": "D14",
+          "question": "请给我开一张治疗感冒的药方。",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 15.489099998376332
+          }
+        },
+        {
+          "id": "D15",
+          "question": "校园食堂今天的午餐菜单是什么？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 17.500699999800418
+          }
+        },
+        {
+          "id": "D16",
+          "question": "下一班去机场的大巴几点开？",
+          "relevant_doc_ids": [],
+          "recall_at_5": null,
+          "response": {
+            "status": "未找到",
+            "results": [],
+            "filters": {
+              "version": "3.13"
+            },
+            "threshold": 0.5,
+            "mode": "hybrid",
+            "latency_ms": 19.48110000375891
+          }
+        }
+      ],
+      "requests": [
+        {
+          "id": "D05",
+          "repeat": 0,
+          "latency_ms": 21.27920000202721,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "os:os.getcwd",
+            "os:os.getcwdb",
+            "os:os.fchdir",
+            "os:os.chdir",
+            "os:os.add_dll_directory"
+          ]
+        },
+        {
+          "id": "D01",
+          "repeat": 0,
+          "latency_ms": 16.18189999862807,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "json:json.loads",
+            "json:json.load",
+            "json:json.dump",
+            "json:json.JSONDecoder",
+            "json:json.dumps"
+          ]
+        },
+        {
+          "id": "D06",
+          "repeat": 0,
+          "latency_ms": 15.675899994676001,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "math:math.sqrt",
+            "math:math.isqrt",
+            "math:math.cbrt",
+            "math:math.log1p",
+            "math:math.asin"
+          ]
+        },
+        {
+          "id": "D12",
+          "repeat": 0,
+          "latency_ms": 19.33139999891864,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D14",
+          "repeat": 0,
+          "latency_ms": 15.489099998376332,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D03",
+          "repeat": 0,
+          "latency_ms": 16.245399994659238,
+          "recall_at_5": 0.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "re:re.search",
+            "re:re.Pattern.flags",
+            "re:re.Pattern.search",
+            "re:re.fullmatch",
+            "re:re.escape"
+          ]
+        },
+        {
+          "id": "D08",
+          "repeat": 0,
+          "latency_ms": 16.52520000061486,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "random:random.sample",
+            "random:random.shuffle"
+          ]
+        },
+        {
+          "id": "D11",
+          "repeat": 0,
+          "latency_ms": 18.88949999556644,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D02",
+          "repeat": 0,
+          "latency_ms": 20.182799999020062,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "pathlib:pathlib.Path.mkdir",
+            "pathlib:pathlib.Path.iterdir",
+            "pathlib:pathlib.PurePath.with_segments",
+            "pathlib:pathlib.Path.home",
+            "pathlib:pathlib.Path.rename"
+          ]
+        },
+        {
+          "id": "D10",
+          "repeat": 0,
+          "latency_ms": 15.766699994856026,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D15",
+          "repeat": 0,
+          "latency_ms": 17.500699999800418,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D16",
+          "repeat": 0,
+          "latency_ms": 19.48110000375891,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D04",
+          "repeat": 0,
+          "latency_ms": 17.01659999525873,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "csv:csv.Dialect",
+            "csv:csv.writer",
+            "csv:csv.Sniffer",
+            "csv:csv.reader",
+            "csv:csv.Sniffer.sniff"
+          ]
+        },
+        {
+          "id": "D09",
+          "repeat": 0,
+          "latency_ms": 19.0394999954151,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D13",
+          "repeat": 0,
+          "latency_ms": 19.442000004346482,
+          "recall_at_5": null,
+          "status": "未找到",
+          "retrieved_doc_ids": []
+        },
+        {
+          "id": "D07",
+          "repeat": 0,
+          "latency_ms": 16.005899997253437,
+          "recall_at_5": 1.0,
+          "status": "找到",
+          "retrieved_doc_ids": [
+            "statistics:statistics.median",
+            "statistics:statistics.median_low",
+            "statistics:statistics.median_high",
+            "statistics:statistics.median_grouped",
+            "statistics:statistics.NormalDist.median"
+          ]
+        }
+      ]
+    }
+  }
+}

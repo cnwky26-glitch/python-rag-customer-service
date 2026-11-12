@@ -1,0 +1,2893 @@
+{
+  "recall_at_5": 0.8,
+  "recall_curve": {
+    "1": 0.45,
+    "2": 0.5,
+    "3": 0.6,
+    "4": 0.8,
+    "5": 0.8
+  },
+  "p50_ms": 16.704999998182757,
+  "p95_ms": 20.427484994070255,
+  "p99_ms": 22.178859997730033,
+  "mean_ms": 17.277524999444722,
+  "cold_first_query_ms": 22.287299994786736,
+  "request_count": 100,
+  "rejection_rate": null,
+  "questions": [
+    {
+      "id": "T01",
+      "question": "怎样把 Python 对象转换成 JSON 格式的字符串返回？",
+      "module": "json",
+      "relevant_doc_ids": [
+        "json:json.dumps"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "json:json.JSONEncoder.encode",
+            "chunk_id": "json:json.JSONEncoder.encode@0",
+            "title": "encode ( o )",
+            "text": "返回 Python o 数据结构的 JSON 字符串表达方式。例如: >>> json . JSONEncoder () . encode ({ \"foo\" : [ \"bar\" , \"baz\" ]}) '{\"foo\": [\"bar\", \"baz\"]}'",
+            "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.JSONEncoder.encode",
+            "module": "json",
+            "version": "3.13",
+            "similarity": 0.6270186901092529,
+            "rrf_score": 0.01626123744050767
+          },
+          {
+            "doc_id": "json:json.JSONEncoder.iterencode",
+            "chunk_id": "json:json.JSONEncoder.iterencode@0",
+            "title": "iterencode ( o )",
+            "text": "编码给定对象 o ,并产出每个可用的字符串表达方式。例如: for chunk in json . JSONEncoder () . iterencode ( bigobject ): mysocket . write ( chunk )",
+            "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.JSONEncoder.iterencode",
+            "module": "json",
+            "version": "3.13",
+            "similarity": 0.6234145760536194,
+            "rrf_score": 0.01575682382133995
+          },
+          {
+            "doc_id": "json:json.dump",
+            "chunk_id": "json:json.dump@0",
+            "title": "json. dump ( obj , fp , * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , cls = None , indent = None , separators = None , default = None , sort_keys = False , ** kw )",
+            "text": "使用这个 Python 至 JSON 转换表 将 obj 序列化为输出到 fp (一个支持 .write() 的 file-like object ) 的已格式化的 JSON 流。 备注 与 pickle 和 marshal 不同,JSON 不是一个具有框架的协议,所以尝试多次使用同一个 fp 调用 dump() 来序列化多个对象会产生一个不合规的 JSON",
+            "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.dump",
+            "module": "json",
+            "version": "3.13",
+            "similarity": 0.6136536598205566,
+            "rrf_score": 0.015512265512265512
+          },
+          {
+            "doc_id": "json:json.dumps",
+            "chunk_id": "json:json.dumps@0",
+            "title": "json. dumps ( obj , * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , cls = None , indent = None , separators = None , default = None , sort_keys = False , ** kw )",
+            "text": "使用这个 转换表 将 obj 序列化为 JSON 格式的 str 。 其参数的含义与 dump() 中的相同。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.dumps",
+            "module": "json",
+            "version": "3.13",
+            "similarity": 0.6074210405349731,
+            "rrf_score": 0.015388257575757576
+          },
+          {
+            "doc_id": "json:json.load",
+            "chunk_id": "json:json.load@0",
+            "title": "json. load ( fp , * , cls = None , object_hook = None , parse_float = None , parse_int = None , parse_constant = None , object_pairs_hook = None , ** kw )",
+            "text": "使用 JSON 至 Python 转换表 将 fp 反序列化为 Python 对象。 参数 : fp ( file-like object ) -- 一个包含要执行反序列化的 JSON 文档的支持 .read() 的 text file 或 binary file 。 cls (a JSONDecoder subclass) -- 如果设定此参数,则使用自定",
+            "source": "https://docs.python.org/zh-cn/3.13/library/json.html#json.load",
+            "module": "json",
+            "version": "3.13",
+            "similarity": 0.599385678768158,
+            "rrf_score": 0.014925373134328358
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "json"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 15.016900004411582
+      }
+    },
+    {
+      "id": "T02",
+      "question": "读取 CSV 时，如何让每行数据按表头列名映射成字典？",
+      "module": "csv",
+      "relevant_doc_ids": [
+        "csv:csv.DictReader"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "csv:csv.csvreader.line_num",
+            "chunk_id": "csv:csv.csvreader.line_num@0",
+            "title": "csvreader. line_num",
+            "text": "源迭代器已经读取了的行数。它与返回的记录数不同,因为记录可能跨越多行。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.csvreader.line_num",
+            "module": "csv",
+            "version": "3.13",
+            "similarity": 0.578668475151062,
+            "rrf_score": 0.016133229247983348
+          },
+          {
+            "doc_id": "csv:csv.DictWriter",
+            "chunk_id": "csv:csv.DictWriter@0",
+            "title": "class csv. DictWriter ( f , fieldnames , restval = '' , extrasaction = 'raise' , dialect = 'excel' , * args , ** kwds )",
+            "text": "创建一个对象,该对象在操作上类似常规 writer,但会将字典映射到输出行。 fieldnames 形参是一个由键组成的 序列 ,它指定字典中要传给 writerow() 方法并写入文件 f 的值的顺序。 如果字典没有 fieldnames 中的键,则可选的 restval 形参将指明要写入的值。 如果传递给 writerow() 方法包含的键在 field",
+            "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.DictWriter",
+            "module": "csv",
+            "version": "3.13",
+            "similarity": 0.5743217468261719,
+            "rrf_score": 0.015749007936507936
+          },
+          {
+            "doc_id": "csv:csv.reader",
+            "chunk_id": "csv:csv.reader@300",
+            "title": "csv. reader ( csvfile , / , dialect = 'excel' , ** fmtparams )",
+            "text": "参的完整细节,请参阅 变种与格式参数 一节。 从 csv 文件读取的每一行都将返回为一个字符串列表。 除非指定了 QUOTE_NONNUMERIC 格式选项(在这种情况下未加引号的字段会被转换为浮点数),否则不会执行自动数据类型转换。 一个简短的用法示例: >>> import csv >>> with open ( 'eggs.csv' , newline",
+            "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.reader",
+            "module": "csv",
+            "version": "3.13",
+            "similarity": 0.5673622488975525,
+            "rrf_score": 0.015527202696196438
+          },
+          {
+            "doc_id": "csv:csv.DictReader",
+            "chunk_id": "csv:csv.DictReader@0",
+            "title": "class csv. DictReader ( f , fieldnames = None , restkey = None , restval = None , dialect = 'excel' , * args , ** kwds )",
+            "text": "创建一个对象,该对象在操作上类似于常规 reader,但是将每行中的信息映射到一个 dict ,该 dict 的键由 fieldnames 可选参数给出。 fieldnames 形参是一个 sequence 。 如果省略 fieldnames ,则文件 f 第一行中的值将用作字段名并将从结果中去除。 如果提供了 fieldnames ,它们将被使用而第一行将",
+            "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.DictReader",
+            "module": "csv",
+            "version": "3.13",
+            "similarity": 0.5412871837615967,
+            "rrf_score": 0.014391447368421052
+          },
+          {
+            "doc_id": "csv:csv.QUOTE_ALL",
+            "chunk_id": "csv:csv.QUOTE_ALL@0",
+            "title": "csv. QUOTE_ALL",
+            "text": "指示 writer 对象给所有字段加上引号。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/csv.html#csv.QUOTE_ALL",
+            "module": "csv",
+            "version": "3.13",
+            "similarity": 0.5813918709754944,
+            "rrf_score": 0.01394384774825702
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "csv"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 21.062899999378715
+      }
+    },
+    {
+      "id": "T03",
+      "question": "如何通过 Path 直接读取整个文本文件并得到解码后的字符串？",
+      "module": "pathlib",
+      "relevant_doc_ids": [
+        "pathlib:pathlib.Path.read_text"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "pathlib:pathlib.Path.read_text",
+            "chunk_id": "pathlib:pathlib.Path.read_text@0",
+            "title": "Path. read_text ( encoding = None , errors = None , newline = None )",
+            "text": "以字符串形式返回路径指向的文件的解码后文本内容: >>> p = Path ( 'my_text_file' ) >>> p . write_text ( 'Text file contents' ) 18 >>> p . read_text () 'Text file contents' 文件先被打开然后关闭。有和 open() 一样的可选形参。 Adde",
+            "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.read_text",
+            "module": "pathlib",
+            "version": "3.13",
+            "similarity": 0.6317045092582703,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "doc_id": "pathlib:pathlib.Path.write_text",
+            "chunk_id": "pathlib:pathlib.Path.write_text@0",
+            "title": "Path. write_text ( data , encoding = None , errors = None , newline = None )",
+            "text": "将文件以文本模式打开,写入 data 并关闭: >>> p = Path ( 'my_text_file' ) >>> p . write_text ( 'Text file contents' ) 18 >>> p . read_text () 'Text file contents' 同名的现有文件会被覆盖。 可选形参的含义与 open() 的相同。 A",
+            "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.write_text",
+            "module": "pathlib",
+            "version": "3.13",
+            "similarity": 0.5911591053009033,
+            "rrf_score": 0.015268065268065269
+          },
+          {
+            "doc_id": "pathlib:pathlib.PurePath",
+            "chunk_id": "pathlib:pathlib.PurePath@150",
+            "title": "class pathlib. PurePath ( * pathsegments )",
+            "text": "以是代表一个路径段的字符串,也可以是实现了 os.PathLike 接口的对象,其中 __fspath__() 方法返回一个字符串,例如另一个路径对象: >>> PurePath ( 'foo' , 'some/path' , 'bar' ) PurePosixPath('foo/some/path/bar') >>> PurePath ( Path ( '",
+            "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.PurePath",
+            "module": "pathlib",
+            "version": "3.13",
+            "similarity": 0.5531889796257019,
+            "rrf_score": 0.014693264693264693
+          },
+          {
+            "doc_id": "pathlib:pathlib.Path.from_uri",
+            "chunk_id": "pathlib:pathlib.Path.from_uri@0",
+            "title": "classmethod Path. from_uri ( uri )",
+            "text": "通过解析一个 '文件' URI 来返回新的路径对象。 例如: >>> p = Path . from_uri ( 'file:///etc/hosts' ) PosixPath('/etc/hosts') 在 Windows 上,可以基于 URI 来解析 DOS 设备和 UNC 路径: >>> p = Path . from_uri ( 'file:///c",
+            "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.from_uri",
+            "module": "pathlib",
+            "version": "3.13",
+            "similarity": 0.5594983696937561,
+            "rrf_score": 0.014185110663983903
+          },
+          {
+            "doc_id": "pathlib:pathlib.Path.rename",
+            "chunk_id": "pathlib:pathlib.Path.rename@150",
+            "title": "Path. rename ( target )",
+            "text": "arget 可以是一个字符串或者另一个路径对象: >>> p = Path ( 'foo' ) >>> p . open ( 'w' ) . write ( 'some text' ) 9 >>> target = Path ( 'bar' ) >>> p . rename ( target ) PosixPath('bar') >>> target . o",
+            "source": "https://docs.python.org/zh-cn/3.13/library/pathlib.html#pathlib.Path.rename",
+            "module": "pathlib",
+            "version": "3.13",
+            "similarity": 0.5553069114685059,
+            "rrf_score": 0.014095691880087354
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "pathlib"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 17.712399996526074
+      }
+    },
+    {
+      "id": "T04",
+      "question": "正则表达式如何一次返回字符串中所有不重叠的匹配结果？",
+      "module": "re",
+      "relevant_doc_ids": [
+        "re:re.findall"
+      ],
+      "recall_at_5": 0.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "re:re.finditer",
+            "chunk_id": "re:re.finditer@0",
+            "title": "re. finditer ( pattern , string , flags = 0 )",
+            "text": "针对正则表达式 pattern 在 string 里的所有非重叠匹配返回一个产生 Match 对象的 iterator 。 string 将被从左至右地扫描,并且匹配也将按被找到的顺序返回。空匹配也会被包括在结果中。 表达式的行为可通过指定 flags 值来修改。值可以是任意 flags 变量,可使用按位 OR ( | 运算符) 进行组合。 在 3.7 版本",
+            "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.finditer",
+            "module": "re",
+            "version": "3.13",
+            "similarity": 0.6569993495941162,
+            "rrf_score": 0.01626123744050767
+          },
+          {
+            "doc_id": "re:re.Pattern.search",
+            "chunk_id": "re:re.Pattern.search@0",
+            "title": "Pattern. search ( string [ , pos [ , endpos ] ] )",
+            "text": "扫描整个 string 查找该正则表达式产生匹配的第一个位置,并返回相应的 Match 。 如果字符串中没有与模式匹配的位置则返回 None ;请注意这不同于在字符串的某个位置上找到零长度匹配。 可选的第二个参数 pos 给出了字符串中开始搜索的位置索引;默认为 0 ,它不完全等价于字符串切片; '^' 样式字符匹配字符串真正的开头,和换行符后面的第一个字符",
+            "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Pattern.search",
+            "module": "re",
+            "version": "3.13",
+            "similarity": 0.6668885946273804,
+            "rrf_score": 0.016133229247983348
+          },
+          {
+            "doc_id": "re:re.search",
+            "chunk_id": "re:re.search@0",
+            "title": "re. search ( pattern , string , flags = 0 )",
+            "text": "扫描整个 string 查找正则表达式 pattern 产生匹配的第一个位置,并返回相应的 Match 。 如果字符串中没有与模式匹配的位置则返回 None ;请注意这不同于在字符串的某个位置上找到零长度匹配。 表达式的行为可通过指定 flags 值来修改。值可以是任意 flags 变量,可使用按位 OR ( | 运算符) 进行组合。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.search",
+            "module": "re",
+            "version": "3.13",
+            "similarity": 0.6512829065322876,
+            "rrf_score": 0.016001024065540194
+          },
+          {
+            "doc_id": "re:re.Pattern.match",
+            "chunk_id": "re:re.Pattern.match@0",
+            "title": "Pattern. match ( string [ , pos [ , endpos ] ] )",
+            "text": "如果字符串 开头 的零个或多个字符与此正则表达式匹配,则返回相应的 Match 。如果字符串与模式不匹配则返回 None ;请注意这与零长度匹配是不同的。 可选参数 pos 和 endpos 与 search() 含义相同。 >>> pattern = re . compile ( \"o\" ) >>> pattern . match ( \"dog\" ) # ",
+            "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.Pattern.match",
+            "module": "re",
+            "version": "3.13",
+            "similarity": 0.6291251182556152,
+            "rrf_score": 0.015058876811594204
+          },
+          {
+            "doc_id": "re:re.PatternError.pattern",
+            "chunk_id": "re:re.PatternError.pattern@0",
+            "title": "pattern",
+            "text": "正则表达式的模式串。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/re.html#re.PatternError.pattern",
+            "module": "re",
+            "version": "3.13",
+            "similarity": 0.6452723145484924,
+            "rrf_score": 0.014938684503901897
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "re"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 19.94120000017574
+      }
+    },
+    {
+      "id": "T05",
+      "question": "给定日期字符串和格式，如何解析出 datetime 对象？",
+      "module": "datetime",
+      "relevant_doc_ids": [
+        "datetime:datetime.datetime.strptime"
+      ],
+      "recall_at_5": 0.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "datetime:datetime.date.isoformat",
+            "chunk_id": "datetime:datetime.date.isoformat@0",
+            "title": "date. isoformat ( )",
+            "text": "返回一个以 ISO 8601 格式 YYYY-MM-DD 来表示日期的字符串: >>> import datetime as dt >>> dt . date ( 2002 , 12 , 4 ) . isoformat () '2002-12-04'",
+            "source": "https://docs.python.org/zh-cn/3.13/library/datetime.html#datetime.date.isoformat",
+            "module": "datetime",
+            "version": "3.13",
+            "similarity": 0.7646868824958801,
+            "rrf_score": 0.01626123744050767
+          },
+          {
+            "doc_id": "datetime:datetime.datetime.ctime",
+            "chunk_id": "datetime:datetime.datetime.ctime@0",
+            "title": "datetime. ctime ( )",
+            "text": "返回一个表示日期和时间的字符串: >>> import datetime as dt >>> dt . datetime ( 2002 , 12 , 4 , 20 , 30 , 40 ) . ctime () 'Wed Dec 4 20:30:40 2002' 输出字符串将 并不 包括时区信息,无论输入的是感知型还是简单型。 d.ctime() 等效于: t",
+            "source": "https://docs.python.org/zh-cn/3.13/library/datetime.html#datetime.datetime.ctime",
+            "module": "datetime",
+            "version": "3.13",
+            "similarity": 0.736962616443634,
+            "rrf_score": 0.015388257575757576
+          },
+          {
+            "doc_id": "datetime:datetime.date.ctime",
+            "chunk_id": "datetime:datetime.date.ctime@0",
+            "title": "date. ctime ( )",
+            "text": "返回一个表示日期的字符串: >>> import datetime as dt >>> dt . date ( 2002 , 12 , 4 ) . ctime () 'Wed Dec 4 00:00:00 2002' d.ctime() 等效于: time . ctime ( time . mktime ( d . timetuple ())) 在原生 C ",
+            "source": "https://docs.python.org/zh-cn/3.13/library/datetime.html#datetime.date.ctime",
+            "module": "datetime",
+            "version": "3.13",
+            "similarity": 0.7372775077819824,
+            "rrf_score": 0.015289449112978524
+          },
+          {
+            "doc_id": "datetime:datetime.datetime.isoformat",
+            "chunk_id": "datetime:datetime.datetime.isoformat@0",
+            "title": "datetime. isoformat ( sep = 'T' , timespec = 'auto' )",
+            "text": "返回一个以 ISO 8601 格式表示的日期和时间字符串: YYYY-MM-DDTHH:MM:SS.ffffff ,如果 microsecond 不为 0 YYYY-MM-DDTHH:MM:SS ,如果 microsecond 为 0 如果 utcoffset() 返回值不为 None ,则添加一个字符串来给出 UTC 时差: YYYY-MM-DDTHH:M",
+            "source": "https://docs.python.org/zh-cn/3.13/library/datetime.html#datetime.datetime.isoformat",
+            "module": "datetime",
+            "version": "3.13",
+            "similarity": 0.7278158664703369,
+            "rrf_score": 0.015058876811594204
+          },
+          {
+            "doc_id": "datetime:datetime.datetime.__format__",
+            "chunk_id": "datetime:datetime.datetime.__format__@0",
+            "title": "datetime. __format__ ( format )",
+            "text": "与 datetime.strftime() 相同。 此方法使得在 格式化字符串字面值 中以及使用 str.format() 时为 datetime 对象指定格式字符串成为可能。 另请参阅 strftime() 和 strptime() 的行为 和 datetime.isoformat() 。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/datetime.html#datetime.datetime.__format__",
+            "module": "datetime",
+            "version": "3.13",
+            "similarity": 0.7156996726989746,
+            "rrf_score": 0.014515455304928988
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "datetime"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 18.346299999393523
+      }
+    },
+    {
+      "id": "T06",
+      "question": "想统计列表中每种元素出现了多少次，应该用哪种计数容器？",
+      "module": "collections",
+      "relevant_doc_ids": [
+        "collections:collections.Counter"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "collections:collections.Counter.elements",
+            "chunk_id": "collections:collections.Counter.elements@0",
+            "title": "elements ( )",
+            "text": "返回一个迭代器,其中每个元素将重复出现计数值所指定次。 元素会按首次出现的顺序返回。 如果一个元素的计数值小于一, elements() 将会忽略它。 >>> c = Counter ( a = 4 , b = 2 , c = 0 , d =- 2 ) >>> sorted ( c . elements ()) ['a', 'a', 'a', 'a', 'b",
+            "source": "https://docs.python.org/zh-cn/3.13/library/collections.html#collections.Counter.elements",
+            "module": "collections",
+            "version": "3.13",
+            "similarity": 0.5459261536598206,
+            "rrf_score": 0.016133229247983348
+          },
+          {
+            "doc_id": "collections:collections.deque.count",
+            "chunk_id": "collections:collections.deque.count@0",
+            "title": "count ( value , / )",
+            "text": "统计双端队列元素等于 value 的个数。 Added in version 3.2.",
+            "source": "https://docs.python.org/zh-cn/3.13/library/collections.html#collections.deque.count",
+            "module": "collections",
+            "version": "3.13",
+            "similarity": 0.5956813097000122,
+            "rrf_score": 0.016133229247983348
+          },
+          {
+            "doc_id": "collections:collections.Counter.most_common",
+            "chunk_id": "collections:collections.Counter.most_common@0",
+            "title": "most_common ( n = None )",
+            "text": "返回一个列表,其中包含 n 个最常见的元素及出现次数,按常见程度由高到低排序。 如果 n 被省略或为 None , most_common() 将返回计数器中的 所有 元素。 计数值相等的元素按首次出现的顺序排序: >>> Counter ( 'abracadabra' ) . most_common ( 3 ) [('a', 5), ('b', 2), (",
+            "source": "https://docs.python.org/zh-cn/3.13/library/collections.html#collections.Counter.most_common",
+            "module": "collections",
+            "version": "3.13",
+            "similarity": 0.5783379077911377,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "doc_id": "collections:collections.Counter",
+            "chunk_id": "collections:collections.Counter@600",
+            "title": "class collections. Counter ( ** kwargs )",
+            "text": "ro 0 设置一个计数为0不会从计数器中移去一个元素。使用 del 来删除它: >>> c [ 'sausage' ] = 0 # counter entry with a zero count >>> del c [ 'sausage' ] # del actually removes the entry Added in version 3.1. 在 3",
+            "source": "https://docs.python.org/zh-cn/3.13/library/collections.html#collections.Counter",
+            "module": "collections",
+            "version": "3.13",
+            "similarity": 0.5422536134719849,
+            "rrf_score": 0.015504807692307693
+          },
+          {
+            "doc_id": "collections:collections.deque.clear",
+            "chunk_id": "collections:collections.deque.clear@0",
+            "title": "clear ( )",
+            "text": "移除所有元素,使其长度为0.",
+            "source": "https://docs.python.org/zh-cn/3.13/library/collections.html#collections.deque.clear",
+            "module": "collections",
+            "version": "3.13",
+            "similarity": 0.5062404274940491,
+            "rrf_score": 0.01450494008829094
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "collections"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 21.89399999770103
+      }
+    },
+    {
+      "id": "T07",
+      "question": "如何把迭代器里连续具有相同键的元素分成一组？为什么通常要先排序？",
+      "module": "itertools",
+      "relevant_doc_ids": [
+        "itertools:itertools.groupby"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "itertools:itertools.groupby",
+            "chunk_id": "itertools:itertools.groupby@150",
+            "title": "itertools. groupby ( iterable , key = None )",
+            "text": "uniq 。当每次 key 函数产生的键值改变时,迭代器会分组或生成一个新组(这就是为什么通常需要使用同一个键值函数先对数据进行排序)。这种行为与SQL的GROUP BY操作不同,SQL的操作会忽略输入的顺序将相同键值的元素分在同组中。 返回的组本身也是一个迭代器,它与 groupby() 共享底层的可迭代对象。因为源是共享的,当 groupby() 对象向",
+            "source": "https://docs.python.org/zh-cn/3.13/library/itertools.html#itertools.groupby",
+            "module": "itertools",
+            "version": "3.13",
+            "similarity": 0.6845344305038452,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "doc_id": "itertools:itertools.cycle",
+            "chunk_id": "itertools:itertools.cycle@0",
+            "title": "itertools. cycle ( iterable )",
+            "text": "创建一个迭代器,它返回来自 iterable 中的元素并保存每个元素的拷贝。 当 iterable 耗尽时,返回来自已保存拷贝中的元素。 将无限重复进行。 大致相当于: def cycle ( iterable ): # cycle('ABCD') → A B C D A B C D A B C D ... saved = [] for element in",
+            "source": "https://docs.python.org/zh-cn/3.13/library/itertools.html#itertools.cycle",
+            "module": "itertools",
+            "version": "3.13",
+            "similarity": 0.5975032448768616,
+            "rrf_score": 0.01482213438735178
+          },
+          {
+            "doc_id": "itertools:itertools.permutations",
+            "chunk_id": "itertools:itertools.permutations@150",
+            "title": "itertools. permutations ( iterable , r = None )",
+            "text": " ≤ n 时计算 n! / (n - r)! 而在 r > n 时则为零。 排列元组是根据输入的 iterable 的顺序以词典排序的形式发出的。 如果输入的 iterable 是已排序的,则输出的元组将按已排序的顺序产生。 元素的唯一性是基于它们的位置,而不是它们的值。 如果输入的元素都是唯一的,则在排列中就不会有重复的元素。 大致相当于: def per",
+            "source": "https://docs.python.org/zh-cn/3.13/library/itertools.html#itertools.permutations",
+            "module": "itertools",
+            "version": "3.13",
+            "similarity": 0.6045669317245483,
+            "rrf_score": 0.014709063378758382
+          },
+          {
+            "doc_id": "itertools:itertools.compress",
+            "chunk_id": "itertools:itertools.compress@0",
+            "title": "itertools. compress ( data , selectors )",
+            "text": "创建一个迭代器,它返回来自 data 在 selectors 中对应元素为真值的元素。 当 data 或 selectors 可迭代对象被耗尽时将停止。 大致相当于: def compress ( data , selectors ): # compress('ABCDEF', [1,0,1,0,1,1]) → A C E F return ( datum ",
+            "source": "https://docs.python.org/zh-cn/3.13/library/itertools.html#itertools.compress",
+            "module": "itertools",
+            "version": "3.13",
+            "similarity": 0.5879952311515808,
+            "rrf_score": 0.01466181506849315
+          },
+          {
+            "doc_id": "itertools:itertools.product",
+            "chunk_id": "itertools:itertools.product@0",
+            "title": "itertools. product ( * iterables , repeat = 1 )",
+            "text": "输入可迭代对象的 笛卡尔乘积 。 大致相当于生成器表达式中的嵌套循环。例如, product(A, B) 和 ((x,y) for x in A for y in B) 返回结果一样。 嵌套循环像里程表那样循环变动,每次迭代时将最右侧的元素向后迭代。这种模式形成了一种字典序,因此如果输入的可迭代对象是已排序的,笛卡尔积元组依次序发出。 要计算可迭代对象自身的",
+            "source": "https://docs.python.org/zh-cn/3.13/library/itertools.html#itertools.product",
+            "module": "itertools",
+            "version": "3.13",
+            "similarity": 0.6092802286148071,
+            "rrf_score": 0.01435897435897436
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "itertools"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 20.45949999592267
+      }
+    },
+    {
+      "id": "T08",
+      "question": "如何缓存函数最近调用的结果，避免相同参数反复计算？",
+      "module": "functools",
+      "relevant_doc_ids": [
+        "functools:functools.lru_cache"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "functools:functools.cache",
+            "chunk_id": "functools:functools.cache@150",
+            "title": "@ functools. cache ( user_function )",
+            "text": "n ): return n * factorial ( n - 1 ) if n else 1 >>> factorial ( 10 ) # 不预先缓存结果,执行 11 次递归调用 3628800 >>> factorial ( 5 ) # 不执行新的调用,只返回缓存的结果 120 >>> factorial ( 12 ) # 执行两次新的递归调用,fact",
+            "source": "https://docs.python.org/zh-cn/3.13/library/functools.html#functools.cache",
+            "module": "functools",
+            "version": "3.13",
+            "similarity": 0.620274543762207,
+            "rrf_score": 0.016009221311475412
+          },
+          {
+            "doc_id": "functools:functools.lru_cache",
+            "chunk_id": "functools:functools.lru_cache@1200",
+            "title": "@ functools. lru_cache ( user_function )",
+            "text": "参阅 我该如何缓存方法调用? LRU (least recently used) 缓存 在最近的调用是即将到来的调用的最佳预测值时性能最好 (例如,新闻服务器上的最热门文章倾向于每天发生变化)。 缓存的大小限制可确保缓存不会在长期运行的进程如 web 服务器上无限制地增长。 一般来说,LRU 缓存只应在你需要重复使用先前计算的值时使用。 因此,缓存有附带影响",
+            "source": "https://docs.python.org/zh-cn/3.13/library/functools.html#functools.lru_cache",
+            "module": "functools",
+            "version": "3.13",
+            "similarity": 0.6095729470252991,
+            "rrf_score": 0.01565940787863959
+          },
+          {
+            "doc_id": "functools:functools.cached_property",
+            "chunk_id": "functools:functools.cached_property@0",
+            "title": "@ functools. cached_property ( func )",
+            "text": "将一个类方法转换为属性,一次性计算该属性的值,然后将其缓存为实例生命周期内的普通属性。 类似于 @property 但增加了缓存功能。 对于在其他情况下实际不可变的高计算资源消耗的实例属性来说该函数非常有用。 示例: class DataSet : def __init__ ( self , sequence_of_numbers ): self . _da",
+            "source": "https://docs.python.org/zh-cn/3.13/library/functools.html#functools.cached_property",
+            "module": "functools",
+            "version": "3.13",
+            "similarity": 0.5480411648750305,
+            "rrf_score": 0.01329225352112676
+          },
+          {
+            "doc_id": "functools:functools.cmp_to_key",
+            "chunk_id": "functools:functools.cmp_to_key@150",
+            "title": "functools. cmp_to_key ( func )",
+            "text": "新版的转换工具,以保持对比较函数的兼容。 比较函数是任何接受两个参数,比较它们,并在结果为小于时返回负数,等于时返回零,大于时返回正数的可调用对象。键函数是接受一个参数并返回另一值的可调用对象,返回值在排序时被用作键。 示例: sorted ( iterable , key = cmp_to_key ( locale . strcoll )) # 感知语言区",
+            "source": "https://docs.python.org/zh-cn/3.13/library/functools.html#functools.cmp_to_key",
+            "module": "functools",
+            "version": "3.13",
+            "similarity": 0.5578174591064453,
+            "rrf_score": 0.01324561403508772
+          },
+          {
+            "doc_id": "functools:functools.reduce",
+            "chunk_id": "functools:functools.reduce@0",
+            "title": "functools. reduce ( function , iterable , [ initial , ] / )",
+            "text": "将两个参数的 function 从左至右累积地应用到 iterable 的条目,以便将该可迭代对象缩减为单个值。 例如, reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) 就是计算 ((((1+2)+3)+4)+5) 。 左边的参数 x 是累积的值而右边的参数 y 则是来自 iterable 的更新值。如果存在可选项 ini",
+            "source": "https://docs.python.org/zh-cn/3.13/library/functools.html#functools.reduce",
+            "module": "functools",
+            "version": "3.13",
+            "similarity": 0.5790367126464844,
+            "rrf_score": 0.012663268556865243
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "functools"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 17.4057999975048
+      }
+    },
+    {
+      "id": "T09",
+      "question": "读取指定名称的环境变量，不存在时使用默认值，应该调用什么？",
+      "module": "os",
+      "relevant_doc_ids": [
+        "os:os.getenv"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "os:os.putenv",
+            "chunk_id": "os:os.putenv@0",
+            "title": "os. putenv ( key , value , / )",
+            "text": "将名为 key 的环境变量值设置为 value 。该变量名修改会影响由 os.system() , popen() , fork() 和 execv() 发起的子进程。 对 os.environ 中的项目的赋值会自动转化为对 putenv() 的相应调用;然而,对 putenv() 的调用并不更新 os.environ ,所以实际上最好是赋值到 os.env",
+            "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.putenv",
+            "module": "os",
+            "version": "3.13",
+            "similarity": 0.5886961817741394,
+            "rrf_score": 0.015339578454332554
+          },
+          {
+            "doc_id": "os:os.defpath",
+            "chunk_id": "os:os.defpath@0",
+            "title": "os. defpath",
+            "text": "在环境变量没有 'PATH' 键的情况下, exec*p* 和 spawn*p* 使用的默认搜索路径。在 os.path 中也可用。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.defpath",
+            "module": "os",
+            "version": "3.13",
+            "similarity": 0.5382816195487976,
+            "rrf_score": 0.014815627743634766
+          },
+          {
+            "doc_id": "os:os.getenv",
+            "chunk_id": "os:os.getenv@0",
+            "title": "os. getenv ( key , default = None )",
+            "text": "如果环境变量 key 存在则将其值作为字符串返回,如果不存在则返回 default 。 key 是一个字符串。 请注意由于 getenv() 使用了 os.environ ,因此 getenv() 的映射同样也会在导入时被捕获,并且该函数可能无法反映未来的环境变化。 在Unix系统上,键和值会使用 sys.getfilesystemencoding() 和 ",
+            "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.getenv",
+            "module": "os",
+            "version": "3.13",
+            "similarity": 0.5203281044960022,
+            "rrf_score": 0.014474772539288668
+          },
+          {
+            "doc_id": "os:os.get_exec_path",
+            "chunk_id": "os:os.get_exec_path@0",
+            "title": "os. get_exec_path ( env = None )",
+            "text": "返回将用于搜索可执行文件的目录列表,与在外壳程序中启动一个进程时相似。指定的 env 应为用于搜索 PATH 的环境变量字典。默认情况下,当 env 为 None 时,将会使用 environ 。 Added in version 3.2.",
+            "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.get_exec_path",
+            "module": "os",
+            "version": "3.13",
+            "similarity": 0.5248218178749084,
+            "rrf_score": 0.014242424242424244
+          },
+          {
+            "doc_id": "os:os.execl",
+            "chunk_id": "os:os.execl@450",
+            "title": "os. execl ( path , arg0 , arg1 , ... )",
+            "text": "境变量来定位程序 file 。 当环境被替换时 (使用某个 exec*e 变体形式,将在下一段中讨论),将使用新环境作为 PATH 变量的来源。 其他的变体形式 execl() , execle() , execv() 和 execve() 将不使用 PATH 变量来定位可执行程序; path 必须包含正确的绝对或相对路径。 相对路径必须包括至少一个斜杠,即",
+            "source": "https://docs.python.org/zh-cn/3.13/library/os.html#os.execl",
+            "module": "os",
+            "version": "3.13",
+            "similarity": 0.5317166447639465,
+            "rrf_score": 0.014095691880087354
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "os"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 20.42579999397276
+      }
+    },
+    {
+      "id": "T10",
+      "question": "如何递归复制整个目录树到另一个目录？",
+      "module": "shutil",
+      "relevant_doc_ids": [
+        "shutil:shutil.copytree"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "shutil:shutil.copytree",
+            "chunk_id": "shutil:shutil.copytree@0",
+            "title": "shutil. copytree ( src , dst , symlinks = False , ignore = None , copy_function = copy2 , ignore_dangling_symlinks = False , dirs_exist_ok = False )",
+            "text": "递归地将以 src 为根起点的整个目录树拷贝到名为 dst 的目录并返回目标目录。所需的包含 dst 的中间目录在默认情况下也将被创建。 目录的权限和时间会通过 copystat() 来拷贝,单个文件则会使用 copy2() 来拷贝。 如果 symlinks 为真值,源目录树中的符号链接会在新目录树中表示为符号链接,并且原链接的元数据在平台允许的情况下也会被",
+            "source": "https://docs.python.org/zh-cn/3.13/library/shutil.html#shutil.copytree",
+            "module": "shutil",
+            "version": "3.13",
+            "similarity": 0.6141713261604309,
+            "rrf_score": 0.01626123744050767
+          },
+          {
+            "doc_id": "shutil:shutil.move",
+            "chunk_id": "shutil:shutil.move@0",
+            "title": "shutil. move ( src , dst , copy_function = copy2 )",
+            "text": "递归地将一个文件或目录 ( src ) 移到另一位置并返回目标位置。 如果 dst 为已存在的目录或指向目录的符号链接,则 src 将被移到该目录中。目标路径在该目录中不能已存在。 如果 dst 已存在但不是一个目录,则它可能会被覆盖,具体取决于 os.rename() 的语义。 当 src 和目标位于相同文件系统时将首选在内部使用 os.rename() ",
+            "source": "https://docs.python.org/zh-cn/3.13/library/shutil.html#shutil.move",
+            "module": "shutil",
+            "version": "3.13",
+            "similarity": 0.5304862260818481,
+            "rrf_score": 0.016009221311475412
+          },
+          {
+            "doc_id": "shutil:shutil.make_archive",
+            "chunk_id": "shutil:shutil.make_archive@150",
+            "title": "shutil. make_archive ( base_name , format [ , root_dir [ , base_dir [ , verbose [ , dry_run [ , owner [ , group [ , logger ] ] ] ] ] ] ] )",
+            "text": "bz2 模块可用) 或 \"xztar\" (如果 lzma 模块可用) 中的一个。 root_dir 是一个目录,它将作为归档文件的根目录,归档中的所有路径都将是它的相对路径;例如,我们通常会在创建归档之前用 chdir 命令切换到 root_dir . base_dir 是我们要执行归档的起始目录;也就是说 base_dir 将成为归档中所有文件和目录共有的",
+            "source": "https://docs.python.org/zh-cn/3.13/library/shutil.html#shutil.make_archive",
+            "module": "shutil",
+            "version": "3.13",
+            "similarity": 0.5349164009094238,
+            "rrf_score": 0.015749007936507936
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "shutil"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 19.99930000602035
+      }
+    },
+    {
+      "id": "T11",
+      "question": "怎样打开 SQLite 数据库连接，或用 :memory: 创建内存数据库？",
+      "module": "sqlite3",
+      "relevant_doc_ids": [
+        "sqlite3:sqlite3.connect"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "sqlite3:sqlite3.connect",
+            "chunk_id": "sqlite3:sqlite3.connect@0",
+            "title": "sqlite3. connect ( database , timeout = 5.0 , detect_types = 0 , isolation_level = 'DEFERRED' , check_same_thread = True , factory = sqlite3.Connection , cached_statements = 128 , uri = False , * , autocommit = sqlite3.LEGACY_TRANSACTION_CONTROL )",
+            "text": "打开一个与 SQLite 数据库的连接。 参数 : database ( path-like object ) -- 要打开的数据库文件的路径。 你可以传入 \":memory:\" 来创建一个 仅存在于内存中的 SQLite 数据库 ,并打开它的一个连接。 timeout ( float ) -- 当一个表被锁定时连接在最终引发 OperationalErro",
+            "source": "https://docs.python.org/zh-cn/3.13/library/sqlite3.html#sqlite3.connect",
+            "module": "sqlite3",
+            "version": "3.13",
+            "similarity": 0.6995270848274231,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "doc_id": "sqlite3:sqlite3.Connection.deserialize",
+            "chunk_id": "sqlite3:sqlite3.Connection.deserialize@0",
+            "title": "deserialize ( data , / , * , name = 'main' )",
+            "text": "将一个 已序列化的 数据库反序列化至 Connection 。此方法将导致数据库连接从 name 数据库断开,并基于包含在 data 中的序列化数据将 name 作为内存数据库重新打开。 参数 : data ( bytes ) -- 已序列化的数据库。 name ( str ) -- 反序列化的目标数据库名称。 默认为 \"main\" 。 抛出 : Opera",
+            "source": "https://docs.python.org/zh-cn/3.13/library/sqlite3.html#sqlite3.Connection.deserialize",
+            "module": "sqlite3",
+            "version": "3.13",
+            "similarity": 0.6390045881271362,
+            "rrf_score": 0.01575682382133995
+          },
+          {
+            "doc_id": "sqlite3:sqlite3.SQLITE_DBCONFIG_DEFENSIVE",
+            "chunk_id": "sqlite3:sqlite3.SQLITE_DBCONFIG_DEFENSIVE@150",
+            "title": "sqlite3. SQLITE_DBCONFIG_DEFENSIVE",
+            "text": "config_defensive.html SQLite 文档:数据库连接配置选项",
+            "source": "https://docs.python.org/zh-cn/3.13/library/sqlite3.html#sqlite3.SQLITE_DBCONFIG_DEFENSIVE",
+            "module": "sqlite3",
+            "version": "3.13",
+            "similarity": 0.6445358991622925,
+            "rrf_score": 0.015749007936507936
+          },
+          {
+            "doc_id": "sqlite3:sqlite3.Connection",
+            "chunk_id": "sqlite3:sqlite3.Connection@0",
+            "title": "class sqlite3. Connection",
+            "text": "每个打开的 SQLite 数据库均以 Connection 对象来表示,这种对象是使用 sqlite3.connect() 创建的。 它们的主要目的是创建 Cursor 对象,以及 事务控制 。 参见 如何使用连接快捷方法 如何使用连接上下文管理器 在 3.13 版本发生变更: 如果未在 Connection 对象被删除前调用 close() 则会发出 Re",
+            "source": "https://docs.python.org/zh-cn/3.13/library/sqlite3.html#sqlite3.Connection",
+            "module": "sqlite3",
+            "version": "3.13",
+            "similarity": 0.6687694787979126,
+            "rrf_score": 0.015079365079365078
+          },
+          {
+            "doc_id": "sqlite3:sqlite3.Connection.backup",
+            "chunk_id": "sqlite3:sqlite3.Connection.backup@0",
+            "title": "backup ( target , * , pages = -1 , progress = None , name = 'main' , sleep = 0.250 )",
+            "text": "创建 SQLite 数据库的备份。 即使数据库是通过其他客户端访问或通过同一连接并发访问也是有效的。 参数 : target ( Connection ) -- 用于保存备份的数据库连接。 pages ( int ) -- 每次要拷贝的页数。如果小于等于 0 ,则一次性拷贝整个数据库。默认为 -1 。 progress ( callback | None) ",
+            "source": "https://docs.python.org/zh-cn/3.13/library/sqlite3.html#sqlite3.Connection.backup",
+            "module": "sqlite3",
+            "version": "3.13",
+            "similarity": 0.617111086845398,
+            "rrf_score": 0.014734561213434454
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "sqlite3"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 16.901000002690125
+      }
+    },
+    {
+      "id": "T12",
+      "question": "如何把 ZIP 压缩包里的全部成员解压到指定目录？",
+      "module": "zipfile",
+      "relevant_doc_ids": [
+        "zipfile:zipfile.ZipFile.extractall"
+      ],
+      "recall_at_5": 0.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "zipfile:zipfile.ZipInfo.compress_type",
+            "chunk_id": "zipfile:zipfile.ZipInfo.compress_type@0",
+            "title": "ZipInfo. compress_type",
+            "text": "归档成员的压缩类型。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/zipfile.html#zipfile.ZipInfo.compress_type",
+            "module": "zipfile",
+            "version": "3.13",
+            "similarity": 0.6082223653793335,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "doc_id": "zipfile:zipfile.ZIP_STORED",
+            "chunk_id": "zipfile:zipfile.ZIP_STORED@0",
+            "title": "zipfile. ZIP_STORED",
+            "text": "未被压缩的归档成员的数字常数。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/zipfile.html#zipfile.ZIP_STORED",
+            "module": "zipfile",
+            "version": "3.13",
+            "similarity": 0.5930756330490112,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "doc_id": "zipfile:zipfile.ZIP_DEFLATED",
+            "chunk_id": "zipfile:zipfile.ZIP_DEFLATED@0",
+            "title": "zipfile. ZIP_DEFLATED",
+            "text": "常用的 ZIP 压缩方法的数字常数。需要 zlib 模块。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/zipfile.html#zipfile.ZIP_DEFLATED",
+            "module": "zipfile",
+            "version": "3.13",
+            "similarity": 0.5692621469497681,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "doc_id": "zipfile:zipfile.ZipFile.writestr",
+            "chunk_id": "zipfile:zipfile.ZipFile.writestr@300",
+            "title": "ZipFile. writestr ( zinfo_or_arcname , data , compress_type = None , compresslevel = None )",
+            "text": " 类似地,如果给定了 compresslevel ,它将会覆盖构造器。 备注 当传入一个 ZipInfo 实例作为 zinfo_or_arcname 形参时,所使用的压缩方法将为在给定的 ZipInfo 实例的 compress_type 成员中指定的方法。 默认情况下, ZipInfo 构造器将此成员设为 ZIP_STORED 。 在 3.2 版本发生变更",
+            "source": "https://docs.python.org/zh-cn/3.13/library/zipfile.html#zipfile.ZipFile.writestr",
+            "module": "zipfile",
+            "version": "3.13",
+            "similarity": 0.5611549019813538,
+            "rrf_score": 0.015268065268065269
+          },
+          {
+            "doc_id": "zipfile:zipfile.ZipFile.open",
+            "chunk_id": "zipfile:zipfile.ZipFile.open@750",
+            "title": "ZipFile. open ( name , mode = 'r' , pwd = None , * , force_zip64 = False )",
+            "text": "act() 方法可接受文件名或 ZipInfo 对象。 当尝试读取一个包含重复名称成员的 ZIP 文件时你将发现此功能很有好处。 在 3.6 版本发生变更: 移除了对 mode='U' 的支持。 请使用 io.TextIOWrapper 以在 universal newlines 模式中读取已压缩的文本文件。 在 3.6 版本发生变更: 现在 ZipFile",
+            "source": "https://docs.python.org/zh-cn/3.13/library/zipfile.html#zipfile.ZipFile.open",
+            "module": "zipfile",
+            "version": "3.13",
+            "similarity": 0.5356777906417847,
+            "rrf_score": 0.014815627743634766
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "zipfile"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 19.390399997064378
+      }
+    },
+    {
+      "id": "T13",
+      "question": "命令行解析器如何声明一个参数，并设置它的类型、默认值和帮助信息？",
+      "module": "argparse",
+      "relevant_doc_ids": [
+        "argparse:argparse.ArgumentParser.add_argument"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "argparse:argparse.ArgumentParser.add_subparsers",
+            "chunk_id": "argparse:argparse.ArgumentParser.add_subparsers@450",
+            "title": "ArgumentParser. add_subparsers ( * [ , title ] [ , description ] [ , prog ] [ , parser_class ] [ , action ] [ , dest ] [ , required ] [ , help ] [ , metavar ] )",
+            "text": "析器参数之前的任何位置参数 parser_class - 将被用于创建子解析器实例的类,默认为当前解析器类 (例如 ArgumentParser ) action - 当此参数在命令行中出现时要执行动作的基本类型 dest - 将被用于保存子命令名称的属性名;默认为 None 即不保存任何值 required - 是否必须要提供子命令,默认为 False (",
+            "source": "https://docs.python.org/zh-cn/3.13/library/argparse.html#argparse.ArgumentParser.add_subparsers",
+            "module": "argparse",
+            "version": "3.13",
+            "similarity": 0.6480221152305603,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "doc_id": "argparse:argparse.ArgumentParser.set_defaults",
+            "chunk_id": "argparse:argparse.ArgumentParser.set_defaults@600",
+            "title": "ArgumentParser. set_defaults ( ** kwargs )",
+            "text": "') 解析器层级默认值在需要多解析器时会特别有用。请参阅 add_subparsers() 方法了解此类型的一个示例。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/argparse.html#argparse.ArgumentParser.set_defaults",
+            "module": "argparse",
+            "version": "3.13",
+            "similarity": 0.7013724446296692,
+            "rrf_score": 0.01565940787863959
+          },
+          {
+            "doc_id": "argparse:argparse.ArgumentParser",
+            "chunk_id": "argparse:argparse.ArgumentParser@150",
+            "title": "class argparse. ArgumentParser ( prog = None , usage = None , description = None , epilog = None , parents = [] , formatter_class = argparse.HelpFormatter , prefix_chars = '-' , fromfile_prefix_chars = None , argument_default = None , conflict_handler = 'error' , add_help = True , allow_abbrev = True , exit_on_error = True )",
+            "text": "析器的参数生成) description - 要在参数帮助信息之前显示的文本(默认:无文本) epilog - 要在参数帮助信息之后显示的文本(默认:无文本) parents - 一个 ArgumentParser 对象的列表,它们的参数也应包含在内 formatter_class - 用于自定义帮助文档输出格式的类 prefix_chars - 可选参数的",
+            "source": "https://docs.python.org/zh-cn/3.13/library/argparse.html#argparse.ArgumentParser",
+            "module": "argparse",
+            "version": "3.13",
+            "similarity": 0.6085715293884277,
+            "rrf_score": 0.015310892940626462
+          },
+          {
+            "doc_id": "argparse:argparse.ArgumentParser.add_argument",
+            "chunk_id": "argparse:argparse.ArgumentParser.add_argument@150",
+            "title": "ArgumentParser. add_argument ( name or flags... , * [ , action ] [ , nargs ] [ , const ] [ , default ] [ , type ] [ , choices ] [ , required ] [ , help ] [ , metavar ] [ , dest ] [ , deprecated ] )",
+            "text": "耗的数目。 const - 被一些 action 和 nargs 选择所需求的常数。 default - 当参数未在命令行中出现并且也不存在于命名空间对象时所产生的值。 type - 命令行参数应当被转换成的类型。 choices - 由允许作为参数的值组成的序列。 required - 此命令行选项是否可省略(仅选项可用)。 help - 一个此选项作用的",
+            "source": "https://docs.python.org/zh-cn/3.13/library/argparse.html#argparse.ArgumentParser.add_argument",
+            "module": "argparse",
+            "version": "3.13",
+            "similarity": 0.6103652119636536,
+            "rrf_score": 0.014407131011608624
+          },
+          {
+            "doc_id": "argparse:argparse.Action.__call__",
+            "chunk_id": "argparse:argparse.Action.__call__@150",
+            "title": "__call__ ( parser , namespace , values , option_string = None )",
+            "text": "tr() 为此对象添加一个属性。 values - 关联的命令行参数,已应用了所有的类型转换。类型转换是由传给 add_argument() 的 type 关键字参数指定的。 应以错误中止该 SQL 语句 ( SQLITE_DENY )。 __call__() 方法可以执行任意动作,但通常将基于 dest 和 values 来设置 namespace 的属性",
+            "source": "https://docs.python.org/zh-cn/3.13/library/argparse.html#argparse.Action.__call__",
+            "module": "argparse",
+            "version": "3.13",
+            "similarity": 0.6099648475646973,
+            "rrf_score": 0.014395194697597348
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "argparse"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 18.134899997676257
+      }
+    },
+    {
+      "id": "T14",
+      "question": "如何给根日志记录器做基本配置，例如设置日志级别和输出文件？",
+      "module": "logging",
+      "relevant_doc_ids": [
+        "logging:logging.basicConfig"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "logging:logging.basicConfig",
+            "chunk_id": "logging:logging.basicConfig@0",
+            "title": "logging. basicConfig ( ** kwargs )",
+            "text": "通过使用默认的 Formatter 创建一个 StreamHandler 并将其加入根日志记录器来为日志记录系统执行基本配置。 如果没有为根日志记录器定义处理器则 debug() , info() , warning() , error() 和 critical() 等函数将自动调用 basicConfig() 。 如果根日志记录器已配置了处理器则此函数将不",
+            "source": "https://docs.python.org/zh-cn/3.13/library/logging.html#logging.basicConfig",
+            "module": "logging",
+            "version": "3.13",
+            "similarity": 0.7165707349777222,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "doc_id": "logging:logging.Logger.setLevel",
+            "chunk_id": "logging:logging.Logger.setLevel@0",
+            "title": "setLevel ( level )",
+            "text": "给记录器设置阈值为 level 。日志等级小于 level 会被忽略。严重性为 level 或更高的日志消息将由该记录器的任何一个或多个处理器发出,除非将处理器的级别设置为比 level 更高的级别。 创建记录器时,级别默认设置为 NOTSET (当记录器是根记录器时,将处理所有消息;如果记录器不是根记录器,则将委托给父级)。请注意,根记录器的默认级别为 W",
+            "source": "https://docs.python.org/zh-cn/3.13/library/logging.html#logging.Logger.setLevel",
+            "module": "logging",
+            "version": "3.13",
+            "similarity": 0.6755195260047913,
+            "rrf_score": 0.01464346349745331
+          },
+          {
+            "doc_id": "logging:logging.Logger.level",
+            "chunk_id": "logging:logging.Logger.level@0",
+            "title": "level",
+            "text": "该日志记录器的阈值,由 setLevel() 方法设置。 备注 请不要直接设置该值 —— 应当始终使用 setLevel() ,它会检查传入的级别。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/logging.html#logging.Logger.level",
+            "module": "logging",
+            "version": "3.13",
+            "similarity": 0.6637405157089233,
+            "rrf_score": 0.014636752136752137
+          },
+          {
+            "doc_id": "logging:logging.info",
+            "chunk_id": "logging:logging.info@0",
+            "title": "logging. info ( msg , * args , ** kwargs )",
+            "text": "在根日志记录器上记录一条 INFO 级别的消息。 其他参数与行为均与 debug() 的相同。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/logging.html#logging.info",
+            "module": "logging",
+            "version": "3.13",
+            "similarity": 0.625505805015564,
+            "rrf_score": 0.014306006493506494
+          },
+          {
+            "doc_id": "logging:logging.critical",
+            "chunk_id": "logging:logging.critical@0",
+            "title": "logging. critical ( msg , * args , ** kwargs )",
+            "text": "在根日志记录器上记录一条 CRITICAL 级别的消息。 其他参数与行为均与 debug() 的相同。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/logging.html#logging.critical",
+            "module": "logging",
+            "version": "3.13",
+            "similarity": 0.632570207118988,
+            "rrf_score": 0.014271255060728745
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "logging"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 18.5810000039055
+      }
+    },
+    {
+      "id": "T15",
+      "question": "怎样执行外部命令并等待结束，获取 CompletedProcess 结果？",
+      "module": "subprocess",
+      "relevant_doc_ids": [
+        "subprocess:subprocess.run"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "subprocess:subprocess.run",
+            "chunk_id": "subprocess:subprocess.run@450",
+            "title": "subprocess. run ( args , * , stdin = None , input = None , stdout = None , stderr = None , capture_output = False , shell = False , cwd = None , timeout = None , check = False , encoding = None , errors = None , text = None , env = None , universal_newlines = None , ** other_popen_kwargs )",
+            "text": "e() 。 如果达到超时限制,子进程将被杀掉并等待。 TimeoutExpired 异常将在子进程终结后重新被引发。在许多平台 API 上初始进程创建本身不可以被打断因此不保证你能看到超时异常直到至少进程创建花费的时间结束后。 input 参数将被传递给 Popen.communicate() 以及子进程的 stdin。 如果使用此参数则它必须是一个字节序列",
+            "source": "https://docs.python.org/zh-cn/3.13/library/subprocess.html#subprocess.run",
+            "module": "subprocess",
+            "version": "3.13",
+            "similarity": 0.5015304088592529,
+            "rrf_score": 0.01575682382133995
+          },
+          {
+            "doc_id": "subprocess:subprocess.Popen.wait",
+            "chunk_id": "subprocess:subprocess.Popen.wait@0",
+            "title": "Popen. wait ( timeout = None )",
+            "text": "等待子进程被终止。设置并返回 returncode 属性。 如果进程在 timeout 秒后未中断,抛出一个 TimeoutExpired 异常,可以安全地捕获此异常并重新等待。 备注 当 stdout=PIPE 或者 stderr=PIPE 并且子进程产生了足以阻塞 OS 管道缓冲区接收更多数据的输出到管道时,将会发生死锁。当使用管道时用 Popen.co",
+            "source": "https://docs.python.org/zh-cn/3.13/library/subprocess.html#subprocess.Popen.wait",
+            "module": "subprocess",
+            "version": "3.13",
+            "similarity": 0.5748777985572815,
+            "rrf_score": 0.014775668679896463
+          },
+          {
+            "doc_id": "subprocess:subprocess.Popen.communicate",
+            "chunk_id": "subprocess:subprocess.Popen.communicate@600",
+            "title": "Popen. communicate ( input = None , timeout = None )",
+            "text": "meout = 15 ) except TimeoutExpired : proc . kill () outs , errs = proc . communicate () 在对 communicate() 的调用引发 TimeoutExpired 之后,不要调用 wait() 。请用一个额外的 communicate() 来结束处理管道并填充 retur",
+            "source": "https://docs.python.org/zh-cn/3.13/library/subprocess.html#subprocess.Popen.communicate",
+            "module": "subprocess",
+            "version": "3.13",
+            "similarity": 0.5403846502304077,
+            "rrf_score": 0.014558022622538752
+          },
+          {
+            "doc_id": "subprocess:subprocess.Popen.poll",
+            "chunk_id": "subprocess:subprocess.Popen.poll@0",
+            "title": "Popen. poll ( )",
+            "text": "检查子进程是否已被终止。设置并返回 returncode 属性。否则返回 None 。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/subprocess.html#subprocess.Popen.poll",
+            "module": "subprocess",
+            "version": "3.13",
+            "similarity": 0.5166085958480835,
+            "rrf_score": 0.0078125
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "subprocess"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 17.01630000025034
+      }
+    },
+    {
+      "id": "T16",
+      "question": "怎样求一组数的算术平均值？空数据会发生什么？",
+      "module": "statistics",
+      "relevant_doc_ids": [
+        "statistics:statistics.mean"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "statistics:statistics.mean",
+            "chunk_id": "statistics:statistics.mean@0",
+            "title": "statistics. mean ( data )",
+            "text": "返回 data 的样本算术平均数,其形式可以为序列或可迭代对象。 算术平均数是数据之和与数据点个数的商。通常称作“平均数”,尽管它只是诸多数学平均数之一。它是数据的中心位置的度量。 若 data 为空,将会引发 StatisticsError 。 一些用法示例: >>> mean ([ 1 , 2 , 3 , 4 , 4 ]) 2.8 >>> mean ([",
+            "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.mean",
+            "module": "statistics",
+            "version": "3.13",
+            "similarity": 0.6334975957870483,
+            "rrf_score": 0.016133229247983348
+          },
+          {
+            "doc_id": "statistics:statistics.geometric_mean",
+            "chunk_id": "statistics:statistics.geometric_mean@0",
+            "title": "statistics. geometric_mean ( data )",
+            "text": "将 data 转换成浮点数并且计算几何平均数。 几何平均值使用值的乘积表示 data 的中心趋势或典型值(与使用它们的总和的算术平均值相反)。 如果输入数据集为空、包含零或包含负值则将引发 StatisticsError 。 data 可以是序列或可迭代对象。 没有为获得精确结果做出特殊处理。(但是,将来或许会修改。) >>> round ( geometr",
+            "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.geometric_mean",
+            "module": "statistics",
+            "version": "3.13",
+            "similarity": 0.624237596988678,
+            "rrf_score": 0.015877016129032258
+          },
+          {
+            "doc_id": "statistics:statistics.harmonic_mean",
+            "chunk_id": "statistics:statistics.harmonic_mean@0",
+            "title": "statistics. harmonic_mean ( data , weights = None )",
+            "text": "返回包含实数的序列或可迭代对象 data 的调和平均值。如果 weights 被省略或为 None ,则会假定为相等权重。 调和平均数是数据的倒数的算术平均值 mean() 的倒数。例如,三个数值 a , b 和 c 的调和平均数将等于 3/(1/a + 1/b + 1/c) 。如果其中一个值为零,则结果也将为零。 调和平均数是均值的一种,是对数据的中心位置",
+            "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.harmonic_mean",
+            "module": "statistics",
+            "version": "3.13",
+            "similarity": 0.5397019386291504,
+            "rrf_score": 0.014863387978142076
+          },
+          {
+            "doc_id": "statistics:statistics.pvariance",
+            "chunk_id": "statistics:statistics.pvariance@300",
+            "title": "statistics. pvariance ( data , mu = None )",
+            "text": "0 , 0.25 , 0.25 , 1.25 , 1.5 , 1.75 , 2.75 , 3.25 ] >>> pvariance ( data ) 1.25 如果你已经计算过数据的平均值,你可以将其作为可选的第二个参数 mu 传入以避免重复计算: >>> mu = mean ( data ) >>> pvariance ( data , mu ) 1.25",
+            "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.pvariance",
+            "module": "statistics",
+            "version": "3.13",
+            "similarity": 0.5709948539733887,
+            "rrf_score": 0.014835164835164835
+          },
+          {
+            "doc_id": "statistics:statistics.variance",
+            "chunk_id": "statistics:statistics.variance@300",
+            "title": "statistics. variance ( data , xbar = None )",
+            "text": ", 0.25 , 0.5 , 1.25 , 3.5 ] >>> variance ( data ) 1.3720238095238095 如果你已经计算过数据的平均值,你可以将其作为可选的第二个参数 xbar 传入以避免重复计算: >>> m = mean ( data ) >>> variance ( data , m ) 1.37202380952380",
+            "source": "https://docs.python.org/zh-cn/3.13/library/statistics.html#statistics.variance",
+            "module": "statistics",
+            "version": "3.13",
+            "similarity": 0.5564776062965393,
+            "rrf_score": 0.014709063378758382
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "statistics"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 18.053299994789995
+      }
+    },
+    {
+      "id": "T17",
+      "question": "浮点数不宜直接比较相等，如何按相对和绝对容差判断接近？",
+      "module": "math",
+      "relevant_doc_ids": [
+        "math:math.isclose"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "math:math.isclose",
+            "chunk_id": "math:math.isclose@0",
+            "title": "math. isclose ( a , b , * , rel_tol = 1e-09 , abs_tol = 0.0 )",
+            "text": "若 a 和 b 的值比较接近则返回 True ,否则返回 False 。 两个值是否会被视为相近是根据给定的绝对和相对容差来确定的。 如果未发生错误,结果将为: abs(a-b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol) 。 rel_tol 是相对容差 -- 它是 a 和 b 之间的最大允许差值,相对于 a",
+            "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.isclose",
+            "module": "math",
+            "version": "3.13",
+            "similarity": 0.5938159227371216,
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "doc_id": "math:math.sumprod",
+            "chunk_id": "math:math.sumprod@0",
+            "title": "math. sumprod ( p , q )",
+            "text": "返回两个可迭代对象 p 和 q 中的值的乘积的总计值。 如果输入值的长度不相等则会引发 ValueError 。 大致相当于: sum ( itertools . starmap ( operator . mul , zip ( p , q , strict = True ))) 对于浮点数或混合整数/浮点数的输入,中间的乘积和总计值将使用扩展精度来计算。 ",
+            "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.sumprod",
+            "module": "math",
+            "version": "3.13",
+            "similarity": 0.5523199439048767,
+            "rrf_score": 0.01562881562881563
+          },
+          {
+            "doc_id": "math:math.fmod",
+            "chunk_id": "math:math.fmod@300",
+            "title": "math. fmod ( x , y )",
+            "text": ",它不能准确表示为一个浮点数,并会舍入为令人惊讶的 1e100 。 出于这个原因,函数 fmod() 在处理浮点数时通常都是首选,而 Python 的 x % y 则在处理整数时是首选。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.fmod",
+            "module": "math",
+            "version": "3.13",
+            "similarity": 0.5441991090774536,
+            "rrf_score": 0.015165441176470588
+          },
+          {
+            "doc_id": "math:math.copysign",
+            "chunk_id": "math:math.copysign@0",
+            "title": "math. copysign ( x , y )",
+            "text": "返回一个基于 x 的绝对值和 y 的符号的浮点数。在支持带符号零的平台上, copysign(1.0, -0.0) 返回 -1.0 。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.copysign",
+            "module": "math",
+            "version": "3.13",
+            "similarity": 0.5119801759719849,
+            "rrf_score": 0.014569256756756757
+          },
+          {
+            "doc_id": "math:math.ulp",
+            "chunk_id": "math:math.ulp@150",
+            "title": "math. ulp ( x )",
+            "text": ")。 如果 x 等于可表示最大正浮点数,则返回 x 的最低有效比特位的值,使得小于 x 的第一个浮点数为 x - ulp(x) 。 在其他情况下 ( x 是一个有限的正数),则返回 x 的最低有效比特位的值,使得大于 x 的第一个浮点数为 x + ulp(x) 。 ULP 即 \"Unit in the Last Place\" 的缩写。 另请参阅 math.n",
+            "source": "https://docs.python.org/zh-cn/3.13/library/math.html#math.ulp",
+            "module": "math",
+            "version": "3.13",
+            "similarity": 0.5127567052841187,
+            "rrf_score": 0.014407131011608624
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "math"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 17.978399999265093
+      }
+    },
+    {
+      "id": "T18",
+      "question": "如何从序列中不放回地随机抽取 k 个元素，同时不改变原序列？",
+      "module": "random",
+      "relevant_doc_ids": [
+        "random:random.sample"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "random:random.sample",
+            "chunk_id": "random:random.sample@0",
+            "title": "random. sample ( population , k , * , counts = None )",
+            "text": "返回从总体序列中选取的唯一元素的长度为 k 的列表。用于无重复的随机抽样。 返回包含来自总体的元素的新列表,同时保持原始总体不变。结果列表按选择顺序排列,因此所有子切片也将是有效的随机样本。 这允许抽奖获奖者(样本)被划分为大奖和第二名获胜者(子切片)。 总体成员不必是 可哈希对象 或唯一的。如果总体包含重复,则每次出现都是样本中可能的选择。 重复的元素可以",
+            "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.sample",
+            "module": "random",
+            "version": "3.13",
+            "similarity": 0.6313741207122803,
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "doc_id": "random:random.choice",
+            "chunk_id": "random:random.choice@0",
+            "title": "random. choice ( seq )",
+            "text": "从非空序列 seq 返回一个随机元素。如果 seq 为空,则引发 IndexError 。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.choice",
+            "module": "random",
+            "version": "3.13",
+            "similarity": 0.63386070728302,
+            "rrf_score": 0.016009221311475412
+          },
+          {
+            "doc_id": "random:random.shuffle",
+            "chunk_id": "random:random.shuffle@0",
+            "title": "random. shuffle ( x )",
+            "text": "就地将序列 x 随机打乱位置。 要改变一个不可变的序列并返回一个新的打乱列表,请使用 sample(x, k=len(x)) 。 请注意,即使对于小的 len(x) , x 的排列总数也可以快速增长,大于大多数随机数生成器的周期。这意味着长序列的大多数排列永远不会产生。 例如,长度为 2080 的序列是可以在 Mersenne Twister 随机数生成器的",
+            "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.shuffle",
+            "module": "random",
+            "version": "3.13",
+            "similarity": 0.6110144853591919,
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "doc_id": "random:random.SystemRandom",
+            "chunk_id": "random:random.SystemRandom@0",
+            "title": "class random. SystemRandom ( [ seed ] )",
+            "text": "使用 os.urandom() 函数的类,用从操作系统提供的源生成随机数。这并非适用于所有系统。也不依赖于软件状态,序列不可重现。 因此, seed() 方法没有效果而被忽略。 getstate() 和 setstate() 方法如果被调用则引发 NotImplementedError .",
+            "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.SystemRandom",
+            "module": "random",
+            "version": "3.13",
+            "similarity": 0.543241024017334,
+            "rrf_score": 0.014605543710021322
+          },
+          {
+            "doc_id": "random:random.seed",
+            "chunk_id": "random:random.seed@150",
+            "title": "random. seed ( a = None , version = 2 )",
+            "text": "rray 对象转换为 int 并使用它的所有位。 对于版本 1(用于从旧版本的 Python 再现随机序列),用于 str 和 bytes 的算法生成更窄的种子范围。 在 3.2 版本发生变更: 已移至版本 2 方案,该方案使用字符串种子中的所有位。 在 3.11 版本发生变更: seed 必须是下列类型之一: None , int , float , st",
+            "source": "https://docs.python.org/zh-cn/3.13/library/random.html#random.seed",
+            "module": "random",
+            "version": "3.13",
+            "similarity": 0.5472695827484131,
+            "rrf_score": 0.014541622760800843
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "random"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 18.599499999254476
+      }
+    },
+    {
+      "id": "T19",
+      "question": "如何通过算法名称字符串创建哈希对象，例如传入 sha256？",
+      "module": "hashlib",
+      "relevant_doc_ids": [
+        "hashlib:hashlib.new"
+      ],
+      "recall_at_5": 1.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "hashlib:hashlib.file_digest",
+            "chunk_id": "hashlib:hashlib.file_digest@300",
+            "title": "hashlib. file_digest ( fileobj , digest , / )",
+            "text": "希算法名称、哈希构造器或返回哈希对象的可调用对象。 示例: >>> import io , hashlib , hmac >>> with open ( \"library/hashlib.rst\" , \"rb\" ) as f : ... digest = hashlib . file_digest ( f , \"sha256\" ) ... >>> diges",
+            "source": "https://docs.python.org/zh-cn/3.13/library/hashlib.html#hashlib.file_digest",
+            "module": "hashlib",
+            "version": "3.13",
+            "similarity": 0.6557974815368652,
+            "rrf_score": 0.016009221311475412
+          },
+          {
+            "doc_id": "hashlib:hashlib.hash.name",
+            "chunk_id": "hashlib:hashlib.hash.name@0",
+            "title": "hash. name",
+            "text": "此哈希对象的规范名称,总是为小写形式并且总是可以作为 new() 的形参用来创建另一个此类型的哈希对象。 在 3.4 版本发生变更: name 属性自被引入起即存在于 CPython 中,但在 Python 3.4 之前并未正式指明,因此可能不存在于某些平台上。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/hashlib.html#hashlib.hash.name",
+            "module": "hashlib",
+            "version": "3.13",
+            "similarity": 0.6700900793075562,
+            "rrf_score": 0.015749007936507936
+          },
+          {
+            "doc_id": "hashlib:hashlib.new",
+            "chunk_id": "hashlib:hashlib.new@0",
+            "title": "hashlib. new ( name , [ data , ] * , usedforsecurity=True )",
+            "text": "接受想要的算法对应的字符串 name 作为其第一个形参的泛型构造器。它还允许访问上面列出的哈希算法以及你的 OpenSSL 库可能提供的任何其他算法。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/hashlib.html#hashlib.new",
+            "module": "hashlib",
+            "version": "3.13",
+            "similarity": 0.6769021153450012,
+            "rrf_score": 0.015527202696196438
+          },
+          {
+            "doc_id": "hashlib:hashlib.hash.copy",
+            "chunk_id": "hashlib:hashlib.hash.copy@0",
+            "title": "hash. copy ( )",
+            "text": "返回哈希对象的副本(“克隆”)。这可被用来高效地计算共享相同初始子串的数据的摘要。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/hashlib.html#hashlib.hash.copy",
+            "module": "hashlib",
+            "version": "3.13",
+            "similarity": 0.6808638572692871,
+            "rrf_score": 0.015443098123069612
+          },
+          {
+            "doc_id": "hashlib:hashlib.pbkdf2_hmac",
+            "chunk_id": "hashlib:hashlib.pbkdf2_hmac@0",
+            "title": "hashlib. pbkdf2_hmac ( hash_name , password , salt , iterations , dklen = None )",
+            "text": "此函数提供 PKCS#5 基于密码的密钥派生函数 2。它使用 HMAC 作为伪随机函数。 字符串 hash_name 是要求用于 HMAC 的哈希摘要算法的名称,例如 'sha1' 或 'sha256'。 password 和 salt 会以字节串缓冲区的形式被解析。应用和库应当将 password 限制在合理长度 (例如 1024)。 salt 应当为适当",
+            "source": "https://docs.python.org/zh-cn/3.13/library/hashlib.html#hashlib.pbkdf2_hmac",
+            "module": "hashlib",
+            "version": "3.13",
+            "similarity": 0.6298478245735168,
+            "rrf_score": 0.015289449112978524
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "hashlib"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 18.640400005097035
+      }
+    },
+    {
+      "id": "T20",
+      "question": "如何让 Decimal 按另一个数的指数保留固定小数位？",
+      "module": "decimal",
+      "relevant_doc_ids": [
+        "decimal:decimal.Decimal.quantize"
+      ],
+      "recall_at_5": 0.0,
+      "response": {
+        "status": "找到",
+        "results": [
+          {
+            "doc_id": "decimal:decimal.Decimal.adjusted",
+            "chunk_id": "decimal:decimal.Decimal.adjusted@0",
+            "title": "adjusted ( )",
+            "text": "在移出系数最右边的数字之后返回调整后的指数,直到只剩下前导数字: Decimal('321e+5').adjusted() 返回 7。 用于确定最高有效位相对于小数点的位置。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/decimal.html#decimal.Decimal.adjusted",
+            "module": "decimal",
+            "version": "3.13",
+            "similarity": 0.6431134939193726,
+            "rrf_score": 0.016133229247983348
+          },
+          {
+            "doc_id": "decimal:decimal.Decimal.to_eng_string",
+            "chunk_id": "decimal:decimal.Decimal.to_eng_string@0",
+            "title": "to_eng_string ( context = None )",
+            "text": "转换为字符串,如果需要指数则会使用工程标注法。 工程标注法的指数是 3 的倍数。这会在十进制位的左边保留至多 3 个数码,并可能要求添加一至两个末尾零。 例如,此方法会将 Decimal('123E+1') 转换为 Decimal('1.23E+3') 。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/decimal.html#decimal.Decimal.to_eng_string",
+            "module": "decimal",
+            "version": "3.13",
+            "similarity": 0.5185083150863647,
+            "rrf_score": 0.01504603637996856
+          },
+          {
+            "doc_id": "decimal:decimal.Context.to_eng_string",
+            "chunk_id": "decimal:decimal.Context.to_eng_string@0",
+            "title": "to_eng_string ( x , / )",
+            "text": "转换为字符串,如果需要指数则会使用工程标注法。 工程标注法的指数是 3 的倍数。这会在十进制位的左边保留至多 3 个数码,并可能要求添加一至两个末尾零。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/decimal.html#decimal.Context.to_eng_string",
+            "module": "decimal",
+            "version": "3.13",
+            "similarity": 0.5156104564666748,
+            "rrf_score": 0.014821272885789015
+          },
+          {
+            "doc_id": "decimal:decimal.Decimal.shift",
+            "chunk_id": "decimal:decimal.Decimal.shift@0",
+            "title": "shift ( other , context = None )",
+            "text": "返回第一个操作数的数码按第二个操作数所指定的数量进行移位的结果。第二个操作数必须为 -precision 至 precision 范围内的整数。 第二个操作数的绝对值给出要移动的位数。如果第二个操作数为正值则向左移位;否则向右移位。移入系数的数码为零。第一个操作数的符号和指数保持不变。",
+            "source": "https://docs.python.org/zh-cn/3.13/library/decimal.html#decimal.Decimal.shift",
+            "module": "decimal",
+            "version": "3.13",
+            "similarity": 0.5720228552818298,
+            "rrf_score": 0.014785823005001086
+          },
+          {
+            "doc_id": "decimal:decimal.Decimal.logb",
+            "chunk_id": "decimal:decimal.Decimal.logb@0",
+            "title": "logb ( context = None )",
+            "text": "对于一个非零数,返回其运算数的调整后指数作为一个 Decimal 实例。如果运算数为零将返回 Decimal('-Infinity') 并且产生 DivisionByZero 标志。如果运算数是无限大则返回 Decimal('Infinity') .",
+            "source": "https://docs.python.org/zh-cn/3.13/library/decimal.html#decimal.Decimal.logb",
+            "module": "decimal",
+            "version": "3.13",
+            "similarity": 0.5522356629371643,
+            "rrf_score": 0.014734561213434454
+          }
+        ],
+        "filters": {
+          "version": "3.13",
+          "module": "decimal"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 19.554999998945277
+      }
+    }
+  ],
+  "requests": [
+    {
+      "id": "T06",
+      "repeat": 0,
+      "latency_ms": 21.89399999770103,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "collections:collections.Counter.elements",
+        "collections:collections.deque.count",
+        "collections:collections.Counter.most_common",
+        "collections:collections.Counter",
+        "collections:collections.deque.clear"
+      ]
+    },
+    {
+      "id": "T04",
+      "repeat": 1,
+      "latency_ms": 19.94120000017574,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "re:re.finditer",
+        "re:re.Pattern.search",
+        "re:re.search",
+        "re:re.Pattern.match",
+        "re:re.PatternError.pattern"
+      ]
+    },
+    {
+      "id": "T09",
+      "repeat": 1,
+      "latency_ms": 20.42579999397276,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "os:os.putenv",
+        "os:os.defpath",
+        "os:os.getenv",
+        "os:os.get_exec_path",
+        "os:os.execl"
+      ]
+    },
+    {
+      "id": "T10",
+      "repeat": 4,
+      "latency_ms": 19.99930000602035,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "shutil:shutil.copytree",
+        "shutil:shutil.move",
+        "shutil:shutil.make_archive"
+      ]
+    },
+    {
+      "id": "T10",
+      "repeat": 0,
+      "latency_ms": 15.839300001971424,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "shutil:shutil.copytree",
+        "shutil:shutil.move",
+        "shutil:shutil.make_archive"
+      ]
+    },
+    {
+      "id": "T20",
+      "repeat": 1,
+      "latency_ms": 19.554999998945277,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "decimal:decimal.Decimal.adjusted",
+        "decimal:decimal.Decimal.to_eng_string",
+        "decimal:decimal.Context.to_eng_string",
+        "decimal:decimal.Decimal.shift",
+        "decimal:decimal.Decimal.logb"
+      ]
+    },
+    {
+      "id": "T04",
+      "repeat": 4,
+      "latency_ms": 18.357500004640315,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "re:re.finditer",
+        "re:re.Pattern.search",
+        "re:re.search",
+        "re:re.Pattern.match",
+        "re:re.PatternError.pattern"
+      ]
+    },
+    {
+      "id": "T12",
+      "repeat": 2,
+      "latency_ms": 19.390399997064378,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "zipfile:zipfile.ZipInfo.compress_type",
+        "zipfile:zipfile.ZIP_STORED",
+        "zipfile:zipfile.ZIP_DEFLATED",
+        "zipfile:zipfile.ZipFile.writestr",
+        "zipfile:zipfile.ZipFile.open"
+      ]
+    },
+    {
+      "id": "T14",
+      "repeat": 2,
+      "latency_ms": 18.5810000039055,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "logging:logging.basicConfig",
+        "logging:logging.Logger.setLevel",
+        "logging:logging.Logger.level",
+        "logging:logging.info",
+        "logging:logging.critical"
+      ]
+    },
+    {
+      "id": "T08",
+      "repeat": 4,
+      "latency_ms": 17.4057999975048,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "functools:functools.cache",
+        "functools:functools.lru_cache",
+        "functools:functools.cached_property",
+        "functools:functools.cmp_to_key",
+        "functools:functools.reduce"
+      ]
+    },
+    {
+      "id": "T02",
+      "repeat": 0,
+      "latency_ms": 21.062899999378715,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "csv:csv.csvreader.line_num",
+        "csv:csv.DictWriter",
+        "csv:csv.reader",
+        "csv:csv.DictReader",
+        "csv:csv.QUOTE_ALL"
+      ]
+    },
+    {
+      "id": "T09",
+      "repeat": 3,
+      "latency_ms": 18.70249999774387,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "os:os.putenv",
+        "os:os.defpath",
+        "os:os.getenv",
+        "os:os.get_exec_path",
+        "os:os.execl"
+      ]
+    },
+    {
+      "id": "T07",
+      "repeat": 2,
+      "latency_ms": 20.45949999592267,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "itertools:itertools.groupby",
+        "itertools:itertools.cycle",
+        "itertools:itertools.permutations",
+        "itertools:itertools.compress",
+        "itertools:itertools.product"
+      ]
+    },
+    {
+      "id": "T20",
+      "repeat": 3,
+      "latency_ms": 18.730999996478204,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "decimal:decimal.Decimal.adjusted",
+        "decimal:decimal.Decimal.to_eng_string",
+        "decimal:decimal.Context.to_eng_string",
+        "decimal:decimal.Decimal.shift",
+        "decimal:decimal.Decimal.logb"
+      ]
+    },
+    {
+      "id": "T16",
+      "repeat": 4,
+      "latency_ms": 18.053299994789995,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "statistics:statistics.mean",
+        "statistics:statistics.geometric_mean",
+        "statistics:statistics.harmonic_mean",
+        "statistics:statistics.pvariance",
+        "statistics:statistics.variance"
+      ]
+    },
+    {
+      "id": "T14",
+      "repeat": 3,
+      "latency_ms": 17.15680000052089,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "logging:logging.basicConfig",
+        "logging:logging.Logger.setLevel",
+        "logging:logging.Logger.level",
+        "logging:logging.info",
+        "logging:logging.critical"
+      ]
+    },
+    {
+      "id": "T02",
+      "repeat": 3,
+      "latency_ms": 18.3446000010008,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "csv:csv.csvreader.line_num",
+        "csv:csv.DictWriter",
+        "csv:csv.reader",
+        "csv:csv.DictReader",
+        "csv:csv.QUOTE_ALL"
+      ]
+    },
+    {
+      "id": "T20",
+      "repeat": 0,
+      "latency_ms": 15.033299998322036,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "decimal:decimal.Decimal.adjusted",
+        "decimal:decimal.Decimal.to_eng_string",
+        "decimal:decimal.Context.to_eng_string",
+        "decimal:decimal.Decimal.shift",
+        "decimal:decimal.Decimal.logb"
+      ]
+    },
+    {
+      "id": "T06",
+      "repeat": 3,
+      "latency_ms": 15.67100000102073,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "collections:collections.Counter.elements",
+        "collections:collections.deque.count",
+        "collections:collections.Counter.most_common",
+        "collections:collections.Counter",
+        "collections:collections.deque.clear"
+      ]
+    },
+    {
+      "id": "T02",
+      "repeat": 4,
+      "latency_ms": 18.69829999486683,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "csv:csv.csvreader.line_num",
+        "csv:csv.DictWriter",
+        "csv:csv.reader",
+        "csv:csv.DictReader",
+        "csv:csv.QUOTE_ALL"
+      ]
+    },
+    {
+      "id": "T13",
+      "repeat": 1,
+      "latency_ms": 18.134899997676257,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "argparse:argparse.ArgumentParser.add_subparsers",
+        "argparse:argparse.ArgumentParser.set_defaults",
+        "argparse:argparse.ArgumentParser",
+        "argparse:argparse.ArgumentParser.add_argument",
+        "argparse:argparse.Action.__call__"
+      ]
+    },
+    {
+      "id": "T16",
+      "repeat": 3,
+      "latency_ms": 15.381099998194259,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "statistics:statistics.mean",
+        "statistics:statistics.geometric_mean",
+        "statistics:statistics.harmonic_mean",
+        "statistics:statistics.pvariance",
+        "statistics:statistics.variance"
+      ]
+    },
+    {
+      "id": "T18",
+      "repeat": 2,
+      "latency_ms": 18.599499999254476,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "random:random.sample",
+        "random:random.choice",
+        "random:random.shuffle",
+        "random:random.SystemRandom",
+        "random:random.seed"
+      ]
+    },
+    {
+      "id": "T01",
+      "repeat": 4,
+      "latency_ms": 15.016900004411582,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "json:json.JSONEncoder.encode",
+        "json:json.JSONEncoder.iterencode",
+        "json:json.dump",
+        "json:json.dumps",
+        "json:json.load"
+      ]
+    },
+    {
+      "id": "T01",
+      "repeat": 1,
+      "latency_ms": 15.48709999769926,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "json:json.JSONEncoder.encode",
+        "json:json.JSONEncoder.iterencode",
+        "json:json.dump",
+        "json:json.dumps",
+        "json:json.load"
+      ]
+    },
+    {
+      "id": "T20",
+      "repeat": 2,
+      "latency_ms": 16.719699997338466,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "decimal:decimal.Decimal.adjusted",
+        "decimal:decimal.Decimal.to_eng_string",
+        "decimal:decimal.Context.to_eng_string",
+        "decimal:decimal.Decimal.shift",
+        "decimal:decimal.Decimal.logb"
+      ]
+    },
+    {
+      "id": "T06",
+      "repeat": 1,
+      "latency_ms": 14.619900000980124,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "collections:collections.Counter.elements",
+        "collections:collections.deque.count",
+        "collections:collections.Counter.most_common",
+        "collections:collections.Counter",
+        "collections:collections.deque.clear"
+      ]
+    },
+    {
+      "id": "T10",
+      "repeat": 2,
+      "latency_ms": 14.863100004731677,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "shutil:shutil.copytree",
+        "shutil:shutil.move",
+        "shutil:shutil.make_archive"
+      ]
+    },
+    {
+      "id": "T14",
+      "repeat": 1,
+      "latency_ms": 18.234299997857306,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "logging:logging.basicConfig",
+        "logging:logging.Logger.setLevel",
+        "logging:logging.Logger.level",
+        "logging:logging.info",
+        "logging:logging.critical"
+      ]
+    },
+    {
+      "id": "T09",
+      "repeat": 4,
+      "latency_ms": 17.55579999735346,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "os:os.putenv",
+        "os:os.defpath",
+        "os:os.getenv",
+        "os:os.get_exec_path",
+        "os:os.execl"
+      ]
+    },
+    {
+      "id": "T11",
+      "repeat": 3,
+      "latency_ms": 16.901000002690125,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "sqlite3:sqlite3.connect",
+        "sqlite3:sqlite3.Connection.deserialize",
+        "sqlite3:sqlite3.SQLITE_DBCONFIG_DEFENSIVE",
+        "sqlite3:sqlite3.Connection",
+        "sqlite3:sqlite3.Connection.backup"
+      ]
+    },
+    {
+      "id": "T12",
+      "repeat": 3,
+      "latency_ms": 16.690299999027047,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "zipfile:zipfile.ZipInfo.compress_type",
+        "zipfile:zipfile.ZIP_STORED",
+        "zipfile:zipfile.ZIP_DEFLATED",
+        "zipfile:zipfile.ZipFile.writestr",
+        "zipfile:zipfile.ZipFile.open"
+      ]
+    },
+    {
+      "id": "T17",
+      "repeat": 1,
+      "latency_ms": 17.978399999265093,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "math:math.isclose",
+        "math:math.sumprod",
+        "math:math.fmod",
+        "math:math.copysign",
+        "math:math.ulp"
+      ]
+    },
+    {
+      "id": "T05",
+      "repeat": 4,
+      "latency_ms": 18.346299999393523,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "datetime:datetime.date.isoformat",
+        "datetime:datetime.datetime.ctime",
+        "datetime:datetime.date.ctime",
+        "datetime:datetime.datetime.isoformat",
+        "datetime:datetime.datetime.__format__"
+      ]
+    },
+    {
+      "id": "T11",
+      "repeat": 1,
+      "latency_ms": 17.467300000134856,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "sqlite3:sqlite3.connect",
+        "sqlite3:sqlite3.Connection.deserialize",
+        "sqlite3:sqlite3.SQLITE_DBCONFIG_DEFENSIVE",
+        "sqlite3:sqlite3.Connection",
+        "sqlite3:sqlite3.Connection.backup"
+      ]
+    },
+    {
+      "id": "T15",
+      "repeat": 3,
+      "latency_ms": 17.01630000025034,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "subprocess:subprocess.run",
+        "subprocess:subprocess.Popen.wait",
+        "subprocess:subprocess.Popen.communicate",
+        "subprocess:subprocess.Popen.poll"
+      ]
+    },
+    {
+      "id": "T15",
+      "repeat": 1,
+      "latency_ms": 15.607300003466662,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "subprocess:subprocess.run",
+        "subprocess:subprocess.Popen.wait",
+        "subprocess:subprocess.Popen.communicate",
+        "subprocess:subprocess.Popen.poll"
+      ]
+    },
+    {
+      "id": "T11",
+      "repeat": 2,
+      "latency_ms": 16.388199997891206,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "sqlite3:sqlite3.connect",
+        "sqlite3:sqlite3.Connection.deserialize",
+        "sqlite3:sqlite3.SQLITE_DBCONFIG_DEFENSIVE",
+        "sqlite3:sqlite3.Connection",
+        "sqlite3:sqlite3.Connection.backup"
+      ]
+    },
+    {
+      "id": "T08",
+      "repeat": 0,
+      "latency_ms": 15.042200000607409,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "functools:functools.cache",
+        "functools:functools.lru_cache",
+        "functools:functools.cached_property",
+        "functools:functools.cmp_to_key",
+        "functools:functools.reduce"
+      ]
+    },
+    {
+      "id": "T01",
+      "repeat": 0,
+      "latency_ms": 15.161499999521766,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "json:json.JSONEncoder.encode",
+        "json:json.JSONEncoder.iterencode",
+        "json:json.dump",
+        "json:json.dumps",
+        "json:json.load"
+      ]
+    },
+    {
+      "id": "T09",
+      "repeat": 0,
+      "latency_ms": 18.08320000418462,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "os:os.putenv",
+        "os:os.defpath",
+        "os:os.getenv",
+        "os:os.get_exec_path",
+        "os:os.execl"
+      ]
+    },
+    {
+      "id": "T13",
+      "repeat": 3,
+      "latency_ms": 16.634899999189656,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "argparse:argparse.ArgumentParser.add_subparsers",
+        "argparse:argparse.ArgumentParser.set_defaults",
+        "argparse:argparse.ArgumentParser",
+        "argparse:argparse.ArgumentParser.add_argument",
+        "argparse:argparse.Action.__call__"
+      ]
+    },
+    {
+      "id": "T05",
+      "repeat": 2,
+      "latency_ms": 15.459999995073304,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "datetime:datetime.date.isoformat",
+        "datetime:datetime.datetime.ctime",
+        "datetime:datetime.date.ctime",
+        "datetime:datetime.datetime.isoformat",
+        "datetime:datetime.datetime.__format__"
+      ]
+    },
+    {
+      "id": "T19",
+      "repeat": 0,
+      "latency_ms": 18.640400005097035,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "hashlib:hashlib.file_digest",
+        "hashlib:hashlib.hash.name",
+        "hashlib:hashlib.new",
+        "hashlib:hashlib.hash.copy",
+        "hashlib:hashlib.pbkdf2_hmac"
+      ]
+    },
+    {
+      "id": "T13",
+      "repeat": 4,
+      "latency_ms": 14.551700005540624,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "argparse:argparse.ArgumentParser.add_subparsers",
+        "argparse:argparse.ArgumentParser.set_defaults",
+        "argparse:argparse.ArgumentParser",
+        "argparse:argparse.ArgumentParser.add_argument",
+        "argparse:argparse.Action.__call__"
+      ]
+    },
+    {
+      "id": "T17",
+      "repeat": 0,
+      "latency_ms": 15.722799995273817,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "math:math.isclose",
+        "math:math.sumprod",
+        "math:math.fmod",
+        "math:math.copysign",
+        "math:math.ulp"
+      ]
+    },
+    {
+      "id": "T03",
+      "repeat": 3,
+      "latency_ms": 17.712399996526074,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "pathlib:pathlib.Path.read_text",
+        "pathlib:pathlib.Path.write_text",
+        "pathlib:pathlib.PurePath",
+        "pathlib:pathlib.Path.from_uri",
+        "pathlib:pathlib.Path.rename"
+      ]
+    },
+    {
+      "id": "T19",
+      "repeat": 3,
+      "latency_ms": 15.429799997946247,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "hashlib:hashlib.file_digest",
+        "hashlib:hashlib.hash.name",
+        "hashlib:hashlib.new",
+        "hashlib:hashlib.hash.copy",
+        "hashlib:hashlib.pbkdf2_hmac"
+      ]
+    },
+    {
+      "id": "T02",
+      "repeat": 1,
+      "latency_ms": 14.31810000212863,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "csv:csv.csvreader.line_num",
+        "csv:csv.DictWriter",
+        "csv:csv.reader",
+        "csv:csv.DictReader",
+        "csv:csv.QUOTE_ALL"
+      ]
+    },
+    {
+      "id": "T15",
+      "repeat": 2,
+      "latency_ms": 17.59759999549715,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "subprocess:subprocess.run",
+        "subprocess:subprocess.Popen.wait",
+        "subprocess:subprocess.Popen.communicate",
+        "subprocess:subprocess.Popen.poll"
+      ]
+    },
+    {
+      "id": "T16",
+      "repeat": 1,
+      "latency_ms": 15.317199999117292,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "statistics:statistics.mean",
+        "statistics:statistics.geometric_mean",
+        "statistics:statistics.harmonic_mean",
+        "statistics:statistics.pvariance",
+        "statistics:statistics.variance"
+      ]
+    },
+    {
+      "id": "T17",
+      "repeat": 3,
+      "latency_ms": 15.95919999817852,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "math:math.isclose",
+        "math:math.sumprod",
+        "math:math.fmod",
+        "math:math.copysign",
+        "math:math.ulp"
+      ]
+    },
+    {
+      "id": "T19",
+      "repeat": 2,
+      "latency_ms": 14.488799999526236,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "hashlib:hashlib.file_digest",
+        "hashlib:hashlib.hash.name",
+        "hashlib:hashlib.new",
+        "hashlib:hashlib.hash.copy",
+        "hashlib:hashlib.pbkdf2_hmac"
+      ]
+    },
+    {
+      "id": "T13",
+      "repeat": 0,
+      "latency_ms": 18.000099997152574,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "argparse:argparse.ArgumentParser.add_subparsers",
+        "argparse:argparse.ArgumentParser.set_defaults",
+        "argparse:argparse.ArgumentParser",
+        "argparse:argparse.ArgumentParser.add_argument",
+        "argparse:argparse.Action.__call__"
+      ]
+    },
+    {
+      "id": "T05",
+      "repeat": 0,
+      "latency_ms": 16.160500003024936,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "datetime:datetime.date.isoformat",
+        "datetime:datetime.datetime.ctime",
+        "datetime:datetime.date.ctime",
+        "datetime:datetime.datetime.isoformat",
+        "datetime:datetime.datetime.__format__"
+      ]
+    },
+    {
+      "id": "T08",
+      "repeat": 1,
+      "latency_ms": 17.4029000045266,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "functools:functools.cache",
+        "functools:functools.lru_cache",
+        "functools:functools.cached_property",
+        "functools:functools.cmp_to_key",
+        "functools:functools.reduce"
+      ]
+    },
+    {
+      "id": "T11",
+      "repeat": 0,
+      "latency_ms": 20.55590000236407,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "sqlite3:sqlite3.connect",
+        "sqlite3:sqlite3.Connection.deserialize",
+        "sqlite3:sqlite3.SQLITE_DBCONFIG_DEFENSIVE",
+        "sqlite3:sqlite3.Connection",
+        "sqlite3:sqlite3.Connection.backup"
+      ]
+    },
+    {
+      "id": "T18",
+      "repeat": 0,
+      "latency_ms": 14.85780000075465,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "random:random.sample",
+        "random:random.choice",
+        "random:random.shuffle",
+        "random:random.SystemRandom",
+        "random:random.seed"
+      ]
+    },
+    {
+      "id": "T03",
+      "repeat": 2,
+      "latency_ms": 16.26389999728417,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "pathlib:pathlib.Path.read_text",
+        "pathlib:pathlib.Path.write_text",
+        "pathlib:pathlib.PurePath",
+        "pathlib:pathlib.Path.from_uri",
+        "pathlib:pathlib.Path.rename"
+      ]
+    },
+    {
+      "id": "T01",
+      "repeat": 2,
+      "latency_ms": 15.66399999865098,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "json:json.JSONEncoder.encode",
+        "json:json.JSONEncoder.iterencode",
+        "json:json.dump",
+        "json:json.dumps",
+        "json:json.load"
+      ]
+    },
+    {
+      "id": "T17",
+      "repeat": 2,
+      "latency_ms": 16.159900005732197,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "math:math.isclose",
+        "math:math.sumprod",
+        "math:math.fmod",
+        "math:math.copysign",
+        "math:math.ulp"
+      ]
+    },
+    {
+      "id": "T08",
+      "repeat": 2,
+      "latency_ms": 18.55099999374943,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "functools:functools.cache",
+        "functools:functools.lru_cache",
+        "functools:functools.cached_property",
+        "functools:functools.cmp_to_key",
+        "functools:functools.reduce"
+      ]
+    },
+    {
+      "id": "T06",
+      "repeat": 4,
+      "latency_ms": 16.472100003738888,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "collections:collections.Counter.elements",
+        "collections:collections.deque.count",
+        "collections:collections.Counter.most_common",
+        "collections:collections.Counter",
+        "collections:collections.deque.clear"
+      ]
+    },
+    {
+      "id": "T19",
+      "repeat": 4,
+      "latency_ms": 14.50019999901997,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "hashlib:hashlib.file_digest",
+        "hashlib:hashlib.hash.name",
+        "hashlib:hashlib.new",
+        "hashlib:hashlib.hash.copy",
+        "hashlib:hashlib.pbkdf2_hmac"
+      ]
+    },
+    {
+      "id": "T07",
+      "repeat": 0,
+      "latency_ms": 17.024799999489915,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "itertools:itertools.groupby",
+        "itertools:itertools.cycle",
+        "itertools:itertools.permutations",
+        "itertools:itertools.compress",
+        "itertools:itertools.product"
+      ]
+    },
+    {
+      "id": "T18",
+      "repeat": 1,
+      "latency_ms": 16.27819999703206,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "random:random.sample",
+        "random:random.choice",
+        "random:random.shuffle",
+        "random:random.SystemRandom",
+        "random:random.seed"
+      ]
+    },
+    {
+      "id": "T17",
+      "repeat": 4,
+      "latency_ms": 15.629599998646881,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "math:math.isclose",
+        "math:math.sumprod",
+        "math:math.fmod",
+        "math:math.copysign",
+        "math:math.ulp"
+      ]
+    },
+    {
+      "id": "T13",
+      "repeat": 2,
+      "latency_ms": 16.065099996922072,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "argparse:argparse.ArgumentParser.add_subparsers",
+        "argparse:argparse.ArgumentParser.set_defaults",
+        "argparse:argparse.ArgumentParser",
+        "argparse:argparse.ArgumentParser.add_argument",
+        "argparse:argparse.Action.__call__"
+      ]
+    },
+    {
+      "id": "T05",
+      "repeat": 1,
+      "latency_ms": 15.829099997063167,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "datetime:datetime.date.isoformat",
+        "datetime:datetime.datetime.ctime",
+        "datetime:datetime.date.ctime",
+        "datetime:datetime.datetime.isoformat",
+        "datetime:datetime.datetime.__format__"
+      ]
+    },
+    {
+      "id": "T02",
+      "repeat": 2,
+      "latency_ms": 18.03279999876395,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "csv:csv.csvreader.line_num",
+        "csv:csv.DictWriter",
+        "csv:csv.reader",
+        "csv:csv.DictReader",
+        "csv:csv.QUOTE_ALL"
+      ]
+    },
+    {
+      "id": "T14",
+      "repeat": 0,
+      "latency_ms": 16.489800000272226,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "logging:logging.basicConfig",
+        "logging:logging.Logger.setLevel",
+        "logging:logging.Logger.level",
+        "logging:logging.info",
+        "logging:logging.critical"
+      ]
+    },
+    {
+      "id": "T03",
+      "repeat": 0,
+      "latency_ms": 16.601499999524094,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "pathlib:pathlib.Path.read_text",
+        "pathlib:pathlib.Path.write_text",
+        "pathlib:pathlib.PurePath",
+        "pathlib:pathlib.Path.from_uri",
+        "pathlib:pathlib.Path.rename"
+      ]
+    },
+    {
+      "id": "T07",
+      "repeat": 4,
+      "latency_ms": 17.853999997896608,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "itertools:itertools.groupby",
+        "itertools:itertools.cycle",
+        "itertools:itertools.permutations",
+        "itertools:itertools.compress",
+        "itertools:itertools.product"
+      ]
+    },
+    {
+      "id": "T04",
+      "repeat": 2,
+      "latency_ms": 14.618799999880139,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "re:re.finditer",
+        "re:re.Pattern.search",
+        "re:re.search",
+        "re:re.Pattern.match",
+        "re:re.PatternError.pattern"
+      ]
+    },
+    {
+      "id": "T16",
+      "repeat": 0,
+      "latency_ms": 16.966800001682714,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "statistics:statistics.mean",
+        "statistics:statistics.geometric_mean",
+        "statistics:statistics.harmonic_mean",
+        "statistics:statistics.pvariance",
+        "statistics:statistics.variance"
+      ]
+    },
+    {
+      "id": "T12",
+      "repeat": 4,
+      "latency_ms": 50.38000000058673,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "zipfile:zipfile.ZipInfo.compress_type",
+        "zipfile:zipfile.ZIP_STORED",
+        "zipfile:zipfile.ZIP_DEFLATED",
+        "zipfile:zipfile.ZipFile.writestr",
+        "zipfile:zipfile.ZipFile.open"
+      ]
+    },
+    {
+      "id": "T08",
+      "repeat": 3,
+      "latency_ms": 16.62189999478869,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "functools:functools.cache",
+        "functools:functools.lru_cache",
+        "functools:functools.cached_property",
+        "functools:functools.cmp_to_key",
+        "functools:functools.reduce"
+      ]
+    },
+    {
+      "id": "T12",
+      "repeat": 0,
+      "latency_ms": 16.11560000310419,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "zipfile:zipfile.ZipInfo.compress_type",
+        "zipfile:zipfile.ZIP_STORED",
+        "zipfile:zipfile.ZIP_DEFLATED",
+        "zipfile:zipfile.ZipFile.writestr",
+        "zipfile:zipfile.ZipFile.open"
+      ]
+    },
+    {
+      "id": "T19",
+      "repeat": 1,
+      "latency_ms": 16.916599997784942,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "hashlib:hashlib.file_digest",
+        "hashlib:hashlib.hash.name",
+        "hashlib:hashlib.new",
+        "hashlib:hashlib.hash.copy",
+        "hashlib:hashlib.pbkdf2_hmac"
+      ]
+    },
+    {
+      "id": "T07",
+      "repeat": 3,
+      "latency_ms": 17.054100004315842,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "itertools:itertools.groupby",
+        "itertools:itertools.cycle",
+        "itertools:itertools.permutations",
+        "itertools:itertools.compress",
+        "itertools:itertools.product"
+      ]
+    },
+    {
+      "id": "T04",
+      "repeat": 0,
+      "latency_ms": 17.815400002291426,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "re:re.finditer",
+        "re:re.Pattern.search",
+        "re:re.search",
+        "re:re.Pattern.match",
+        "re:re.PatternError.pattern"
+      ]
+    },
+    {
+      "id": "T03",
+      "repeat": 4,
+      "latency_ms": 16.24430000083521,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "pathlib:pathlib.Path.read_text",
+        "pathlib:pathlib.Path.write_text",
+        "pathlib:pathlib.PurePath",
+        "pathlib:pathlib.Path.from_uri",
+        "pathlib:pathlib.Path.rename"
+      ]
+    },
+    {
+      "id": "T11",
+      "repeat": 4,
+      "latency_ms": 16.323199997714255,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "sqlite3:sqlite3.connect",
+        "sqlite3:sqlite3.Connection.deserialize",
+        "sqlite3:sqlite3.SQLITE_DBCONFIG_DEFENSIVE",
+        "sqlite3:sqlite3.Connection",
+        "sqlite3:sqlite3.Connection.backup"
+      ]
+    },
+    {
+      "id": "T04",
+      "repeat": 3,
+      "latency_ms": 17.17550000466872,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "re:re.finditer",
+        "re:re.Pattern.search",
+        "re:re.search",
+        "re:re.Pattern.match",
+        "re:re.PatternError.pattern"
+      ]
+    },
+    {
+      "id": "T10",
+      "repeat": 1,
+      "latency_ms": 15.585399996780325,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "shutil:shutil.copytree",
+        "shutil:shutil.move",
+        "shutil:shutil.make_archive"
+      ]
+    },
+    {
+      "id": "T18",
+      "repeat": 4,
+      "latency_ms": 16.880099996342324,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "random:random.sample",
+        "random:random.choice",
+        "random:random.shuffle",
+        "random:random.SystemRandom",
+        "random:random.seed"
+      ]
+    },
+    {
+      "id": "T10",
+      "repeat": 3,
+      "latency_ms": 16.6386999990209,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "shutil:shutil.copytree",
+        "shutil:shutil.move",
+        "shutil:shutil.make_archive"
+      ]
+    },
+    {
+      "id": "T01",
+      "repeat": 3,
+      "latency_ms": 14.230499997211155,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "json:json.JSONEncoder.encode",
+        "json:json.JSONEncoder.iterencode",
+        "json:json.dump",
+        "json:json.dumps",
+        "json:json.load"
+      ]
+    },
+    {
+      "id": "T03",
+      "repeat": 1,
+      "latency_ms": 16.151199997693766,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "pathlib:pathlib.Path.read_text",
+        "pathlib:pathlib.Path.write_text",
+        "pathlib:pathlib.PurePath",
+        "pathlib:pathlib.Path.from_uri",
+        "pathlib:pathlib.Path.rename"
+      ]
+    },
+    {
+      "id": "T06",
+      "repeat": 2,
+      "latency_ms": 16.502300000865944,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "collections:collections.Counter.elements",
+        "collections:collections.deque.count",
+        "collections:collections.Counter.most_common",
+        "collections:collections.Counter",
+        "collections:collections.deque.clear"
+      ]
+    },
+    {
+      "id": "T16",
+      "repeat": 2,
+      "latency_ms": 15.945800005283672,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "statistics:statistics.mean",
+        "statistics:statistics.geometric_mean",
+        "statistics:statistics.harmonic_mean",
+        "statistics:statistics.pvariance",
+        "statistics:statistics.variance"
+      ]
+    },
+    {
+      "id": "T15",
+      "repeat": 4,
+      "latency_ms": 14.498599994112737,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "subprocess:subprocess.run",
+        "subprocess:subprocess.Popen.wait",
+        "subprocess:subprocess.Popen.communicate",
+        "subprocess:subprocess.Popen.poll"
+      ]
+    },
+    {
+      "id": "T15",
+      "repeat": 0,
+      "latency_ms": 18.3686000018497,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "subprocess:subprocess.run",
+        "subprocess:subprocess.Popen.wait",
+        "subprocess:subprocess.Popen.communicate",
+        "subprocess:subprocess.Popen.poll"
+      ]
+    },
+    {
+      "id": "T18",
+      "repeat": 3,
+      "latency_ms": 16.925099997024518,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "random:random.sample",
+        "random:random.choice",
+        "random:random.shuffle",
+        "random:random.SystemRandom",
+        "random:random.seed"
+      ]
+    },
+    {
+      "id": "T12",
+      "repeat": 1,
+      "latency_ms": 16.126499998790678,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "zipfile:zipfile.ZipInfo.compress_type",
+        "zipfile:zipfile.ZIP_STORED",
+        "zipfile:zipfile.ZIP_DEFLATED",
+        "zipfile:zipfile.ZipFile.writestr",
+        "zipfile:zipfile.ZipFile.open"
+      ]
+    },
+    {
+      "id": "T14",
+      "repeat": 4,
+      "latency_ms": 17.476599998190068,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "logging:logging.basicConfig",
+        "logging:logging.Logger.setLevel",
+        "logging:logging.Logger.level",
+        "logging:logging.info",
+        "logging:logging.critical"
+      ]
+    },
+    {
+      "id": "T09",
+      "repeat": 2,
+      "latency_ms": 18.51469999382971,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "os:os.putenv",
+        "os:os.defpath",
+        "os:os.getenv",
+        "os:os.get_exec_path",
+        "os:os.execl"
+      ]
+    },
+    {
+      "id": "T20",
+      "repeat": 4,
+      "latency_ms": 15.25019999826327,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "decimal:decimal.Decimal.adjusted",
+        "decimal:decimal.Decimal.to_eng_string",
+        "decimal:decimal.Context.to_eng_string",
+        "decimal:decimal.Decimal.shift",
+        "decimal:decimal.Decimal.logb"
+      ]
+    },
+    {
+      "id": "T05",
+      "repeat": 3,
+      "latency_ms": 17.64510000066366,
+      "recall_at_5": 0.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "datetime:datetime.date.isoformat",
+        "datetime:datetime.datetime.ctime",
+        "datetime:datetime.date.ctime",
+        "datetime:datetime.datetime.isoformat",
+        "datetime:datetime.datetime.__format__"
+      ]
+    },
+    {
+      "id": "T07",
+      "repeat": 1,
+      "latency_ms": 15.957999996317085,
+      "recall_at_5": 1.0,
+      "status": "找到",
+      "retrieved_doc_ids": [
+        "itertools:itertools.groupby",
+        "itertools:itertools.cycle",
+        "itertools:itertools.permutations",
+        "itertools:itertools.compress",
+        "itertools:itertools.product"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "created_at": "2026-11-12T14:10:25.829694+08:00",
+  "document_count": 1388,
+  "source_page_count": 20,
+  "unit": "独立 API 说明条目，不将分块计入原始文档数量",
+  "documents_sha256": "776774874b99a4c39b6f1f7b55aca260016a9ce7a4f62af3308c45e6b3077791",
+  "license": "Python documentation PSF License; see data/LICENSE-python.txt",
+  "sources": [
+    {
+      "module": "json",
+      "url": "https://docs.python.org/zh-cn/3.13/library/json.html",
+      "sha256": "ee92253497ba07cfa4f03feedf5dcf9f5b9a160f1ba5c6cb559eabf6fdc2833b",
+      "documents": 17
+    },
+    {
+      "module": "csv",
+      "url": "https://docs.python.org/zh-cn/3.13/library/csv.html",
+      "sha256": "da57e489219a59eb5968c8b03363c2badd5057d404e277382a336ab81cd12965",
+      "documents": 40
+    },
+    {
+      "module": "pathlib",
+      "url": "https://docs.python.org/zh-cn/3.13/library/pathlib.html",
+      "sha256": "3a0510661bd92299775f4eb14b6de2b9a34b59cdff16654c00ae0056c71a41bc",
+      "documents": 72
+    },
+    {
+      "module": "re",
+      "url": "https://docs.python.org/zh-cn/3.13/library/re.html",
+      "sha256": "527f3268811e08f895953345a01dcc1e4c5f0edf87379613e0508eb2ae5356df",
+      "documents": 54
+    },
+    {
+      "module": "datetime",
+      "url": "https://docs.python.org/zh-cn/3.13/library/datetime.html",
+      "sha256": "4b0c635cdd4eb46dbd51522633f3ad8b1f02ba9ff3d75303265644cdae5bd3a4",
+      "documents": 107
+    },
+    {
+      "module": "collections",
+      "url": "https://docs.python.org/zh-cn/3.13/library/collections.html",
+      "sha256": "3cc0f2a027f887164c389172364bd5d9550439946155c5d88b94e2674f14fea6",
+      "documents": 45
+    },
+    {
+      "module": "itertools",
+      "url": "https://docs.python.org/zh-cn/3.13/library/itertools.html",
+      "sha256": "527ececa985e487812772979c921cd693999a7e5e77615c8a1f1c2cec2eac245",
+      "documents": 21
+    },
+    {
+      "module": "functools",
+      "url": "https://docs.python.org/zh-cn/3.13/library/functools.html",
+      "sha256": "ac89309471b7ac09c2b6e4642c73113b24cb9ff49d94cf3047bdd5b6de8e2615",
+      "documents": 15
+    },
+    {
+      "module": "os",
+      "url": "https://docs.python.org/zh-cn/3.13/library/os.html",
+      "sha256": "9b7d650886096b21526f3c81efb1f8a189e1d207ce3417ef38393613ff545fc5",
+      "documents": 367
+    },
+    {
+      "module": "shutil",
+      "url": "https://docs.python.org/zh-cn/3.13/library/shutil.html",
+      "sha256": "2958075720a251be4e0a9c993f046557b3f056f9ba3ecc2a552c78101876aa53",
+      "documents": 26
+    },
+    {
+      "module": "sqlite3",
+      "url": "https://docs.python.org/zh-cn/3.13/library/sqlite3.html",
+      "sha256": "ece41ff53b970427a663a190e7608bb6fce1f270f6bc2023ae5a3711a76e4cae",
+      "documents": 87
+    },
+    {
+      "module": "zipfile",
+      "url": "https://docs.python.org/zh-cn/3.13/library/zipfile.html",
+      "sha256": "4d06026d61292d178c43e38f491ad6e21ea687968f169dcd07a7bade433a8742",
+      "documents": 62
+    },
+    {
+      "module": "argparse",
+      "url": "https://docs.python.org/zh-cn/3.13/library/argparse.html",
+      "sha256": "c80e5c032ee547af6299ffedab996bfe03ec4d869143906481e9d13882e6dd64",
+      "documents": 26
+    },
+    {
+      "module": "logging",
+      "url": "https://docs.python.org/zh-cn/3.13/library/logging.html",
+      "sha256": "075cc3356bed393f8b51cf71ba25232b146856c59576fa406fc8530ac9ccdaa8",
+      "documents": 84
+    },
+    {
+      "module": "subprocess",
+      "url": "https://docs.python.org/zh-cn/3.13/library/subprocess.html",
+      "sha256": "8f8d071a80afff935ccb85d8a1a7ad6c724272d4728878b07ace968d632707e4",
+      "documents": 68
+    },
+    {
+      "module": "statistics",
+      "url": "https://docs.python.org/zh-cn/3.13/library/statistics.html",
+      "sha256": "5c5c63745b8f53affa8bb25d0a495140a4a5dd39e43e5599fa1638f12ffb0753",
+      "documents": 35
+    },
+    {
+      "module": "math",
+      "url": "https://docs.python.org/zh-cn/3.13/library/math.html",
+      "sha256": "962500e415258a9bff0a47ee4131035d86f02116bec610842d15ca5eb40416a6",
+      "documents": 62
+    },
+    {
+      "module": "random",
+      "url": "https://docs.python.org/zh-cn/3.13/library/random.html",
+      "sha256": "76a53da3d47b0eb760a20897a27884704c3d6f3f94dfb38efb47fde7de228e4e",
+      "documents": 32
+    },
+    {
+      "module": "hashlib",
+      "url": "https://docs.python.org/zh-cn/3.13/library/hashlib.html",
+      "sha256": "6dd1f0ba68b2f9fd6f294e1f4e55efa3e420e160d96d994ddc5e2efa63c47dbf",
+      "documents": 15
+    },
+    {
+      "module": "decimal",
+      "url": "https://docs.python.org/zh-cn/3.13/library/decimal.html",
+      "sha256": "46840cc880b8f9b95c911c1f91ee803a4bac777a0a371f38231a6e47425df64c",
+      "documents": 153
+    }
+  ]
+}

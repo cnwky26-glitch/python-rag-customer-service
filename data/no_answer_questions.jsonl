@@ -1,0 +1,6 @@
+{"id":"N01","question":"我的快递丢失了，赔偿多少钱？","relevant_doc_ids":[]}
+{"id":"N02","question":"我要预约明天下午的牙科门诊。","relevant_doc_ids":[]}
+{"id":"N03","question":"今天北京到上海的高铁票价是多少？","relevant_doc_ids":[]}
+{"id":"N04","question":"请帮我查询本月水电费。","relevant_doc_ids":[]}
+{"id":"N05","question":"如何把对象转换成 JSON 字符串？","module":"unknown_module","relevant_doc_ids":[]}
+{"id":"N06","question":"如何读取文本文件？","module":"pathlib","version":"0.0","relevant_doc_ids":[]}

@@ -1,0 +1,16 @@
+{"id":"D01","question":"如何把包含 JSON 的字符串反序列化为 Python 对象？","module":"json","relevant_doc_ids":["json:json.loads"]}
+{"id":"D02","question":"怎样通过路径对象创建目录，并自动创建不存在的父目录？","module":"pathlib","relevant_doc_ids":["pathlib:pathlib.Path.mkdir"]}
+{"id":"D03","question":"怎样用正则表达式替换字符串中匹配到的部分？","module":"re","relevant_doc_ids":["re:re.sub"]}
+{"id":"D04","question":"如何在一个字符或多个分隔符之间猜测 CSV 文件使用的格式？","module":"csv","relevant_doc_ids":["csv:csv.Sniffer.sniff"]}
+{"id":"D05","question":"如何获取当前工作目录的路径字符串？","module":"os","relevant_doc_ids":["os:os.getcwd"]}
+{"id":"D06","question":"如何计算一个数的平方根？","module":"math","relevant_doc_ids":["math:math.sqrt"]}
+{"id":"D07","question":"如何计算数据的中位数？","module":"statistics","relevant_doc_ids":["statistics:statistics.median"]}
+{"id":"D08","question":"如何把列表里的元素打乱顺序并原地修改列表？","module":"random","relevant_doc_ids":["random:random.shuffle"]}
+{"id":"D09","question":"我的网购订单什么时候发货？","relevant_doc_ids":[]}
+{"id":"D10","question":"怎样申请信用卡退款？","relevant_doc_ids":[]}
+{"id":"D11","question":"我的手机屏幕碎了，换屏收费多少？","relevant_doc_ids":[]}
+{"id":"D12","question":"学校宿舍的空调坏了在哪里报修？","relevant_doc_ids":[]}
+{"id":"D13","question":"这家健身房的年卡能不能退？","relevant_doc_ids":[]}
+{"id":"D14","question":"请给我开一张治疗感冒的药方。","relevant_doc_ids":[]}
+{"id":"D15","question":"校园食堂今天的午餐菜单是什么？","relevant_doc_ids":[]}
+{"id":"D16","question":"下一班去机场的大巴几点开？","relevant_doc_ids":[]}

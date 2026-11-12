@@ -1,0 +1,243 @@
+embedded 128/2084
+embedded 256/2084
+embedded 384/2084
+embedded 512/2084
+embedded 640/2084
+embedded 768/2084
+embedded 896/2084
+embedded 1024/2084
+embedded 1152/2084
+embedded 1280/2084
+embedded 1408/2084
+embedded 1536/2084
+embedded 1664/2084
+embedded 1792/2084
+embedded 1920/2084
+embedded 2048/2084
+embedded 2084/2084
+[2026-11-12T06:12:54Z WARN  lance::dataset::write::insert] No existing dataset at C:\Prj\AIDBS\期末作业\storage\lancedb\comparison_180_30.lance, it will be created
+embedded 128/2836
+embedded 256/2836
+embedded 384/2836
+embedded 512/2836
+embedded 640/2836
+embedded 768/2836
+embedded 896/2836
+embedded 1024/2836
+embedded 1152/2836
+embedded 1280/2836
+embedded 1408/2836
+embedded 1536/2836
+embedded 1664/2836
+embedded 1792/2836
+embedded 1920/2836
+embedded 2048/2836
+embedded 2176/2836
+embedded 2304/2836
+embedded 2432/2836
+embedded 2560/2836
+embedded 2688/2836
+embedded 2816/2836
+embedded 2836/2836
+Evaluate chunk=180/30 mode=vector threshold=0.5
+Evaluate chunk=180/30 mode=hybrid threshold=0.5
+Evaluate chunk=300/50 mode=vector threshold=0.5
+Evaluate chunk=300/50 mode=hybrid threshold=0.5
+[2026-11-12T06:13:35Z WARN  lance::dataset::write::insert] No existing dataset at C:\Prj\AIDBS\期末作业\storage\lancedb\comparison_420_70.lance, it will be created
+embedded 128/1786
+embedded 256/1786
+embedded 384/1786
+embedded 512/1786
+embedded 640/1786
+embedded 768/1786
+embedded 896/1786
+embedded 1024/1786
+embedded 1152/1786
+embedded 1280/1786
+embedded 1408/1786
+embedded 1536/1786
+embedded 1664/1786
+embedded 1786/1786
+Evaluate chunk=420/70 mode=vector threshold=0.5
+Evaluate chunk=420/70 mode=hybrid threshold=0.5
+{
+  "created_at": "2026-11-12T14:14:27.144687+08:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 204 Stepping 3, GenuineIntel",
+    "packages": {
+      "lancedb": "0.41.0",
+      "fastembed": "0.9.1",
+      "onnxruntime": "1.31.1",
+      "numpy": "2.5.4",
+      "pyarrow": "26.0.1"
+    }
+  },
+  "model": {
+    "model": "BAAI/bge-small-zh-v1.5",
+    "dimension": 512,
+    "threads": 4,
+    "batch_size": 32,
+    "query_prefix": "为这个句子生成表示以用于检索相关文章："
+  },
+  "documents": 1388,
+  "test_questions": 20,
+  "test_sha256": "59046da608a0ba8c01adba794a22a835fcf8a05873303e7ed91c555a4997380b",
+  "repeats": 5,
+  "threshold": 0.5,
+  "experiments": [
+    {
+      "name": "chunk_180_30_vector",
+      "chunk_size": 180,
+      "overlap": 30,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 2836,
+      "build_seconds": 35.904905499999586,
+      "official": false,
+      "recall_at_5": 0.7,
+      "p50_ms": 10.951199998089578,
+      "p95_ms": 13.047209994692821,
+      "p99_ms": 13.263729998434433,
+      "mean_ms": 11.197178000002168,
+      "cold_first_query_ms": 15.926400003081653,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.35,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.65,
+        "5": 0.7
+      }
+    },
+    {
+      "name": "chunk_180_30_hybrid",
+      "chunk_size": 180,
+      "overlap": 30,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 2836,
+      "build_seconds": 35.904905499999586,
+      "official": false,
+      "recall_at_5": 0.8,
+      "p50_ms": 16.704999998182757,
+      "p95_ms": 20.427484994070255,
+      "p99_ms": 22.178859997730033,
+      "mean_ms": 17.277524999444722,
+      "cold_first_query_ms": 22.287299994786736,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.5,
+        "3": 0.6,
+        "4": 0.8,
+        "5": 0.8
+      }
+    },
+    {
+      "name": "chunk_300_50_vector",
+      "chunk_size": 300,
+      "overlap": 50,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 2084,
+      "build_seconds": 39.68352679999953,
+      "official": false,
+      "recall_at_5": 0.65,
+      "p50_ms": 10.93504999880679,
+      "p95_ms": 12.655640002412838,
+      "p99_ms": 13.573315995308807,
+      "mean_ms": 11.004524999807472,
+      "cold_first_query_ms": 10.85869999951683,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.6,
+        "5": 0.65
+      }
+    },
+    {
+      "name": "chunk_300_50_hybrid",
+      "chunk_size": 300,
+      "overlap": 50,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 2084,
+      "build_seconds": 39.68352679999953,
+      "official": true,
+      "recall_at_5": 0.75,
+      "p50_ms": 16.217349999351427,
+      "p95_ms": 19.306660002621356,
+      "p99_ms": 20.07139699868276,
+      "mean_ms": 16.480743000211078,
+      "cold_first_query_ms": 15.993500004697125,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.4,
+        "2": 0.5,
+        "3": 0.55,
+        "4": 0.75,
+        "5": 0.75
+      }
+    },
+    {
+      "name": "chunk_420_70_vector",
+      "chunk_size": 420,
+      "overlap": 70,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 1786,
+      "build_seconds": 46.14965669999947,
+      "official": false,
+      "recall_at_5": 0.65,
+      "p50_ms": 11.150850001286017,
+      "p95_ms": 12.762714995187707,
+      "p99_ms": 13.0437299967889,
+      "mean_ms": 11.166076999506913,
+      "cold_first_query_ms": 14.428900001803413,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.55,
+        "3": 0.55,
+        "4": 0.65,
+        "5": 0.65
+      }
+    },
+    {
+      "name": "chunk_420_70_hybrid",
+      "chunk_size": 420,
+      "overlap": 70,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 1786,
+      "build_seconds": 46.14965669999947,
+      "official": false,
+      "recall_at_5": 0.8,
+      "p50_ms": 16.716450001695193,
+      "p95_ms": 18.44463499946869,
+      "p99_ms": 19.357286995509646,
+      "mean_ms": 16.592023000121117,
+      "cold_first_query_ms": 20.595900001353584,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.35,
+        "2": 0.55,
+        "3": 0.6,
+        "4": 0.7,
+        "5": 0.8
+      }
+    }
+  ],
+  "before_threshold_tuning": {
+    "recall_at_5": 0.75,
+    "p95_ms": 18.86929499778489
+  },
+  "no_answer_rejection_before": 1.0,
+  "no_answer_rejection_after": 1.0,
+  "elapsed_seconds": 132.89355280000018,
+  "metric_definition": "doc-level macro Recall@5; unique doc_id; one pre-labelled target per test question; latency includes embedding, filters, both retrieval routes, fusion and thresholding; excludes model loading and build; serial warm CPU requests; numpy linear percentile"
+}

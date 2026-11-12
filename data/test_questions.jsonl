@@ -1,0 +1,20 @@
+{"id":"T01","question":"怎样把 Python 对象转换成 JSON 格式的字符串返回？","module":"json","relevant_doc_ids":["json:json.dumps"]}
+{"id":"T02","question":"读取 CSV 时，如何让每行数据按表头列名映射成字典？","module":"csv","relevant_doc_ids":["csv:csv.DictReader"]}
+{"id":"T03","question":"如何通过 Path 直接读取整个文本文件并得到解码后的字符串？","module":"pathlib","relevant_doc_ids":["pathlib:pathlib.Path.read_text"]}
+{"id":"T04","question":"正则表达式如何一次返回字符串中所有不重叠的匹配结果？","module":"re","relevant_doc_ids":["re:re.findall"]}
+{"id":"T05","question":"给定日期字符串和格式，如何解析出 datetime 对象？","module":"datetime","relevant_doc_ids":["datetime:datetime.datetime.strptime"]}
+{"id":"T06","question":"想统计列表中每种元素出现了多少次，应该用哪种计数容器？","module":"collections","relevant_doc_ids":["collections:collections.Counter"]}
+{"id":"T07","question":"如何把迭代器里连续具有相同键的元素分成一组？为什么通常要先排序？","module":"itertools","relevant_doc_ids":["itertools:itertools.groupby"]}
+{"id":"T08","question":"如何缓存函数最近调用的结果，避免相同参数反复计算？","module":"functools","relevant_doc_ids":["functools:functools.lru_cache"]}
+{"id":"T09","question":"读取指定名称的环境变量，不存在时使用默认值，应该调用什么？","module":"os","relevant_doc_ids":["os:os.getenv"]}
+{"id":"T10","question":"如何递归复制整个目录树到另一个目录？","module":"shutil","relevant_doc_ids":["shutil:shutil.copytree"]}
+{"id":"T11","question":"怎样打开 SQLite 数据库连接，或用 :memory: 创建内存数据库？","module":"sqlite3","relevant_doc_ids":["sqlite3:sqlite3.connect"]}
+{"id":"T12","question":"如何把 ZIP 压缩包里的全部成员解压到指定目录？","module":"zipfile","relevant_doc_ids":["zipfile:zipfile.ZipFile.extractall"]}
+{"id":"T13","question":"命令行解析器如何声明一个参数，并设置它的类型、默认值和帮助信息？","module":"argparse","relevant_doc_ids":["argparse:argparse.ArgumentParser.add_argument"]}
+{"id":"T14","question":"如何给根日志记录器做基本配置，例如设置日志级别和输出文件？","module":"logging","relevant_doc_ids":["logging:logging.basicConfig"]}
+{"id":"T15","question":"怎样执行外部命令并等待结束，获取 CompletedProcess 结果？","module":"subprocess","relevant_doc_ids":["subprocess:subprocess.run"]}
+{"id":"T16","question":"怎样求一组数的算术平均值？空数据会发生什么？","module":"statistics","relevant_doc_ids":["statistics:statistics.mean"]}
+{"id":"T17","question":"浮点数不宜直接比较相等，如何按相对和绝对容差判断接近？","module":"math","relevant_doc_ids":["math:math.isclose"]}
+{"id":"T18","question":"如何从序列中不放回地随机抽取 k 个元素，同时不改变原序列？","module":"random","relevant_doc_ids":["random:random.sample"]}
+{"id":"T19","question":"如何通过算法名称字符串创建哈希对象，例如传入 sha256？","module":"hashlib","relevant_doc_ids":["hashlib:hashlib.new"]}
+{"id":"T20","question":"如何让 Decimal 按另一个数的指数保留固定小数位？","module":"decimal","relevant_doc_ids":["decimal:decimal.Decimal.quantize"]}

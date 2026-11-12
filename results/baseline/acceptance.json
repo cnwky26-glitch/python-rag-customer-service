@@ -1,0 +1,5 @@
+{
+  "empty_query_rejected": true,
+  "filter_and_threshold_checked": 20,
+  "empty_module_and_version_return_not_found": true
+}

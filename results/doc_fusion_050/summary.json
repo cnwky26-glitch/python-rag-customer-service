@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-11-12T14:21:34.554470+08:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 204 Stepping 3, GenuineIntel",
+    "packages": {
+      "lancedb": "0.41.0",
+      "fastembed": "0.9.1",
+      "onnxruntime": "1.31.1",
+      "numpy": "2.5.4",
+      "pyarrow": "26.0.1"
+    }
+  },
+  "model": {
+    "model": "BAAI/bge-small-zh-v1.5",
+    "dimension": 512,
+    "threads": 4,
+    "batch_size": 32,
+    "query_prefix": "为这个句子生成表示以用于检索相关文章："
+  },
+  "documents": 1388,
+  "test_questions": 20,
+  "test_sha256": "59046da608a0ba8c01adba794a22a835fcf8a05873303e7ed91c555a4997380b",
+  "repeats": 5,
+  "threshold": 0.5,
+  "experiments": [
+    {
+      "name": "chunk_180_30_vector",
+      "chunk_size": 180,
+      "overlap": 30,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 2836,
+      "build_seconds": 36.98592769999959,
+      "official": false,
+      "recall_at_5": 0.7,
+      "p50_ms": 11.258149996137945,
+      "p95_ms": 13.772850003806525,
+      "p99_ms": 15.206672002095738,
+      "mean_ms": 11.518319000024348,
+      "cold_first_query_ms": 15.919700002996251,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.35,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.65,
+        "5": 0.7
+      }
+    },
+    {
+      "name": "chunk_180_30_hybrid",
+      "chunk_size": 180,
+      "overlap": 30,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 2836,
+      "build_seconds": 36.98592769999959,
+      "official": false,
+      "recall_at_5": 0.8,
+      "p50_ms": 17.0753499987768,
+      "p95_ms": 20.944020001843455,
+      "p99_ms": 24.59993199452597,
+      "mean_ms": 17.580576999971527,
+      "cold_first_query_ms": 25.0679000018863,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.55,
+        "3": 0.55,
+        "4": 0.8,
+        "5": 0.8
+      }
+    },
+    {
+      "name": "chunk_300_50_vector",
+      "chunk_size": 300,
+      "overlap": 50,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 2084,
+      "build_seconds": 43.14405560000159,
+      "official": false,
+      "recall_at_5": 0.65,
+      "p50_ms": 10.91295000151149,
+      "p95_ms": 12.901464999595191,
+      "p99_ms": 14.880601994591432,
+      "mean_ms": 11.03837500057125,
+      "cold_first_query_ms": 11.068200001318473,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.6,
+        "5": 0.65
+      }
+    },
+    {
+      "name": "chunk_300_50_hybrid",
+      "chunk_size": 300,
+      "overlap": 50,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 2084,
+      "build_seconds": 43.14405560000159,
+      "official": true,
+      "recall_at_5": 0.8,
+      "p50_ms": 16.7175499991572,
+      "p95_ms": 19.279904999348215,
+      "p99_ms": 20.361675004605786,
+      "mean_ms": 16.655069000116782,
+      "cold_first_query_ms": 16.248699997959193,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.4,
+        "2": 0.45,
+        "3": 0.55,
+        "4": 0.7,
+        "5": 0.8
+      }
+    },
+    {
+      "name": "chunk_420_70_vector",
+      "chunk_size": 420,
+      "overlap": 70,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 1786,
+      "build_seconds": 46.811165499995695,
+      "official": false,
+      "recall_at_5": 0.65,
+      "p50_ms": 11.397850001230836,
+      "p95_ms": 13.209185000232536,
+      "p99_ms": 14.228948000236418,
+      "mean_ms": 11.451046000074712,
+      "cold_first_query_ms": 14.62790000368841,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.55,
+        "3": 0.55,
+        "4": 0.65,
+        "5": 0.65
+      }
+    },
+    {
+      "name": "chunk_420_70_hybrid",
+      "chunk_size": 420,
+      "overlap": 70,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 1786,
+      "build_seconds": 46.811165499995695,
+      "official": false,
+      "recall_at_5": 0.85,
+      "p50_ms": 16.798800003016368,
+      "p95_ms": 19.421114994838717,
+      "p99_ms": 20.339656001233383,
+      "mean_ms": 16.89068900013808,
+      "cold_first_query_ms": 21.762699994724244,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.35,
+        "2": 0.45,
+        "3": 0.7,
+        "4": 0.8,
+        "5": 0.85
+      }
+    }
+  ],
+  "before_threshold_tuning": {
+    "recall_at_5": 0.8,
+    "p95_ms": 18.684349999239203
+  },
+  "no_answer_rejection_before": 1.0,
+  "no_answer_rejection_after": 1.0,
+  "elapsed_seconds": 138.23936539999704,
+  "metric_definition": "doc-level macro Recall@5; unique doc_id; one pre-labelled target per test question; latency includes embedding, filters, both retrieval routes, fusion and thresholding; excludes model loading and build; serial warm CPU requests; numpy linear percentile"
+}

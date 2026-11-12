@@ -1,0 +1,94 @@
+{
+  "documents": 1388,
+  "chunks": 2836,
+  "chunk_size": 180,
+  "overlap": 30,
+  "build_seconds": 36.98592769999959,
+  "schema": "chunk_id: string\ndoc_id: string\ntitle: string\ntext: string\nmodule: string\nversion: string\nlanguage: string\nsource: string\nstart: int64\nend: int64\nterms: string\nvector: fixed_size_list<item: float>[512]\n  child 0, item: float",
+  "indexes": [
+    {
+      "name": "doc_id_idx",
+      "type": "BTree",
+      "columns": [
+        "doc_id"
+      ],
+      "stats": {
+        "num_indexed_rows": 2836,
+        "num_unindexed_rows": 0,
+        "index_type": "BTREE",
+        "distance_type": null,
+        "num_indices": 1
+      }
+    },
+    {
+      "name": "language_idx",
+      "type": "Bitmap",
+      "columns": [
+        "language"
+      ],
+      "stats": {
+        "num_indexed_rows": 2836,
+        "num_unindexed_rows": 0,
+        "index_type": "BITMAP",
+        "distance_type": null,
+        "num_indices": 1
+      }
+    },
+    {
+      "name": "module_idx",
+      "type": "Bitmap",
+      "columns": [
+        "module"
+      ],
+      "stats": {
+        "num_indexed_rows": 2836,
+        "num_unindexed_rows": 0,
+        "index_type": "BITMAP",
+        "distance_type": null,
+        "num_indices": 1
+      }
+    },
+    {
+      "name": "terms_idx",
+      "type": "FTS",
+      "columns": [
+        "terms"
+      ],
+      "stats": {
+        "num_indexed_rows": 2836,
+        "num_unindexed_rows": 0,
+        "index_type": "FTS",
+        "distance_type": null,
+        "num_indices": 1
+      }
+    },
+    {
+      "name": "vector_idx",
+      "type": "IvfFlat",
+      "columns": [
+        "vector"
+      ],
+      "stats": {
+        "num_indexed_rows": 2836,
+        "num_unindexed_rows": 0,
+        "index_type": "IVF_FLAT",
+        "distance_type": "cosine",
+        "num_indices": 1
+      }
+    },
+    {
+      "name": "version_idx",
+      "type": "Bitmap",
+      "columns": [
+        "version"
+      ],
+      "stats": {
+        "num_indexed_rows": 2836,
+        "num_unindexed_rows": 0,
+        "index_type": "BITMAP",
+        "distance_type": null,
+        "num_indices": 1
+      }
+    }
+  ]
+}

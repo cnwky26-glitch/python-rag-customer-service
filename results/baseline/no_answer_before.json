@@ -1,0 +1,164 @@
+{
+  "recall_at_5": null,
+  "recall_curve": {},
+  "p50_ms": 15.568450002319878,
+  "p95_ms": 18.76070000434993,
+  "p99_ms": 19.18182000372326,
+  "mean_ms": 15.233483335274892,
+  "cold_first_query_ms": 17.888700000185054,
+  "request_count": 6,
+  "rejection_rate": 1.0,
+  "questions": [
+    {
+      "id": "N01",
+      "question": "我的快递丢失了，赔偿多少钱？",
+      "relevant_doc_ids": [],
+      "recall_at_5": null,
+      "response": {
+        "status": "未找到",
+        "results": [],
+        "filters": {
+          "version": "3.13"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 16.854800000146497
+      }
+    },
+    {
+      "id": "N02",
+      "question": "我要预约明天下午的牙科门诊。",
+      "relevant_doc_ids": [],
+      "recall_at_5": null,
+      "response": {
+        "status": "未找到",
+        "results": [],
+        "filters": {
+          "version": "3.13"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 14.282100004493259
+      }
+    },
+    {
+      "id": "N03",
+      "question": "今天北京到上海的高铁票价是多少？",
+      "relevant_doc_ids": [],
+      "recall_at_5": null,
+      "response": {
+        "status": "未找到",
+        "results": [],
+        "filters": {
+          "version": "3.13"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 19.287100003566593
+      }
+    },
+    {
+      "id": "N04",
+      "question": "请帮我查询本月水电费。",
+      "relevant_doc_ids": [],
+      "recall_at_5": null,
+      "response": {
+        "status": "未找到",
+        "results": [],
+        "filters": {
+          "version": "3.13"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 17.181500006699935
+      }
+    },
+    {
+      "id": "N05",
+      "question": "如何把对象转换成 JSON 字符串？",
+      "module": "unknown_module",
+      "relevant_doc_ids": [],
+      "recall_at_5": null,
+      "response": {
+        "status": "未找到",
+        "results": [],
+        "filters": {
+          "version": "3.13",
+          "module": "unknown_module"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 12.815499998396263
+      }
+    },
+    {
+      "id": "N06",
+      "question": "如何读取文本文件？",
+      "module": "pathlib",
+      "version": "0.0",
+      "relevant_doc_ids": [],
+      "recall_at_5": null,
+      "response": {
+        "status": "未找到",
+        "results": [],
+        "filters": {
+          "version": "0.0",
+          "module": "pathlib"
+        },
+        "threshold": 0.5,
+        "mode": "hybrid",
+        "latency_ms": 10.97989999834681
+      }
+    }
+  ],
+  "requests": [
+    {
+      "id": "N03",
+      "repeat": 0,
+      "latency_ms": 19.287100003566593,
+      "recall_at_5": null,
+      "status": "未找到",
+      "retrieved_doc_ids": []
+    },
+    {
+      "id": "N01",
+      "repeat": 0,
+      "latency_ms": 16.854800000146497,
+      "recall_at_5": null,
+      "status": "未找到",
+      "retrieved_doc_ids": []
+    },
+    {
+      "id": "N04",
+      "repeat": 0,
+      "latency_ms": 17.181500006699935,
+      "recall_at_5": null,
+      "status": "未找到",
+      "retrieved_doc_ids": []
+    },
+    {
+      "id": "N06",
+      "repeat": 0,
+      "latency_ms": 10.97989999834681,
+      "recall_at_5": null,
+      "status": "未找到",
+      "retrieved_doc_ids": []
+    },
+    {
+      "id": "N05",
+      "repeat": 0,
+      "latency_ms": 12.815499998396263,
+      "recall_at_5": null,
+      "status": "未找到",
+      "retrieved_doc_ids": []
+    },
+    {
+      "id": "N02",
+      "repeat": 0,
+      "latency_ms": 14.282100004493259,
+      "recall_at_5": null,
+      "status": "未找到",
+      "retrieved_doc_ids": []
+    }
+  ]
+}

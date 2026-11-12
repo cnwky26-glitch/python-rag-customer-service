@@ -1,0 +1,38 @@
+[data]
+version = "3.13"
+language = "zh-cn"
+min_documents = 200
+modules = ["json", "csv", "pathlib", "re", "datetime", "collections", "itertools", "functools", "os", "shutil", "sqlite3", "zipfile", "argparse", "logging", "subprocess", "statistics", "math", "random", "hashlib", "decimal"]
+
+[embedding]
+model = "BAAI/bge-small-zh-v1.5"
+dimension = 512
+threads = 4
+batch_size = 32
+query_prefix = "为这个句子生成表示以用于检索相关文章："
+
+[chunking]
+chunk_size = 300
+overlap = 50
+title_limit = 64
+
+[database]
+path = "storage/lancedb"
+table = "python_support"
+batch_size = 128
+num_partitions = 16
+nprobes = 16
+
+[retrieval]
+top_k = 5
+candidate_k = 30
+similarity_threshold = 0.5
+rrf_k = 60
+vector_weight = 0.5
+
+[evaluation]
+repeats = 5
+seed = 20261112
+thresholds = [0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80]
+chunk_sizes = [180, 300, 420]
+overlaps = [30, 50, 70]

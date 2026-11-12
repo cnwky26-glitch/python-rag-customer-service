@@ -1,0 +1,300 @@
+{
+  "rows": [
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.3,
+      "threshold": 0.4,
+      "dev_recall_at_5": 0.875,
+      "dev_rejection_rate": 0.5,
+      "balanced_score": 0.6875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.3,
+      "threshold": 0.45,
+      "dev_recall_at_5": 0.875,
+      "dev_rejection_rate": 0.875,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.3,
+      "threshold": 0.5,
+      "dev_recall_at_5": 0.875,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.9375
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.3,
+      "threshold": 0.55,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.3,
+      "threshold": 0.6,
+      "dev_recall_at_5": 0.375,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.6875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.3,
+      "threshold": 0.65,
+      "dev_recall_at_5": 0.0,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.5
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.5,
+      "threshold": 0.4,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 0.5,
+      "balanced_score": 0.625
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.5,
+      "threshold": 0.45,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 0.875,
+      "balanced_score": 0.8125
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.5,
+      "threshold": 0.5,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.5,
+      "threshold": 0.55,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.5,
+      "threshold": 0.6,
+      "dev_recall_at_5": 0.375,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.6875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.5,
+      "threshold": 0.65,
+      "dev_recall_at_5": 0.0,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.5
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.7,
+      "threshold": 0.4,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 0.5,
+      "balanced_score": 0.625
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.7,
+      "threshold": 0.45,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 0.875,
+      "balanced_score": 0.8125
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.7,
+      "threshold": 0.5,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.7,
+      "threshold": 0.55,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.7,
+      "threshold": 0.6,
+      "dev_recall_at_5": 0.375,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.6875
+    },
+    {
+      "candidate_k": 30,
+      "vector_weight": 0.7,
+      "threshold": 0.65,
+      "dev_recall_at_5": 0.0,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.5
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.3,
+      "threshold": 0.4,
+      "dev_recall_at_5": 0.875,
+      "dev_rejection_rate": 0.5,
+      "balanced_score": 0.6875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.3,
+      "threshold": 0.45,
+      "dev_recall_at_5": 0.875,
+      "dev_rejection_rate": 0.875,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.3,
+      "threshold": 0.5,
+      "dev_recall_at_5": 0.875,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.9375
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.3,
+      "threshold": 0.55,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.3,
+      "threshold": 0.6,
+      "dev_recall_at_5": 0.375,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.6875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.3,
+      "threshold": 0.65,
+      "dev_recall_at_5": 0.0,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.5
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.5,
+      "threshold": 0.4,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 0.5,
+      "balanced_score": 0.625
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.5,
+      "threshold": 0.45,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 0.875,
+      "balanced_score": 0.8125
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.5,
+      "threshold": 0.5,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.5,
+      "threshold": 0.55,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.5,
+      "threshold": 0.6,
+      "dev_recall_at_5": 0.375,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.6875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.5,
+      "threshold": 0.65,
+      "dev_recall_at_5": 0.0,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.5
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.7,
+      "threshold": 0.4,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 0.5,
+      "balanced_score": 0.625
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.7,
+      "threshold": 0.45,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 0.875,
+      "balanced_score": 0.8125
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.7,
+      "threshold": 0.5,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.7,
+      "threshold": 0.55,
+      "dev_recall_at_5": 0.75,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.7,
+      "threshold": 0.6,
+      "dev_recall_at_5": 0.375,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.6875
+    },
+    {
+      "candidate_k": 80,
+      "vector_weight": 0.7,
+      "threshold": 0.65,
+      "dev_recall_at_5": 0.0,
+      "dev_rejection_rate": 1.0,
+      "balanced_score": 0.5
+    }
+  ],
+  "selected": {
+    "candidate_k": 30,
+    "vector_weight": 0.3,
+    "threshold": 0.5,
+    "dev_recall_at_5": 0.875,
+    "dev_rejection_rate": 1.0,
+    "balanced_score": 0.9375
+  }
+}

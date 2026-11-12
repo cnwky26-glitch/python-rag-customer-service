@@ -1,0 +1,327 @@
+embedded 128/1786
+embedded 256/1786
+embedded 384/1786
+embedded 512/1786
+embedded 640/1786
+embedded 768/1786
+embedded 896/1786
+embedded 1024/1786
+embedded 1152/1786
+embedded 1280/1786
+embedded 1408/1786
+embedded 1536/1786
+embedded 1664/1786
+embedded 1786/1786
+embedded 128/2836
+embedded 256/2836
+embedded 384/2836
+embedded 512/2836
+embedded 640/2836
+embedded 768/2836
+embedded 896/2836
+embedded 1024/2836
+embedded 1152/2836
+embedded 1280/2836
+embedded 1408/2836
+embedded 1536/2836
+embedded 1664/2836
+embedded 1792/2836
+embedded 1920/2836
+embedded 2048/2836
+embedded 2176/2836
+embedded 2304/2836
+embedded 2432/2836
+embedded 2560/2836
+embedded 2688/2836
+embedded 2816/2836
+embedded 2836/2836
+Evaluate chunk=180/30 mode=vector threshold=0.5
+Evaluate chunk=180/30 mode=hybrid threshold=0.5
+[2026-11-12T06:32:45Z WARN  lance::dataset::write::insert] No existing dataset at C:\Prj\AIDBS\期末作业\storage\lancedb\comparison_300_50.lance, it will be created
+embedded 128/2084
+embedded 256/2084
+embedded 384/2084
+embedded 512/2084
+embedded 640/2084
+embedded 768/2084
+embedded 896/2084
+embedded 1024/2084
+embedded 1152/2084
+embedded 1280/2084
+embedded 1408/2084
+embedded 1536/2084
+embedded 1664/2084
+embedded 1792/2084
+embedded 1920/2084
+embedded 2048/2084
+embedded 2084/2084
+Evaluate chunk=300/50 mode=vector threshold=0.5
+Evaluate chunk=300/50 mode=hybrid threshold=0.5
+Evaluate chunk=420/70 mode=vector threshold=0.5
+Evaluate chunk=420/70 mode=hybrid threshold=0.5
+{
+  "created_at": "2026-11-12T14:33:34.807338+08:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 204 Stepping 3, GenuineIntel",
+    "packages": {
+      "lancedb": "0.41.0",
+      "fastembed": "0.9.1",
+      "onnxruntime": "1.31.1",
+      "numpy": "2.5.4",
+      "pyarrow": "26.0.1"
+    }
+  },
+  "model": {
+    "model": "BAAI/bge-small-zh-v1.5",
+    "dimension": 512,
+    "threads": 4,
+    "batch_size": 32,
+    "query_prefix": "为这个句子生成表示以用于检索相关文章："
+  },
+  "config": {
+    "data": {
+      "version": "3.13",
+      "language": "zh-cn",
+      "min_documents": 200,
+      "modules": [
+        "json",
+        "csv",
+        "pathlib",
+        "re",
+        "datetime",
+        "collections",
+        "itertools",
+        "functools",
+        "os",
+        "shutil",
+        "sqlite3",
+        "zipfile",
+        "argparse",
+        "logging",
+        "subprocess",
+        "statistics",
+        "math",
+        "random",
+        "hashlib",
+        "decimal"
+      ]
+    },
+    "embedding": {
+      "model": "BAAI/bge-small-zh-v1.5",
+      "dimension": 512,
+      "threads": 4,
+      "batch_size": 32,
+      "query_prefix": "为这个句子生成表示以用于检索相关文章："
+    },
+    "chunking": {
+      "chunk_size": 420,
+      "overlap": 70,
+      "title_limit": 64
+    },
+    "database": {
+      "path": "storage/lancedb",
+      "table": "python_support",
+      "batch_size": 128,
+      "num_partitions": 16,
+      "nprobes": 16
+    },
+    "retrieval": {
+      "top_k": 5,
+      "candidate_k": 30,
+      "similarity_threshold": 0.5,
+      "vector_weight": 0.3
+    },
+    "evaluation": {
+      "repeats": 5,
+      "seed": 20261112,
+      "thresholds": [
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.65
+      ],
+      "candidate_grid": [
+        30,
+        80
+      ],
+      "vector_weight_grid": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "chunk_sizes": [
+        180,
+        300,
+        420
+      ],
+      "overlaps": [
+        30,
+        50,
+        70
+      ]
+    }
+  },
+  "documents": 1388,
+  "test_questions": 20,
+  "test_sha256": "59046da608a0ba8c01adba794a22a835fcf8a05873303e7ed91c555a4997380b",
+  "repeats": 5,
+  "threshold": 0.5,
+  "experiments": [
+    {
+      "name": "chunk_180_30_vector",
+      "chunk_size": 180,
+      "overlap": 30,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 2836,
+      "build_seconds": 38.69835829999647,
+      "official": false,
+      "recall_at_5": 0.7,
+      "p50_ms": 12.552799998957198,
+      "p95_ms": 14.348935002635699,
+      "p99_ms": 15.164950997568667,
+      "mean_ms": 12.531956999955582,
+      "cold_first_query_ms": 16.857700000400655,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.35,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.65,
+        "5": 0.7
+      }
+    },
+    {
+      "name": "chunk_180_30_hybrid",
+      "chunk_size": 180,
+      "overlap": 30,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 2836,
+      "build_seconds": 38.69835829999647,
+      "official": false,
+      "recall_at_5": 0.85,
+      "p50_ms": 17.10629999797675,
+      "p95_ms": 21.70587000073283,
+      "p99_ms": 22.66270300235208,
+      "mean_ms": 17.636876999531523,
+      "cold_first_query_ms": 21.268299999064766,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.55,
+        "3": 0.55,
+        "4": 0.8,
+        "5": 0.85
+      }
+    },
+    {
+      "name": "chunk_300_50_vector",
+      "chunk_size": 300,
+      "overlap": 50,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 2084,
+      "build_seconds": 41.45524380000279,
+      "official": false,
+      "recall_at_5": 0.65,
+      "p50_ms": 11.238900002354058,
+      "p95_ms": 13.137720003214781,
+      "p99_ms": 14.258368004084332,
+      "mean_ms": 11.407208999880822,
+      "cold_first_query_ms": 14.93270000355551,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.6,
+        "5": 0.65
+      }
+    },
+    {
+      "name": "chunk_300_50_hybrid",
+      "chunk_size": 300,
+      "overlap": 50,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 2084,
+      "build_seconds": 41.45524380000279,
+      "official": false,
+      "recall_at_5": 0.8,
+      "p50_ms": 16.717699996661395,
+      "p95_ms": 21.957115000623162,
+      "p99_ms": 24.3767020048108,
+      "mean_ms": 17.221349000246846,
+      "cold_first_query_ms": 25.354799996421207,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.4,
+        "2": 0.55,
+        "3": 0.6,
+        "4": 0.8,
+        "5": 0.8
+      }
+    },
+    {
+      "name": "chunk_420_70_vector",
+      "chunk_size": 420,
+      "overlap": 70,
+      "mode": "vector",
+      "threshold": 0.5,
+      "chunks": 1786,
+      "build_seconds": 45.82831989999977,
+      "official": false,
+      "recall_at_5": 0.65,
+      "p50_ms": 11.01320000452688,
+      "p95_ms": 12.376375003441353,
+      "p99_ms": 13.369475000727126,
+      "mean_ms": 11.081100000010338,
+      "cold_first_query_ms": 10.472399997524917,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.45,
+        "2": 0.55,
+        "3": 0.55,
+        "4": 0.65,
+        "5": 0.65
+      }
+    },
+    {
+      "name": "chunk_420_70_hybrid",
+      "chunk_size": 420,
+      "overlap": 70,
+      "mode": "hybrid",
+      "threshold": 0.5,
+      "chunks": 1786,
+      "build_seconds": 45.82831989999977,
+      "official": true,
+      "recall_at_5": 0.85,
+      "p50_ms": 17.06575000207522,
+      "p95_ms": 19.6766450022551,
+      "p99_ms": 20.344725000904877,
+      "mean_ms": 17.143618000045535,
+      "cold_first_query_ms": 16.550799999095034,
+      "request_count": 100,
+      "recall_curve": {
+        "1": 0.4,
+        "2": 0.45,
+        "3": 0.6,
+        "4": 0.85,
+        "5": 0.85
+      }
+    }
+  ],
+  "before_threshold_tuning": {
+    "recall_at_5": 0.85,
+    "p95_ms": 19.719020000775345
+  },
+  "no_answer_rejection_before": 1.0,
+  "no_answer_rejection_after": 1.0,
+  "elapsed_seconds": 137.61454189999495,
+  "metric_definition": "doc-level macro Recall@5; unique doc_id; one pre-labelled target per test question; latency includes embedding, filters, both retrieval routes, fusion and thresholding; excludes model loading and build; serial warm CPU requests; numpy linear percentile"
+}
